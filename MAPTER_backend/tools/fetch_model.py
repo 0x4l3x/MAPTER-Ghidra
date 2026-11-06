@@ -10,7 +10,7 @@ pipeline from a clone; the released extension zips already contain it.
 Usage:
     python tools/fetch_model.py --url https://github.com/<owner>/<repo>/releases/download/<tag>/safe-model.zip
     python tools/fetch_model.py --zip /path/to/safe-model.zip     # offline
-    MAPTER_MODEL_URL=<url> python tools/fetch_model.py
+    python tools/fetch_model.py
 
 Both files are checked against the SHA-256 values below; nothing is installed
 outside the model folder. Standard library only.
@@ -72,7 +72,8 @@ def install_from_zip(archive: Path, dest: Path) -> None:
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     src = ap.add_mutually_exclusive_group()
-    src.add_argument("--url", default=os.environ.get("MAPTER_MODEL_URL"), help="URL of safe-model.zip")
+    src.add_argument("--url", default="https://github.com/0x4l3x/MAPTER-Ghidra/releases/download/v1.0.0/safe-model.zip", 
+                     help="URL of safe-model.zip")
     src.add_argument("--zip", type=Path, help="local safe-model.zip")
     ap.add_argument("--dest", type=Path, default=MODEL_DIR, help=f"model folder (default {MODEL_DIR})")
     ap.add_argument("--force", action="store_true", help="download even if a valid model is present")
