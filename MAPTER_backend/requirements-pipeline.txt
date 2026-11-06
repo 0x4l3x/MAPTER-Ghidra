@@ -1,0 +1,35 @@
+# Python environment of the MAPTER generation pipeline (mapter_pipeline.py).
+# Separate from the Dash app's requirements-app.txt: torch is large (~200 MB
+# for the CPU wheel) and the app does not need it.
+#
+#   python3 -m venv mapter-pipeline-venv
+#   mapter-pipeline-venv/bin/pip install -r requirements-pipeline.txt
+#   mapter-pipeline-venv/bin/python mapter_pipeline.py --check
+#
+# Needs Python >= 3.9. Not installed by pip (see README.md):
+#   radare2 >= 6.0   (brew install radare2, or tools/install_tools.py radare2)
+#   capa             (optional, python tools/install_tools.py capa)
+
+# SAFE function embeddings. CPU is enough (batch size 1, plain state_dict
+# SAFEtorch.pt). Any torch >= 2.2 works. On Linux a smaller CPU-only wheel is:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+# (macOS and Windows PyPI wheels are already CPU/MPS builds.)
+torch>=2.2
+numpy>=1.26
+pandas>=2.0
+
+# Dimensionality reduction (standardise -> PCA -> t-SNE / PCA)
+scikit-learn>=1.3
+
+# radare2 bridge used by the SAFE stage (needs the radare2 binary >= 6.0 too)
+r2pipe>=1.9
+
+# AVClass2 labels from VirusTotal reports (stage skipped when not installed)
+avclass-malicialab>=2.8
+
+# capa_simplifier progress bars, VirusTotal fetching
+tqdm>=4.66
+requests>=2.31
+
+# Optional: UMAP reduction (--method umap). Pulls numba; uncomment to install.
+# umap-learn>=0.5.5

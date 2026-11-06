@@ -1,0 +1,272 @@
+{
+    "timestamp": "2024-12-14T11:40:29.611397",
+    "version": "7.4.0",
+    "extractor": "VivisectFeatureExtractor",
+    "rules": {
+        "calculate modulo 256 via x86 assembly": {
+            "rule_name": "calculate modulo 256 via x86 assembly",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Modulo",
+                "method_mbc": "",
+                "mbc_id": "C0058"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [
+                71847
+            ],
+            "rules_non_code_related": []
+        },
+        "delay execution": {
+            "rule_name": "delay execution",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Anti-Behavioral Analysis",
+                "behavior_mbc": "Dynamic Analysis Evasion",
+                "method_mbc": "Delayed Execution",
+                "mbc_id": "B0003.003"
+            },
+            "associated_funcs": [
+                69798
+            ],
+            "associated_addresses": [
+                69798
+            ],
+            "rules_non_code_related": []
+        },
+        "encode data using XOR": {
+            "rule_name": "encode data using XOR",
+            "rule_namespace": "data-manipulation/encoding/xor",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Obfuscated Files or Information",
+                "method_mbc": "Encoding-Standard Algorithm",
+                "mbc_id": "E1027.m02"
+            },
+            "associated_funcs": [
+                73072,
+                73812
+            ],
+            "associated_addresses": [
+                73626,
+                74396
+            ],
+            "rules_non_code_related": []
+        },
+        "get OS version": {
+            "rule_name": "get OS version",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                69852
+            ],
+            "associated_addresses": [
+                69852
+            ],
+            "rules_non_code_related": []
+        },
+        "contain loop": {
+            "rule_name": "contain loop",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                70576,
+                71714,
+                72888,
+                73072,
+                73812,
+                75586,
+                75988,
+                77056,
+                77404
+            ],
+            "associated_addresses": [
+                70576,
+                71714,
+                72888,
+                73072,
+                73812,
+                74828,
+                75586,
+                75988,
+                77056,
+                77404
+            ],
+            "rules_non_code_related": []
+        },
+        "attach user process memory": {
+            "rule_name": "attach user process memory",
+            "rule_namespace": "host-interaction/process/inject",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Process Injection",
+                "subtechnique_attck": "",
+                "attck_id": "T1055"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Process Injection",
+                "method_mbc": "",
+                "mbc_id": "E1055"
+            },
+            "associated_funcs": [
+                71714
+            ],
+            "associated_addresses": [
+                71714
+            ],
+            "rules_non_code_related": []
+        },
+        "query or enumerate registry value": {
+            "rule_name": "query or enumerate registry value",
+            "rule_namespace": "host-interaction/registry",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "Query Registry",
+                "subtechnique_attck": "",
+                "attck_id": "T1012"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Query Registry Value",
+                "mbc_id": "C0036.006"
+            },
+            "associated_funcs": [
+                72698
+            ],
+            "associated_addresses": [
+                72698
+            ],
+            "rules_non_code_related": []
+        }
+    },
+    "analysis": {
+        "base_address": {
+            "type": "absolute",
+            "value": 65536
+        },
+        "file_functions": {
+            "69798": 69798,
+            "69852": 69852,
+            "70106": 70106,
+            "72431": 70106,
+            "72451": 70106,
+            "70140": 70140,
+            "70184": 70140,
+            "70342": 70342,
+            "70379": 70342,
+            "70576": 70576,
+            "70696": 70576,
+            "70759": 70576,
+            "70802": 70576,
+            "70918": 70576,
+            "70981": 70576,
+            "71024": 70576,
+            "71107": 70576,
+            "71140": 70576,
+            "71206": 70576,
+            "71249": 70576,
+            "71714": 71714,
+            "71833": 71714,
+            "71872": 71714,
+            "72224": 72224,
+            "72296": 72224,
+            "72377": 72224,
+            "72468": 72468,
+            "72576": 72468,
+            "72698": 72698,
+            "72782": 72698,
+            "72825": 72698,
+            "72888": 72888,
+            "72975": 72888,
+            "72996": 72888,
+            "73072": 73072,
+            "73184": 73072,
+            "73204": 73072,
+            "73234": 73072,
+            "73253": 73072,
+            "73278": 73072,
+            "73302": 73072,
+            "73320": 73072,
+            "73335": 73072,
+            "73364": 73072,
+            "73385": 73072,
+            "73489": 73072,
+            "73509": 73072,
+            "73526": 73072,
+            "73541": 73072,
+            "73626": 73072,
+            "73652": 73072,
+            "73681": 73072,
+            "73812": 73812,
+            "73903": 73812,
+            "73939": 73812,
+            "73959": 73812,
+            "73989": 73812,
+            "74008": 73812,
+            "74033": 73812,
+            "74057": 73812,
+            "74075": 73812,
+            "74090": 73812,
+            "74119": 73812,
+            "74140": 73812,
+            "74248": 73812,
+            "74268": 73812,
+            "74291": 73812,
+            "74306": 73812,
+            "74396": 73812,
+            "74428": 73812,
+            "74441": 73812,
+            "74466": 73812,
+            "74480": 73812,
+            "74489": 73812,
+            "74507": 73812,
+            "74986": 74986,
+            "75002": 74986,
+            "75322": 75322,
+            "75371": 75322,
+            "75451": 75322,
+            "75586": 75586,
+            "75735": 75586,
+            "75836": 75586,
+            "75988": 75988,
+            "76035": 75988,
+            "76118": 75988,
+            "76212": 76212,
+            "76287": 76212,
+            "76346": 76212,
+            "76353": 76212,
+            "76405": 76212,
+            "76436": 76212,
+            "77056": 77056,
+            "77100": 77056,
+            "77113": 77056,
+            "77231": 77056,
+            "77244": 77056,
+            "77326": 77056,
+            "77339": 77056,
+            "77404": 77404,
+            "77521": 77404
+        },
+        "library_functions": {
+            "75958": "_Dns_StringToDnsAddr_A@8",
+            "76857": "@__security_check_cookie@4",
+            "76960": "__SEH_prolog4",
+            "77535": "__unwind_handler4",
+            "77633": "@_EH4_CallFilterFunc@8",
+            "77700": "@_EH4_LocalUnwind@16"
+        }
+    }
+}

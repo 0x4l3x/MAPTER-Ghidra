@@ -1,0 +1,658 @@
+{
+    "timestamp": "2024-12-15T07:07:45.776411",
+    "version": "7.4.0",
+    "extractor": "VivisectFeatureExtractor",
+    "rules": {
+        "encode data using XOR": {
+            "rule_name": "encode data using XOR",
+            "rule_namespace": "data-manipulation/encoding/xor",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Obfuscated Files or Information",
+                "method_mbc": "Encoding-Standard Algorithm",
+                "mbc_id": "E1027.m02"
+            },
+            "associated_funcs": [
+                70084,
+                70288,
+                70532,
+                71704,
+                73620,
+                74344
+            ],
+            "associated_addresses": [
+                70126,
+                70353,
+                70678,
+                72127,
+                73678,
+                74418
+            ],
+            "rules_non_code_related": [
+                [
+                    "contains PDB path",
+                    "file",
+                    16520
+                ]
+            ]
+        },
+        "delay execution": {
+            "rule_name": "delay execution",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Anti-Behavioral Analysis",
+                "behavior_mbc": "Dynamic Analysis Evasion",
+                "method_mbc": "Delayed Execution",
+                "mbc_id": "B0003.003"
+            },
+            "associated_funcs": [
+                70532,
+                76456,
+                77264
+            ],
+            "associated_addresses": [
+                71381,
+                76491,
+                77303
+            ],
+            "rules_non_code_related": [
+                [
+                    "contains PDB path",
+                    "file",
+                    16520
+                ]
+            ]
+        },
+        "create or open file": {
+            "rule_name": "create or open file",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Create File",
+                "method_mbc": "",
+                "mbc_id": "C0016"
+            },
+            "associated_funcs": [
+                72400,
+                74972,
+                79468
+            ],
+            "associated_addresses": [
+                72703,
+                75016,
+                79643
+            ],
+            "rules_non_code_related": [
+                [
+                    "contains PDB path",
+                    "file",
+                    16520
+                ]
+            ]
+        },
+        "get file attributes": {
+            "rule_name": "get file attributes",
+            "rule_namespace": "host-interaction/file-system/meta",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Get File Attributes",
+                "method_mbc": "",
+                "mbc_id": "C0049"
+            },
+            "associated_funcs": [
+                72400,
+                81720
+            ],
+            "associated_addresses": [
+                72888,
+                81776
+            ],
+            "rules_non_code_related": [
+                [
+                    "contains PDB path",
+                    "file",
+                    16520
+                ]
+            ]
+        },
+        "complete processing asynchronous IO request": {
+            "rule_name": "complete processing asynchronous IO request",
+            "rule_namespace": "host-interaction/driver",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                75212,
+                75212,
+                75212,
+                75212,
+                75212,
+                76316
+            ],
+            "associated_addresses": [
+                75482,
+                75512,
+                75888,
+                76018,
+                76240,
+                76316
+            ],
+            "rules_non_code_related": [
+                [
+                    "contains PDB path",
+                    "file",
+                    16520
+                ]
+            ]
+        },
+        "create or open registry key": {
+            "rule_name": "create or open registry key",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Create Registry Key",
+                "mbc_id": "C0036.004"
+            },
+            "associated_funcs": [
+                77804,
+                78956
+            ],
+            "associated_addresses": [
+                77893,
+                78956
+            ],
+            "rules_non_code_related": [
+                [
+                    "contains PDB path",
+                    "file",
+                    16520
+                ]
+            ]
+        },
+        "install driver": {
+            "rule_name": "install driver",
+            "rule_namespace": "host-interaction/driver",
+            "rule_attack": {
+                "tactic_attck": "Persistence",
+                "technique_attck": "Create or Modify System Process",
+                "subtechnique_attck": "Windows Service",
+                "attck_id": "T1543.003"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Hardware",
+                "behavior_mbc": "Install Driver",
+                "method_mbc": "",
+                "mbc_id": "C0037"
+            },
+            "associated_funcs": [
+                79892
+            ],
+            "associated_addresses": [
+                80511
+            ],
+            "rules_non_code_related": [
+                [
+                    "contains PDB path",
+                    "file",
+                    16520
+                ]
+            ]
+        },
+        "contain loop": {
+            "rule_name": "contain loop",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                69640,
+                70084,
+                70288,
+                70532,
+                71704,
+                72400,
+                73620,
+                73892,
+                74344,
+                74780,
+                78596,
+                78956,
+                79804,
+                79892,
+                80916,
+                81080,
+                82240,
+                83232,
+                103136,
+                103136
+            ],
+            "associated_addresses": [
+                69640,
+                70084,
+                70288,
+                70532,
+                71704,
+                72400,
+                73620,
+                73892,
+                74344,
+                74780,
+                78596,
+                78956,
+                79804,
+                79892,
+                80916,
+                81080,
+                82240,
+                83232,
+                102408,
+                103136
+            ],
+            "rules_non_code_related": [
+                [
+                    "contains PDB path",
+                    "file",
+                    16520
+                ]
+            ]
+        },
+        "hash data using fnv": {
+            "rule_name": "hash data using fnv",
+            "rule_namespace": "data-manipulation/hashing/fnv",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Non-Cryptographic Hash",
+                "method_mbc": "FNV",
+                "mbc_id": "C0030.005"
+            },
+            "associated_funcs": [
+                70084,
+                70288,
+                70532,
+                71704,
+                73620,
+                74344
+            ],
+            "associated_addresses": [
+                70084,
+                70288,
+                70532,
+                71704,
+                73620,
+                74344
+            ],
+            "rules_non_code_related": [
+                [
+                    "contains PDB path",
+                    "file",
+                    16520
+                ]
+            ]
+        },
+        "set registry value": {
+            "rule_name": "set registry value",
+            "rule_namespace": "host-interaction/registry/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Set Registry Key",
+                "mbc_id": "C0036.001"
+            },
+            "associated_funcs": [
+                77804
+            ],
+            "associated_addresses": [
+                77804
+            ],
+            "rules_non_code_related": [
+                [
+                    "contains PDB path",
+                    "file",
+                    16520
+                ]
+            ]
+        },
+        "get system information on Windows": {
+            "rule_name": "get system information on Windows",
+            "rule_namespace": "host-interaction/os/info",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                78596
+            ],
+            "associated_addresses": [
+                78596
+            ],
+            "rules_non_code_related": [
+                [
+                    "contains PDB path",
+                    "file",
+                    16520
+                ]
+            ]
+        },
+        "query or enumerate registry value": {
+            "rule_name": "query or enumerate registry value",
+            "rule_namespace": "host-interaction/registry",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "Query Registry",
+                "subtechnique_attck": "",
+                "attck_id": "T1012"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Query Registry Value",
+                "mbc_id": "C0036.006"
+            },
+            "associated_funcs": [
+                78956
+            ],
+            "associated_addresses": [
+                78956
+            ],
+            "rules_non_code_related": [
+                [
+                    "contains PDB path",
+                    "file",
+                    16520
+                ]
+            ]
+        },
+        "parse PE header": {
+            "rule_name": "parse PE header",
+            "rule_namespace": "load-code/pe",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Shared Modules",
+                "subtechnique_attck": "",
+                "attck_id": "T1129"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                80736
+            ],
+            "associated_addresses": [
+                80736
+            ],
+            "rules_non_code_related": [
+                [
+                    "contains PDB path",
+                    "file",
+                    16520
+                ]
+            ]
+        },
+        "read file on Windows": {
+            "rule_name": "read file on Windows",
+            "rule_namespace": "host-interaction/file-system/read",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Read File",
+                "method_mbc": "",
+                "mbc_id": "C0051"
+            },
+            "associated_funcs": [
+                81720
+            ],
+            "associated_addresses": [
+                81720
+            ],
+            "rules_non_code_related": [
+                [
+                    "contains PDB path",
+                    "file",
+                    16520
+                ]
+            ]
+        },
+        "create device object": {
+            "rule_name": "create device object",
+            "rule_namespace": "host-interaction/driver",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                103136,
+                103136
+            ],
+            "associated_addresses": [
+                102408,
+                103136
+            ],
+            "rules_non_code_related": [
+                [
+                    "contains PDB path",
+                    "file",
+                    16520
+                ]
+            ]
+        },
+        "contains PDB path": {
+            "rule_name": "contains PDB path",
+            "rule_namespace": "executable/pe/pdb",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [],
+            "associated_addresses": [],
+            "rules_non_code_related": [
+                [
+                    "contains PDB path",
+                    "file",
+                    16520
+                ]
+            ]
+        }
+    },
+    "analysis": {
+        "base_address": {
+            "type": "absolute",
+            "value": 65536
+        },
+        "file_functions": {
+            "69640": 69640,
+            "69718": 69640,
+            "69771": 69640,
+            "69790": 69640,
+            "69843": 69640,
+            "69860": 69640,
+            "69913": 69640,
+            "69930": 69640,
+            "69982": 69640,
+            "69997": 69640,
+            "70049": 69640,
+            "70084": 70084,
+            "70126": 70084,
+            "70241": 70084,
+            "70288": 70288,
+            "70353": 70288,
+            "70482": 70288,
+            "70532": 70532,
+            "70643": 70532,
+            "70678": 70532,
+            "70754": 70532,
+            "70790": 70532,
+            "70898": 70532,
+            "71179": 70532,
+            "71316": 70532,
+            "71371": 70532,
+            "71381": 70532,
+            "71581": 70532,
+            "71656": 70532,
+            "71674": 70532,
+            "71704": 71704,
+            "71835": 71704,
+            "71885": 71704,
+            "72038": 71704,
+            "72092": 71704,
+            "72127": 71704,
+            "72311": 71704,
+            "72363": 71704,
+            "72400": 72400,
+            "72536": 72400,
+            "72590": 72400,
+            "72703": 72400,
+            "72888": 72400,
+            "73048": 72400,
+            "73428": 73428,
+            "73590": 73428,
+            "73620": 73620,
+            "73678": 73620,
+            "73863": 73620,
+            "73892": 73892,
+            "73971": 73892,
+            "74039": 73892,
+            "74171": 73892,
+            "74199": 73892,
+            "74236": 74236,
+            "74327": 74236,
+            "74344": 74344,
+            "74418": 74344,
+            "74635": 74344,
+            "74668": 74668,
+            "74743": 74668,
+            "74780": 74780,
+            "74960": 74780,
+            "74972": 74972,
+            "75016": 74972,
+            "75184": 74972,
+            "75212": 75212,
+            "75482": 75212,
+            "75512": 75212,
+            "75717": 75212,
+            "75814": 75212,
+            "75888": 75212,
+            "76018": 75212,
+            "76059": 75212,
+            "76240": 75212,
+            "76278": 75212,
+            "76316": 76316,
+            "76356": 76356,
+            "76425": 76356,
+            "76456": 76456,
+            "76491": 76456,
+            "76613": 76456,
+            "76640": 76640,
+            "76669": 76640,
+            "76712": 76712,
+            "76740": 76740,
+            "76766": 76740,
+            "76842": 76740,
+            "77008": 76740,
+            "77028": 77028,
+            "77060": 77028,
+            "77126": 77028,
+            "77180": 77028,
+            "77237": 77028,
+            "77264": 77264,
+            "77303": 77264,
+            "77501": 77264,
+            "77595": 77264,
+            "77779": 77264,
+            "77804": 77804,
+            "77893": 77804,
+            "78052": 77804,
+            "78562": 77804,
+            "78596": 78596,
+            "78690": 78596,
+            "78885": 78596,
+            "78934": 78596,
+            "78956": 78956,
+            "79034": 78956,
+            "79113": 78956,
+            "79239": 78956,
+            "79288": 78956,
+            "79468": 79468,
+            "79525": 79468,
+            "79643": 79468,
+            "79778": 79468,
+            "79804": 79804,
+            "79867": 79804,
+            "79892": 79892,
+            "79963": 79892,
+            "80184": 79892,
+            "80392": 79892,
+            "80464": 79892,
+            "80511": 79892,
+            "80736": 80736,
+            "80783": 80736,
+            "80883": 80736,
+            "80916": 80916,
+            "80962": 80916,
+            "80977": 80916,
+            "81004": 81004,
+            "81044": 81004,
+            "81061": 81004,
+            "81080": 81080,
+            "81320": 81080,
+            "81426": 81080,
+            "81479": 81080,
+            "81643": 81080,
+            "81690": 81080,
+            "81720": 81720,
+            "81776": 81720,
+            "82044": 81720,
+            "82212": 81720,
+            "82240": 82240,
+            "82330": 82240,
+            "82413": 82240,
+            "82425": 82240,
+            "82460": 82240,
+            "82472": 82240,
+            "82499": 82240,
+            "82523": 82240,
+            "82532": 82240,
+            "82552": 82552,
+            "82561": 82552,
+            "82697": 82552,
+            "83232": 83232,
+            "83260": 83232,
+            "83272": 83232,
+            "83277": 83232,
+            "83297": 83232,
+            "83328": 83232,
+            "83408": 83232,
+            "83488": 83232,
+            "83520": 83232,
+            "83606": 83232,
+            "83658": 83232,
+            "83688": 83232,
+            "83693": 83232,
+            "83924": 83232,
+            "84022": 83232,
+            "84258": 84258,
+            "84290": 84290,
+            "84322": 84322,
+            "102408": 103136,
+            "102512": 103136,
+            "102569": 103136,
+            "102579": 103136,
+            "102994": 103136,
+            "103136": 103136
+        },
+        "library_functions": {
+            "74756": "?",
+            "76696": "?",
+            "82832": "memset",
+            "83072": "__GSHandlerCheckCommon",
+            "83180": "__GSHandlerCheck"
+        }
+    }
+}

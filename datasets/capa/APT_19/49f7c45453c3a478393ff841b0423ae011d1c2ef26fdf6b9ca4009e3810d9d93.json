@@ -1,0 +1,1994 @@
+{
+    "timestamp": "2024-12-13T13:11:51.265755",
+    "version": "7.4.0",
+    "extractor": "VivisectFeatureExtractor",
+    "rules": {
+        "link function at runtime on Windows": {
+            "rule_name": "link function at runtime on Windows",
+            "rule_namespace": "linking/runtime-linking",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Shared Modules",
+                "subtechnique_attck": "",
+                "attck_id": "T1129"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [],
+            "associated_addresses": [
+                6442470434,
+                6442471695,
+                6442473160,
+                6442517481,
+                6442517522,
+                6442517554,
+                6442517586,
+                6442517626
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "encode data using XOR": {
+            "rule_name": "encode data using XOR",
+            "rule_namespace": "data-manipulation/encoding/xor",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Obfuscated Files or Information",
+                "method_mbc": "Encoding-Standard Algorithm",
+                "mbc_id": "E1027.m02"
+            },
+            "associated_funcs": [
+                6442455040,
+                6442455272,
+                6442461100,
+                6442461100,
+                6442461100,
+                6442461100,
+                6442461100,
+                6442471084,
+                6442471084,
+                6442471084,
+                6442471084,
+                6442471084,
+                6442462124,
+                6442465344,
+                6442467392,
+                6442471084,
+                6442532772
+            ],
+            "associated_addresses": [
+                6442455231,
+                6442455327,
+                6442461446,
+                6442461487,
+                6442461528,
+                6442461569,
+                6442461610,
+                6442471102,
+                6442471102,
+                6442471102,
+                6442471102,
+                6442471102,
+                6442462168,
+                6442465416,
+                6442467394,
+                6442471102,
+                6442533234
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "create or open registry key": {
+            "rule_name": "create or open registry key",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Create Registry Key",
+                "mbc_id": "C0036.004"
+            },
+            "associated_funcs": [
+                6442461736
+            ],
+            "associated_addresses": [
+                6442461736
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "delay execution": {
+            "rule_name": "delay execution",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Anti-Behavioral Analysis",
+                "behavior_mbc": "Dynamic Analysis Evasion",
+                "method_mbc": "Delayed Execution",
+                "mbc_id": "B0003.003"
+            },
+            "associated_funcs": [
+                6442462672,
+                6442462672,
+                6442462672,
+                6442465344,
+                6442465560,
+                6442465560
+            ],
+            "associated_addresses": [
+                6442462741,
+                6442462794,
+                6442462832,
+                6442465344,
+                6442465652,
+                6442465674
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "check mutex": {
+            "rule_name": "check mutex",
+            "rule_namespace": "host-interaction/mutex",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Check Mutex",
+                "method_mbc": "",
+                "mbc_id": "C0043"
+            },
+            "associated_funcs": [
+                6442465160
+            ],
+            "associated_addresses": [
+                6442465160
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "create thread": {
+            "rule_name": "create thread",
+            "rule_namespace": "host-interaction/thread/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Create Thread",
+                "method_mbc": "",
+                "mbc_id": "C0038"
+            },
+            "associated_funcs": [
+                6442465560
+            ],
+            "associated_addresses": [
+                6442465614
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "create process on Windows": {
+            "rule_name": "create process on Windows",
+            "rule_namespace": "host-interaction/process/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Create Process",
+                "method_mbc": "",
+                "mbc_id": "C0017"
+            },
+            "associated_funcs": [
+                6442469268
+            ],
+            "associated_addresses": [
+                6442469345
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "open process": {
+            "rule_name": "open process",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Open Process",
+                "method_mbc": "",
+                "mbc_id": "C0065"
+            },
+            "associated_funcs": [
+                6442469592
+            ],
+            "associated_addresses": [
+                6442469592
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "change memory protection": {
+            "rule_name": "change memory protection",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Memory",
+                "behavior_mbc": "Change Memory Protection",
+                "method_mbc": "",
+                "mbc_id": "C0008"
+            },
+            "associated_funcs": [
+                6442471616,
+                6442472664
+            ],
+            "associated_addresses": [
+                6442471654,
+                6442472855
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "allocate memory": {
+            "rule_name": "allocate memory",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Memory",
+                "behavior_mbc": "Allocate Memory",
+                "method_mbc": "",
+                "mbc_id": "C0007"
+            },
+            "associated_funcs": [
+                6442472428,
+                6442472428,
+                6442473260,
+                6442473260,
+                6442473260
+            ],
+            "associated_addresses": [
+                6442472511,
+                6442472561,
+                6442473321,
+                6442473356,
+                6442473386
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "allocate or change RW memory": {
+            "rule_name": "allocate or change RW memory",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Memory",
+                "behavior_mbc": "Allocate Memory",
+                "method_mbc": "",
+                "mbc_id": "C0007"
+            },
+            "associated_funcs": [
+                6442472428,
+                6442472428,
+                6442473260,
+                6442473260,
+                6442473260
+            ],
+            "associated_addresses": [
+                6442472511,
+                6442472561,
+                6442473321,
+                6442473356,
+                6442473386
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "allocate or change RWX memory": {
+            "rule_name": "allocate or change RWX memory",
+            "rule_namespace": "host-interaction/process/inject",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Memory",
+                "behavior_mbc": "Allocate Memory",
+                "method_mbc": "",
+                "mbc_id": "C0007"
+            },
+            "associated_funcs": [
+                6442472664
+            ],
+            "associated_addresses": [
+                6442472855
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "contain loop": {
+            "rule_name": "contain loop",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                6442455040,
+                6442455272,
+                6442456076,
+                6442458108,
+                6442458860,
+                6442461100,
+                6442461692,
+                6442461724,
+                6442461736,
+                6442462088,
+                6442462100,
+                6442462112,
+                6442462124,
+                6442462532,
+                6442462672,
+                6442462876,
+                6442465284,
+                6442465344,
+                6442467392,
+                6442467420,
+                6442468296,
+                6442468404,
+                6442468908,
+                6442470116,
+                6442470372,
+                6442471084,
+                6442471132,
+                6442471232,
+                6442471456,
+                6442471616,
+                6442472156,
+                6442472428,
+                6442472664,
+                6442472920,
+                6442473260,
+                6442473780,
+                6442473956,
+                6442474132,
+                6442483604,
+                6442496720,
+                6442500852,
+                6442500908,
+                6442510808,
+                6442511168,
+                6442522972,
+                6442524456,
+                6442530820,
+                6442531512,
+                6442531916,
+                6442532348,
+                6442532772,
+                6442533708,
+                6442534880,
+                6442535212,
+                6442535324,
+                6442535504,
+                6442536008,
+                6442536252,
+                6442537612,
+                6442538240,
+                6442539424,
+                6442540092,
+                6442540376,
+                6442541368
+            ],
+            "associated_addresses": [
+                6442455040,
+                6442455272,
+                6442456076,
+                6442458108,
+                6442458860,
+                6442461100,
+                6442461692,
+                6442461724,
+                6442461736,
+                6442462088,
+                6442462100,
+                6442462112,
+                6442462124,
+                6442462532,
+                6442462672,
+                6442462876,
+                6442465284,
+                6442465344,
+                6442467392,
+                6442467420,
+                6442468296,
+                6442468404,
+                6442468908,
+                6442470116,
+                6442470372,
+                6442471084,
+                6442471132,
+                6442471232,
+                6442471456,
+                6442471616,
+                6442472156,
+                6442472428,
+                6442472664,
+                6442472920,
+                6442473260,
+                6442473780,
+                6442473956,
+                6442474132,
+                6442483604,
+                6442496720,
+                6442500852,
+                6442500908,
+                6442510808,
+                6442511168,
+                6442522972,
+                6442524456,
+                6442530820,
+                6442531512,
+                6442531916,
+                6442532348,
+                6442532772,
+                6442533708,
+                6442534880,
+                6442535212,
+                6442535324,
+                6442535504,
+                6442536008,
+                6442536252,
+                6442537612,
+                6442538240,
+                6442539424,
+                6442540092,
+                6442540376,
+                6442541368
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "terminate process": {
+            "rule_name": "terminate process",
+            "rule_namespace": "host-interaction/process/terminate",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Terminate Process",
+                "method_mbc": "",
+                "mbc_id": "C0018"
+            },
+            "associated_funcs": [
+                6442455040,
+                6442465824,
+                6442471616,
+                6442501915
+            ],
+            "associated_addresses": [
+                6442455040,
+                6442465824,
+                6442471616,
+                6442501915
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "print debug messages": {
+            "rule_name": "print debug messages",
+            "rule_namespace": "host-interaction/log/debug/write-event",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [],
+            "associated_addresses": [
+                6442457268
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "set HTTP header": {
+            "rule_name": "set HTTP header",
+            "rule_namespace": "communication/http",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "HTTP Communication",
+                "method_mbc": "Set Header",
+                "mbc_id": "C0002.013"
+            },
+            "associated_funcs": [
+                6442458108
+            ],
+            "associated_addresses": [
+                6442458108
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "read HTTP header": {
+            "rule_name": "read HTTP header",
+            "rule_namespace": "communication/http",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "HTTP Communication",
+                "method_mbc": "Read Header",
+                "mbc_id": "C0002.014"
+            },
+            "associated_funcs": [
+                6442458524,
+                6442458588
+            ],
+            "associated_addresses": [
+                6442458524,
+                6442458588
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "receive HTTP response": {
+            "rule_name": "receive HTTP response",
+            "rule_namespace": "communication/http/client",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "HTTP Communication",
+                "method_mbc": "Get Response",
+                "mbc_id": "C0002.017"
+            },
+            "associated_funcs": [
+                6442458860,
+                6442460120
+            ],
+            "associated_addresses": [
+                6442458860,
+                6442460120
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "initialize WinHTTP library": {
+            "rule_name": "initialize WinHTTP library",
+            "rule_namespace": "communication/http",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "HTTP Communication",
+                "method_mbc": "WinHTTP",
+                "mbc_id": "C0002.008"
+            },
+            "associated_funcs": [
+                6442459940
+            ],
+            "associated_addresses": [
+                6442459940
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "send HTTP request": {
+            "rule_name": "send HTTP request",
+            "rule_namespace": "communication/http/client",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "HTTP Communication",
+                "method_mbc": "Send Request",
+                "mbc_id": "C0002.003"
+            },
+            "associated_funcs": [
+                6442460120
+            ],
+            "associated_addresses": [
+                6442460120
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "prepare HTTP request": {
+            "rule_name": "prepare HTTP request",
+            "rule_namespace": "communication/http/client",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "HTTP Communication",
+                "method_mbc": "Create Request",
+                "mbc_id": "C0002.012"
+            },
+            "associated_funcs": [
+                6442460120
+            ],
+            "associated_addresses": [
+                6442460120
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "send data": {
+            "rule_name": "send data",
+            "rule_namespace": "communication",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Command and Control",
+                "behavior_mbc": "C2 Communication",
+                "method_mbc": "Send Data",
+                "mbc_id": "B0030.001"
+            },
+            "associated_funcs": [
+                6442460120
+            ],
+            "associated_addresses": [
+                6442460120
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "query or enumerate registry value": {
+            "rule_name": "query or enumerate registry value",
+            "rule_namespace": "host-interaction/registry",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "Query Registry",
+                "subtechnique_attck": "",
+                "attck_id": "T1012"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Query Registry Value",
+                "mbc_id": "C0036.006"
+            },
+            "associated_funcs": [
+                6442461736
+            ],
+            "associated_addresses": [
+                6442461736
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "initialize Winsock library": {
+            "rule_name": "initialize Winsock library",
+            "rule_namespace": "communication/socket",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "Socket Communication",
+                "method_mbc": "Initialize Winsock Library",
+                "mbc_id": "C0001.009"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [
+                6442462300
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "get networking parameters": {
+            "rule_name": "get networking parameters",
+            "rule_namespace": "host-interaction/network",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Network Configuration Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1016"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                6442462876
+            ],
+            "associated_addresses": [
+                6442462876
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "create mutex": {
+            "rule_name": "create mutex",
+            "rule_namespace": "host-interaction/mutex",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Create Mutex",
+                "method_mbc": "",
+                "mbc_id": "C0042"
+            },
+            "associated_funcs": [
+                6442465160
+            ],
+            "associated_addresses": [
+                6442465160
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "check mutex and exit": {
+            "rule_name": "check mutex and exit",
+            "rule_namespace": "host-interaction/mutex",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Check Mutex",
+                "method_mbc": "",
+                "mbc_id": "C0043"
+            },
+            "associated_funcs": [
+                6442465160
+            ],
+            "associated_addresses": [
+                6442465160
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "encode data using Base64": {
+            "rule_name": "encode data using Base64",
+            "rule_namespace": "data-manipulation/encoding/base64",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Obfuscated Files or Information",
+                "method_mbc": "Encoding-Standard Algorithm",
+                "mbc_id": "E1027.m02"
+            },
+            "associated_funcs": [
+                6442468404
+            ],
+            "associated_addresses": [
+                6442468404
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "impersonate user": {
+            "rule_name": "impersonate user",
+            "rule_namespace": "host-interaction/user",
+            "rule_attack": {
+                "tactic_attck": "Privilege Escalation",
+                "technique_attck": "Access Token Manipulation",
+                "subtechnique_attck": "Token Impersonation/Theft",
+                "attck_id": "T1134.001"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                6442469592
+            ],
+            "associated_addresses": [
+                6442469592
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "enumerate processes": {
+            "rule_name": "enumerate processes",
+            "rule_namespace": "host-interaction/process/list",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "Process Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1057"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                6442470116
+            ],
+            "associated_addresses": [
+                6442470116
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "modify access privileges": {
+            "rule_name": "modify access privileges",
+            "rule_namespace": "host-interaction/process/modify",
+            "rule_attack": {
+                "tactic_attck": "Privilege Escalation",
+                "technique_attck": "Access Token Manipulation",
+                "subtechnique_attck": "",
+                "attck_id": "T1134"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                6442470640
+            ],
+            "associated_addresses": [
+                6442470640
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "parse PE header": {
+            "rule_name": "parse PE header",
+            "rule_namespace": "load-code/pe",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Shared Modules",
+                "subtechnique_attck": "",
+                "attck_id": "T1129"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                6442471456,
+                6442473260
+            ],
+            "associated_addresses": [
+                6442471456,
+                6442473260
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "link many functions at runtime": {
+            "rule_name": "link many functions at runtime",
+            "rule_namespace": "linking/runtime-linking",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Shared Modules",
+                "subtechnique_attck": "",
+                "attck_id": "T1129"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                6442517384
+            ],
+            "associated_addresses": [
+                6442517384
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "encrypt data using RC4 PRGA": {
+            "rule_name": "encrypt data using RC4 PRGA",
+            "rule_namespace": "data-manipulation/encryption/rc4",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Cryptography",
+                "behavior_mbc": "Encrypt Data",
+                "method_mbc": "RC4",
+                "mbc_id": "C0027.009"
+            },
+            "associated_funcs": [
+                6442531916
+            ],
+            "associated_addresses": [
+                6442531916
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "compute adler32 checksum": {
+            "rule_name": "compute adler32 checksum",
+            "rule_namespace": "data-manipulation/checksum/adler32",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Checksum",
+                "method_mbc": "Adler",
+                "mbc_id": "C0032.005"
+            },
+            "associated_funcs": [
+                6442534880
+            ],
+            "associated_addresses": [
+                6442534880
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "run as service": {
+            "rule_name": "run as service",
+            "rule_namespace": "host-interaction/service",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Anti-Behavioral Analysis",
+                "behavior_mbc": "Conditional Execution",
+                "method_mbc": "Runs as Service",
+                "mbc_id": "B0025.007"
+            },
+            "associated_funcs": [
+                6442465344
+            ],
+            "associated_addresses": [
+                [
+                    6442465344,
+                    6442465344,
+                    6442465452
+                ]
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ]
+            ]
+        },
+        "reference Base64 string": {
+            "rule_name": "reference Base64 string",
+            "rule_namespace": "data-manipulation/encoding/base64",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Encode Data",
+                "method_mbc": "Base64",
+                "mbc_id": "C0026.001"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ],
+                [
+                    "linked against ZLIB",
+                    "file",
+                    100463
+                ],
+                [
+                    "linked against ZLIB",
+                    "file",
+                    103600
+                ]
+            ]
+        },
+        "linked against ZLIB": {
+            "rule_name": "linked against ZLIB",
+            "rule_namespace": "linking/static/zlib",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Compression Library",
+                "method_mbc": "",
+                "mbc_id": "C0060"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    104336
+                ],
+                [
+                    "linked against ZLIB",
+                    "file",
+                    103600
+                ],
+                [
+                    "linked against ZLIB",
+                    "file",
+                    100463
+                ]
+            ]
+        }
+    },
+    "analysis": {
+        "base_address": {
+            "type": "absolute",
+            "value": 6442450944
+        },
+        "file_functions": {
+            "6442455040": 6442455040,
+            "6442455102": 6442455040,
+            "6442455231": 6442455040,
+            "6442455245": 6442455040,
+            "6442455272": 6442455272,
+            "6442455327": 6442455272,
+            "6442455430": 6442455272,
+            "6442455481": 6442455272,
+            "6442455528": 6442455528,
+            "6442455540": 6442455540,
+            "6442455586": 6442455540,
+            "6442455644": 6442455644,
+            "6442455687": 6442455644,
+            "6442455704": 6442455704,
+            "6442455783": 6442455704,
+            "6442456076": 6442456076,
+            "6442456180": 6442462532,
+            "6442479575": 6442492676,
+            "6442456204": 6442456204,
+            "6442456243": 6442456204,
+            "6442456256": 6442456256,
+            "6442456331": 6442456256,
+            "6442456344": 6442456344,
+            "6442456531": 6442456344,
+            "6442456600": 6442456600,
+            "6442456652": 6442456600,
+            "6442456664": 6442456664,
+            "6442456716": 6442456664,
+            "6442456736": 6442456736,
+            "6442456794": 6442456736,
+            "6442456808": 6442456808,
+            "6442456864": 6442456808,
+            "6442456876": 6442456876,
+            "6442456932": 6442456876,
+            "6442456944": 6442456944,
+            "6442457472": 6442457472,
+            "6442457503": 6442457472,
+            "6442457508": 6442457508,
+            "6442457583": 6442457508,
+            "6442457615": 6442457508,
+            "6442457684": 6442457508,
+            "6442457734": 6442457508,
+            "6442457927": 6442457508,
+            "6442457990": 6442457508,
+            "6442458032": 6442458032,
+            "6442458099": 6442458032,
+            "6442458108": 6442458108,
+            "6442458459": 6442458108,
+            "6442458508": 6442458108,
+            "6442458524": 6442458524,
+            "6442458588": 6442458588,
+            "6442458667": 6442458588,
+            "6442458759": 6442458588,
+            "6442458835": 6442458588,
+            "6442458860": 6442458860,
+            "6442459066": 6442458860,
+            "6442459131": 6442458860,
+            "6442459183": 6442458860,
+            "6442459940": 6442459940,
+            "6442460024": 6442459940,
+            "6442460098": 6442459940,
+            "6442460120": 6442460120,
+            "6442460558": 6442460120,
+            "6442460588": 6442460588,
+            "6442460931": 6442460588,
+            "6442461016": 6442461016,
+            "6442461087": 6442461016,
+            "6442461100": 6442461100,
+            "6442461446": 6442461100,
+            "6442461487": 6442461100,
+            "6442461528": 6442461100,
+            "6442461569": 6442461100,
+            "6442461610": 6442461100,
+            "6442461633": 6442461100,
+            "6442461692": 6442461692,
+            "6442471102": 6442471084,
+            "6442461724": 6442461724,
+            "6442461736": 6442461736,
+            "6442461992": 6442461736,
+            "6442462070": 6442461736,
+            "6442462088": 6442462088,
+            "6442462100": 6442462100,
+            "6442462112": 6442462112,
+            "6442462124": 6442462124,
+            "6442462168": 6442462124,
+            "6442462287": 6442462124,
+            "6442462532": 6442462532,
+            "6442462616": 6442462532,
+            "6442462652": 6442462652,
+            "6442462663": 6442462652,
+            "6442462672": 6442462672,
+            "6442462741": 6442462672,
+            "6442462794": 6442462672,
+            "6442462832": 6442462672,
+            "6442462862": 6442462672,
+            "6442462876": 6442462876,
+            "6442462904": 6442462876,
+            "6442463202": 6442462876,
+            "6442463220": 6442463220,
+            "6442463958": 6442463220,
+            "6442463992": 6442463992,
+            "6442464035": 6442463992,
+            "6442464060": 6442464060,
+            "6442464309": 6442464060,
+            "6442464348": 6442464348,
+            "6442464936": 6442464936,
+            "6442465044": 6442464936,
+            "6442465068": 6442465068,
+            "6442465146": 6442465068,
+            "6442465160": 6442465160,
+            "6442465278": 6442465160,
+            "6442465284": 6442465284,
+            "6442465328": 6442465284,
+            "6442465344": 6442465344,
+            "6442465416": 6442465344,
+            "6442465470": 6442465344,
+            "6442465553": 6442465344,
+            "6442465560": 6442465560,
+            "6442465614": 6442465560,
+            "6442465652": 6442465560,
+            "6442465674": 6442465560,
+            "6442465692": 6442465560,
+            "6442465708": 6442465708,
+            "6442465824": 6442465824,
+            "6442465890": 6442465824,
+            "6442467032": 6442467032,
+            "6442467392": 6442467392,
+            "6442467394": 6442467392,
+            "6442467420": 6442467420,
+            "6442467479": 6442467420,
+            "6442467501": 6442467420,
+            "6442467523": 6442467420,
+            "6442467547": 6442467420,
+            "6442467558": 6442467420,
+            "6442467573": 6442467420,
+            "6442467598": 6442467420,
+            "6442467627": 6442467420,
+            "6442467646": 6442467420,
+            "6442467663": 6442467420,
+            "6442467676": 6442467420,
+            "6442467739": 6442467420,
+            "6442467781": 6442467420,
+            "6442467803": 6442467420,
+            "6442467838": 6442467420,
+            "6442467849": 6442467420,
+            "6442467864": 6442467420,
+            "6442467921": 6442467420,
+            "6442467932": 6442467420,
+            "6442467947": 6442467420,
+            "6442467988": 6442467420,
+            "6442468004": 6442467420,
+            "6442468021": 6442467420,
+            "6442468049": 6442467420,
+            "6442468067": 6442467420,
+            "6442468098": 6442467420,
+            "6442468124": 6442467420,
+            "6442468141": 6442467420,
+            "6442468159": 6442467420,
+            "6442468171": 6442467420,
+            "6442468183": 6442467420,
+            "6442468232": 6442468232,
+            "6442468266": 6442468232,
+            "6442468296": 6442468296,
+            "6442468339": 6442468296,
+            "6442468388": 6442468296,
+            "6442468404": 6442468404,
+            "6442468522": 6442468404,
+            "6442468588": 6442468404,
+            "6442468693": 6442468404,
+            "6442468701": 6442468404,
+            "6442468759": 6442468404,
+            "6442468764": 6442468404,
+            "6442468908": 6442468908,
+            "6442469028": 6442468908,
+            "6442469115": 6442468908,
+            "6442469130": 6442468908,
+            "6442469233": 6442468908,
+            "6442469268": 6442469268,
+            "6442469345": 6442469268,
+            "6442469592": 6442469592,
+            "6442469722": 6442469592,
+            "6442470116": 6442470116,
+            "6442470372": 6442470372,
+            "6442470640": 6442470640,
+            "6442470736": 6442470640,
+            "6442470810": 6442470640,
+            "6442470836": 6442470836,
+            "6442470964": 6442470964,
+            "6442471010": 6442470964,
+            "6442471084": 6442471084,
+            "6442471132": 6442471132,
+            "6442471201": 6442471132,
+            "6442471209": 6442471132,
+            "6442471232": 6442471232,
+            "6442471307": 6442471232,
+            "6442471310": 6442471232,
+            "6442471352": 6442471352,
+            "6442471447": 6442471352,
+            "6442471456": 6442471456,
+            "6442471559": 6442471456,
+            "6442471573": 6442471456,
+            "6442471583": 6442471456,
+            "6442471616": 6442471616,
+            "6442471654": 6442471616,
+            "6442471797": 6442471616,
+            "6442472000": 6442471616,
+            "6442472040": 6442471616,
+            "6442472066": 6442471616,
+            "6442472132": 6442471616,
+            "6442472156": 6442472156,
+            "6442472224": 6442472156,
+            "6442472250": 6442472156,
+            "6442472389": 6442472156,
+            "6442472428": 6442472428,
+            "6442472511": 6442472428,
+            "6442472561": 6442472428,
+            "6442472610": 6442472428,
+            "6442472632": 6442472428,
+            "6442472664": 6442472664,
+            "6442472855": 6442472664,
+            "6442472877": 6442472664,
+            "6442472900": 6442472664,
+            "6442472920": 6442472920,
+            "6442472977": 6442472920,
+            "6442473006": 6442472920,
+            "6442473020": 6442472920,
+            "6442473102": 6442472920,
+            "6442473115": 6442472920,
+            "6442473175": 6442472920,
+            "6442473195": 6442472920,
+            "6442473226": 6442472920,
+            "6442473260": 6442473260,
+            "6442473302": 6442473260,
+            "6442473321": 6442473260,
+            "6442473356": 6442473260,
+            "6442473386": 6442473260,
+            "6442473561": 6442473260,
+            "6442473572": 6442473260,
+            "6442473600": 6442473260,
+            "6442473625": 6442473260,
+            "6442473634": 6442473260,
+            "6442473641": 6442473260,
+            "6442473666": 6442473260,
+            "6442473708": 6442473260,
+            "6442473751": 6442473260,
+            "6442473780": 6442473780,
+            "6442473823": 6442473780,
+            "6442473845": 6442473780,
+            "6442473864": 6442473780,
+            "6442473882": 6442473780,
+            "6442473901": 6442473780,
+            "6442473939": 6442473780,
+            "6442473956": 6442473956,
+            "6442473965": 6442473956,
+            "6442473989": 6442473956,
+            "6442474052": 6442473956,
+            "6442474095": 6442473956,
+            "6442474132": 6442474132,
+            "6442475444": 6442475408,
+            "6442474177": 6442474177,
+            "6442475324": 6442475324,
+            "6442475400": 6442475400,
+            "6442475408": 6442475408,
+            "6442475944": 6442542264,
+            "6442475968": 6442542264,
+            "6442476100": 6442476100,
+            "6442476116": 6442476116,
+            "6442476159": 6442476116,
+            "6442477096": 6442477096,
+            "6442491884": 6442491884,
+            "6442491922": 6442491884,
+            "6442477136": 6442477136,
+            "6442477327": 6442477352,
+            "6442477352": 6442477352,
+            "6442477628": 6442477628,
+            "6442477671": 6442477628,
+            "6442478964": 6442478964,
+            "6442479022": 6442479248,
+            "6442479225": 6442479248,
+            "6442479248": 6442479248,
+            "6442479281": 6442479248,
+            "6442479488": 6442479488,
+            "6442502050": 6442501915,
+            "6442479520": 6442479520,
+            "6442483604": 6442483604,
+            "6442483661": 6442483604,
+            "6442483728": 6442483604,
+            "6442489548": 6442489548,
+            "6442490136": 6442490136,
+            "6442492676": 6442492676,
+            "6442496484": 6442496484,
+            "6442496628": 6442496720,
+            "6442496675": 6442496720,
+            "6442496720": 6442496720,
+            "6442500852": 6442500852,
+            "6442500888": 6442500852,
+            "6442500897": 6442500852,
+            "6442500908": 6442500908,
+            "6442500944": 6442500908,
+            "6442500953": 6442500908,
+            "6442501568": 6442501568,
+            "6442501736": 6442501618,
+            "6442501618": 6442501618,
+            "6442501748": 6442501748,
+            "6442501915": 6442501915,
+            "6442506920": 6442506920,
+            "6442506925": 6442506920,
+            "6442507022": 6442506920,
+            "6442510268": 6442510268,
+            "6442510320": 6442510320,
+            "6442510506": 6442510808,
+            "6442510564": 6442510808,
+            "6442510582": 6442510808,
+            "6442510679": 6442510808,
+            "6442510697": 6442510808,
+            "6442510756": 6442510808,
+            "6442510780": 6442510808,
+            "6442510808": 6442510808,
+            "6442510816": 6442510816,
+            "6442511118": 6442511168,
+            "6442511142": 6442511168,
+            "6442511168": 6442511168,
+            "6442511268": 6442511268,
+            "6442511333": 6442511644,
+            "6442511644": 6442511644,
+            "6442517384": 6442517384,
+            "6442517876": 6442517384,
+            "6442521532": 6442521532,
+            "6442521574": 6442521532,
+            "6442521640": 6442521640,
+            "6442521669": 6442521640,
+            "6442521776": 6442521776,
+            "6442521921": 6442521776,
+            "6442521955": 6442521776,
+            "6442522032": 6442522032,
+            "6442522177": 6442522032,
+            "6442522211": 6442522032,
+            "6442522972": 6442522972,
+            "6442523094": 6442522972,
+            "6442523107": 6442522972,
+            "6442523124": 6442522972,
+            "6442523236": 6442522972,
+            "6442523246": 6442522972,
+            "6442523378": 6442522972,
+            "6442523405": 6442522972,
+            "6442523407": 6442522972,
+            "6442523425": 6442522972,
+            "6442523453": 6442522972,
+            "6442523524": 6442522972,
+            "6442523564": 6442522972,
+            "6442523585": 6442522972,
+            "6442523616": 6442522972,
+            "6442523708": 6442522972,
+            "6442523718": 6442522972,
+            "6442523850": 6442522972,
+            "6442523872": 6442522972,
+            "6442523929": 6442522972,
+            "6442523987": 6442522972,
+            "6442524028": 6442522972,
+            "6442524101": 6442522972,
+            "6442524160": 6442522972,
+            "6442524190": 6442522972,
+            "6442524211": 6442522972,
+            "6442524264": 6442522972,
+            "6442524323": 6442522972,
+            "6442524357": 6442522972,
+            "6442524417": 6442522972,
+            "6442524456": 6442524456,
+            "6442524578": 6442524456,
+            "6442524591": 6442524456,
+            "6442524608": 6442524456,
+            "6442524720": 6442524456,
+            "6442524730": 6442524456,
+            "6442524862": 6442524456,
+            "6442524889": 6442524456,
+            "6442524891": 6442524456,
+            "6442524909": 6442524456,
+            "6442524937": 6442524456,
+            "6442525008": 6442524456,
+            "6442525048": 6442524456,
+            "6442525069": 6442524456,
+            "6442525100": 6442524456,
+            "6442525192": 6442524456,
+            "6442525202": 6442524456,
+            "6442525334": 6442524456,
+            "6442525356": 6442524456,
+            "6442525413": 6442524456,
+            "6442525471": 6442524456,
+            "6442525512": 6442524456,
+            "6442525585": 6442524456,
+            "6442525644": 6442524456,
+            "6442525674": 6442524456,
+            "6442525695": 6442524456,
+            "6442525748": 6442524456,
+            "6442525807": 6442524456,
+            "6442525841": 6442524456,
+            "6442525901": 6442524456,
+            "6442530820": 6442530820,
+            "6442530897": 6442530820,
+            "6442531064": 6442530820,
+            "6442531071": 6442530820,
+            "6442531180": 6442530820,
+            "6442531210": 6442530820,
+            "6442531283": 6442530820,
+            "6442531335": 6442530820,
+            "6442531396": 6442531396,
+            "6442531432": 6442531396,
+            "6442531493": 6442531396,
+            "6442531512": 6442531512,
+            "6442531594": 6442531512,
+            "6442531633": 6442531512,
+            "6442531702": 6442531512,
+            "6442531787": 6442531512,
+            "6442531806": 6442531512,
+            "6442531916": 6442531916,
+            "6442532054": 6442531916,
+            "6442532096": 6442531916,
+            "6442532127": 6442531916,
+            "6442532142": 6442531916,
+            "6442532179": 6442531916,
+            "6442532212": 6442531916,
+            "6442532236": 6442531916,
+            "6442532320": 6442531916,
+            "6442532348": 6442532348,
+            "6442532436": 6442532348,
+            "6442532488": 6442532348,
+            "6442532500": 6442532348,
+            "6442532542": 6442532348,
+            "6442532575": 6442532348,
+            "6442532632": 6442532348,
+            "6442532668": 6442532348,
+            "6442532680": 6442532348,
+            "6442532737": 6442532348,
+            "6442532772": 6442532772,
+            "6442532825": 6442532772,
+            "6442532882": 6442532772,
+            "6442532893": 6442532772,
+            "6442532974": 6442532772,
+            "6442533032": 6442532772,
+            "6442533165": 6442532772,
+            "6442533234": 6442532772,
+            "6442533331": 6442532772,
+            "6442533387": 6442532772,
+            "6442533475": 6442532772,
+            "6442533481": 6442532772,
+            "6442533501": 6442532772,
+            "6442533513": 6442532772,
+            "6442533569": 6442532772,
+            "6442533605": 6442532772,
+            "6442533617": 6442532772,
+            "6442533675": 6442532772,
+            "6442533708": 6442533708,
+            "6442533813": 6442533708,
+            "6442533936": 6442533708,
+            "6442534007": 6442533708,
+            "6442534060": 6442533708,
+            "6442534217": 6442533708,
+            "6442534274": 6442533708,
+            "6442534292": 6442533708,
+            "6442534372": 6442533708,
+            "6442534412": 6442533708,
+            "6442534424": 6442533708,
+            "6442534482": 6442533708,
+            "6442534566": 6442533708,
+            "6442534619": 6442533708,
+            "6442534645": 6442533708,
+            "6442534676": 6442533708,
+            "6442534707": 6442533708,
+            "6442534781": 6442533708,
+            "6442534793": 6442533708,
+            "6442534880": 6442534880,
+            "6442534903": 6442534880,
+            "6442534927": 6442534880,
+            "6442534944": 6442534880,
+            "6442535136": 6442534880,
+            "6442535153": 6442534880,
+            "6442535212": 6442535212,
+            "6442535231": 6442535212,
+            "6442535256": 6442535212,
+            "6442535281": 6442535212,
+            "6442535324": 6442535324,
+            "6442535451": 6442535324,
+            "6442535504": 6442535504,
+            "6442535627": 6442535504,
+            "6442535649": 6442535504,
+            "6442535677": 6442535504,
+            "6442535693": 6442535504,
+            "6442535726": 6442535504,
+            "6442535752": 6442535504,
+            "6442535782": 6442535504,
+            "6442535812": 6442535504,
+            "6442535842": 6442535504,
+            "6442535858": 6442535504,
+            "6442535927": 6442535504,
+            "6442535952": 6442535504,
+            "6442536008": 6442536008,
+            "6442536080": 6442536008,
+            "6442536093": 6442536008,
+            "6442536116": 6442536008,
+            "6442536135": 6442536008,
+            "6442536144": 6442536008,
+            "6442536160": 6442536008,
+            "6442536170": 6442536008,
+            "6442536220": 6442536008,
+            "6442536252": 6442536252,
+            "6442536347": 6442537612,
+            "6442536379": 6442537612,
+            "6442536404": 6442537612,
+            "6442536562": 6442537612,
+            "6442536587": 6442537612,
+            "6442536718": 6442537612,
+            "6442536743": 6442537612,
+            "6442536878": 6442537612,
+            "6442536973": 6442537612,
+            "6442537005": 6442537612,
+            "6442537020": 6442537612,
+            "6442537155": 6442537612,
+            "6442537262": 6442537612,
+            "6442537277": 6442537612,
+            "6442537412": 6442537612,
+            "6442537569": 6442537612,
+            "6442537612": 6442537612,
+            "6442537659": 6442537612,
+            "6442537785": 6442537612,
+            "6442537905": 6442537612,
+            "6442538050": 6442537612,
+            "6442538164": 6442537612,
+            "6442538182": 6442537612,
+            "6442538240": 6442538240,
+            "6442538304": 6442538240,
+            "6442538350": 6442538240,
+            "6442538491": 6442538240,
+            "6442538660": 6442538240,
+            "6442538813": 6442538240,
+            "6442538833": 6442538240,
+            "6442538994": 6442538240,
+            "6442539140": 6442538240,
+            "6442539424": 6442539424,
+            "6442539521": 6442539424,
+            "6442539562": 6442539424,
+            "6442539575": 6442539424,
+            "6442539580": 6442539424,
+            "6442539590": 6442539424,
+            "6442539650": 6442539424,
+            "6442539659": 6442539424,
+            "6442539680": 6442539424,
+            "6442539702": 6442539424,
+            "6442539842": 6442539424,
+            "6442539954": 6442539424,
+            "6442540027": 6442539424,
+            "6442540054": 6442539424,
+            "6442540092": 6442540092,
+            "6442540227": 6442540092,
+            "6442540365": 6442540092,
+            "6442540376": 6442540376,
+            "6442540435": 6442540376,
+            "6442540458": 6442540376,
+            "6442540485": 6442540376,
+            "6442540512": 6442540376,
+            "6442540526": 6442540376,
+            "6442540669": 6442540376,
+            "6442540769": 6442540376,
+            "6442540857": 6442540376,
+            "6442541083": 6442540376,
+            "6442541108": 6442541108,
+            "6442541232": 6442541368,
+            "6442541251": 6442541368,
+            "6442541255": 6442541368,
+            "6442541271": 6442541368,
+            "6442541318": 6442541368,
+            "6442541345": 6442541368,
+            "6442541368": 6442541368,
+            "6442541392": 6442541368,
+            "6442541443": 6442541368,
+            "6442541462": 6442541368,
+            "6442541466": 6442541368,
+            "6442541480": 6442541368,
+            "6442541493": 6442541368,
+            "6442542016": 6442542016,
+            "6442542150": 6442542150,
+            "6442542264": 6442542264
+        },
+        "library_functions": {
+            "6442455620": "?",
+            "6442460948": "??0bad_alloc@std@@QEAA@AEBV01@@Z",
+            "6442461716": "?",
+            "6442474240": "memmove",
+            "6442475088": "memset",
+            "6442475332": "srand",
+            "6442475356": "rand",
+            "6442475400": "?UnalignedDeallocate@CryptoPP@@YAXPEAX@Z",
+            "6442475408": "??2@YAPEAX_K@Z",
+            "6442475572": "sprintf",
+            "6442475732": "wcscat",
+            "6442475776": "wcscpy",
+            "6442475804": "??0exception@std@@QEAA@AEBQEBDH@Z",
+            "6442475852": "?_Copy_str@exception@std@@AEAAXPEBD@Z",
+            "6442475944": "?_Tidy@exception@std@@AEAAXXZ",
+            "6442475984": "??0exception@std@@QEAA@AEBQEBD@Z",
+            "6442476032": "??4exception@std@@QEAAAEAV01@AEBV01@@Z",
+            "6442476176": "??0exception@std@@QEAA@AEBV01@@Z",
+            "6442476220": "??0_LocaleUpdate@@QEAA@PEAUlocaleinfo_struct@@@Z",
+            "6442476384": "?_strlwr_s_l_stat@@YAHPEAD_KPEAUlocaleinfo_struct@@@Z",
+            "6442476892": "_strlwr_s_l",
+            "6442476968": "_strlwr",
+            "6442477068": "strchr",
+            "6442477108": "wcslen",
+            "6442477136": "_fsopen",
+            "6442477392": "strcmp",
+            "6442477560": "qword_not_equal",
+            "6442477568": "wcscmp",
+            "6442477688": "wcscpy_s",
+            "6442477796": "_fclose_nolock",
+            "6442477920": "fclose",
+            "6442478048": "strcat",
+            "6442478208": "strcpy",
+            "6442478416": "strlen",
+            "6442478584": "strrchr",
+            "6442478624": "_CRT_INIT",
+            "6442478964": "__DllMainCRTStartup",
+            "6442479312": "_CxxThrowException",
+            "6442479488": "__security_check_cookie",
+            "6442479520": "free",
+            "6442479584": "malloc",
+            "6442479768": "_get_errno_from_oserr",
+            "6442479840": "_errno",
+            "6442479872": "__doserrno",
+            "6442479904": "_dosmaperr",
+            "6442479976": "isdigit",
+            "6442480104": "_tolower_l",
+            "6442480440": "tolower",
+            "6442480472": "__ascii_stricmp",
+            "6442480532": "_stricmp_l",
+            "6442480748": "_stricmp",
+            "6442480820": "realloc",
+            "6442481056": "strncpy",
+            "6442481412": "fprintf",
+            "6442481732": "_mtterm",
+            "6442481772": "_initptd",
+            "6442481956": "_getptd_noexit",
+            "6442482088": "_getptd",
+            "6442482124": "_freefls",
+            "6442482432": "_freeptd",
+            "6442482496": "_mtinit",
+            "6442482628": "__onexitinit",
+            "6442482696": "_onexit",
+            "6442482964": "atexit",
+            "6442482996": "_callnewh",
+            "6442483048": "_flsbuf",
+            "6442483448": "write_char",
+            "6442483520": "write_multi_char",
+            "6442483756": "_output_s_l",
+            "6442486496": "_call_reportfault",
+            "6442486828": "_invoke_watson",
+            "6442486880": "_invalid_parameter",
+            "6442486992": "_invalid_parameter_noinfo",
+            "6442487024": "strcpy_s",
+            "6442487124": "?setSBCS@@YAXPEAUthreadmbcinfostruct@@@Z",
+            "6442487264": "?setSBUpLow@@YAXPEAUthreadmbcinfostruct@@@Z",
+            "6442487760": "__updatetmbcinfo",
+            "6442487948": "?getSystemCP@@YAHH@Z",
+            "6442488092": "_setmbcp_nolock",
+            "6442488724": "_setmbcp",
+            "6442489204": "__initmbctable",
+            "6442489244": "__addlocaleref",
+            "6442489384": "__removelocaleref",
+            "6442489548": "__freetlocinfo",
+            "6442489928": "_updatetlocinfoEx_nolock",
+            "6442490016": "__updatetlocinfo",
+            "6442490136": "__GSHandlerCheckCommon",
+            "6442490236": "__GSHandlerCheck",
+            "6442490268": "?__crtLCMapStringA_stat@@YAHPEAUlocaleinfo_struct@@KKPEBDHPEADHHH@Z",
+            "6442490984": "__crtLCMapStringA",
+            "6442491136": "strnlen",
+            "6442491184": "_alloca_probe",
+            "6442491264": "?strtoxl@@YAKPEAUlocaleinfo_struct@@PEBDPEAPEBDHH@Z",
+            "6442491884": "strtol",
+            "6442491932": "__C_specific_handler",
+            "6442492452": "__initstdio",
+            "6442492676": "__endstdio",
+            "6442492716": "_lock_file",
+            "6442492816": "_lock_file2",
+            "6442492868": "_unlock_file",
+            "6442492944": "_unlock_file2",
+            "6442492976": "_openfile",
+            "6442493672": "_getstream",
+            "6442494032": "_local_unwind",
+            "6442494080": "_NLG_Notify",
+            "6442494132": "_write_nolock",
+            "6442496020": "_write",
+            "6442496244": "_fileno",
+            "6442496284": "_flush",
+            "6442496408": "_fflush_nolock",
+            "6442496484": "flsall",
+            "6442496732": "?",
+            "6442496840": "_close_nolock",
+            "6442497028": "_close",
+            "6442497224": "_freebuf",
+            "6442497424": "_malloc_crt",
+            "6442497552": "?",
+            "6442497684": "?",
+            "6442497820": "__crtCorExitProcess",
+            "6442497880": "__crtExitProcess",
+            "6442497904": "_lockexit",
+            "6442497916": "_unlockexit",
+            "6442497928": "_init_pointers",
+            "6442497996": "_initterm",
+            "6442498048": "_initterm_e",
+            "6442498108": "_cinit",
+            "6442498284": "doexit",
+            "6442498684": "_exit",
+            "6442498696": "_cexit",
+            "6442498712": "_amsg_exit",
+            "6442498752": "_ioinit",
+            "6442499476": "_ioterm",
+            "6442499592": "_setenvp",
+            "6442499896": "parse_cmdline",
+            "6442500360": "_setargv",
+            "6442500608": "__crtGetEnvironmentStringsA",
+            "6442500964": "_heap_init",
+            "6442501052": "_heap_term",
+            "6442501084": "_XcptFilter",
+            "6442501548": "__CppXcptFilter",
+            "6442501568": "__security_init_cookie",
+            "6442501748": "__report_gsfailure",
+            "6442502080": "_GET_RTERRMSG",
+            "6442502124": "_NMSG_WRITE",
+            "6442502732": "_FF_MSGBANNER",
+            "6442502800": "_isctype_l",
+            "6442503032": "_towlower_l",
+            "6442503248": "_isleadbyte_l",
+            "6442503320": "isleadbyte",
+            "6442503392": "_stbuf",
+            "6442503604": "_ftbuf",
+            "6442503660": "_mtinitlocks",
+            "6442503792": "_mtdeletelocks",
+            "6442503928": "_unlock",
+            "6442503952": "_mtinitlocknum",
+            "6442504184": "_lock",
+            "6442504252": "_msize",
+            "6442504312": "_lseeki64_nolock",
+            "6442504464": "_lseeki64",
+            "6442504692": "_getbuf",
+            "6442504776": "_isatty",
+            "6442504872": "_initp_misc_cfltcvt_tab",
+            "6442504928": "_get_printf_count_output",
+            "6442504952": "_wctomb_s_l",
+            "6442505404": "wctomb_s",
+            "6442505432": "?__crtGetStringTypeA_stat@@YAHPEAUlocaleinfo_struct@@KPEBDHPEAGHHH@Z",
+            "6442505784": "__crtGetStringTypeA",
+            "6442505912": "__free_lc_time",
+            "6442507028": "__free_lconv_mon",
+            "6442507312": "memcmp",
+            "6442507536": "strncmp",
+            "6442507728": "_ValidateImageBase",
+            "6442507776": "_FindPESection",
+            "6442507856": "_IsNonwritableInCurrentImage",
+            "6442507924": "_fcloseall",
+            "6442508096": "_tsopen_nolock",
+            "6442510056": "?",
+            "6442510320": "_mbsnbicmp_l",
+            "6442510816": "_mbsnbcmp_l",
+            "6442511176": "_putwch_nolock",
+            "6442511268": "_mbtowc_l",
+            "6442511652": "_set_osfhnd",
+            "6442511828": "_free_osfhnd",
+            "6442512000": "_get_osfhandle",
+            "6442512116": "__lock_fhandle",
+            "6442512284": "_unlock_fhandle",
+            "6442512324": "_alloc_osfhnd",
+            "6442512844": "_commit",
+            "6442513060": "_forcdecpt_l",
+            "6442513188": "_cropzeros_l",
+            "6442513372": "_fassign_l",
+            "6442513440": "_fassign",
+            "6442513448": "_forcdecpt",
+            "6442513456": "_cropzeros",
+            "6442513464": "_cftoe2_l",
+            "6442514028": "_cftoe_l",
+            "6442514276": "_cftoa_l",
+            "6442515268": "_cftof2_l",
+            "6442515680": "_cftof_l",
+            "6442515892": "_cftog_l",
+            "6442516200": "_cfltcvt_l",
+            "6442516352": "_cfltcvt",
+            "6442516388": "_calloc_impl",
+            "6442516544": "?terminate@@YAXXZ",
+            "6442516580": "_initp_eh_hooks",
+            "6442516612": "?",
+            "6442516660": "raise",
+            "6442517240": "?x_ismbbtype_l@@YAHPEAUlocaleinfo_struct@@IHH@Z",
+            "6442517364": "_ismbblead",
+            "6442517904": "wcscat_s",
+            "6442518040": "wcsncpy_s",
+            "6442518248": "_set_error_mode",
+            "6442518312": "__crtLCMapStringW",
+            "6442518408": "iswctype",
+            "6442518512": "_fptrap",
+            "6442518524": "__ascii_strnicmp",
+            "6442518596": "_strnicmp_l",
+            "6442518856": "_strnicmp",
+            "6442518936": "_chsize_nolock",
+            "6442519344": "_read_nolock",
+            "6442521172": "_lseek_nolock",
+            "6442521324": "_setmode_nolock",
+            "6442521580": "__initconout",
+            "6442521696": "_get_fpsr",
+            "6442522288": "_fptostr",
+            "6442522492": "__dtold",
+            "6442522692": "_fltout2",
+            "6442522876": "abort",
+            "6442522940": "wcsnlen",
+            "6442525940": "__strgtold12_l",
+            "6442528088": "$I10_OUTPUT",
+            "6442541108": "_wcsicmp_l",
+            "6442541504": "?",
+            "6442541530": "?",
+            "6442541556": "_CRT_INIT$fin$0",
+            "6442541594": "__DllMainCRTStartup$filt$0",
+            "6442541624": "?",
+            "6442541650": "?",
+            "6442541682": "?",
+            "6442541709": "_onexit$fin$0",
+            "6442541731": "?",
+            "6442541758": "?",
+            "6442541785": "?",
+            "6442541812": "?",
+            "6442541837": "?",
+            "6442541885": "?",
+            "6442541912": "?",
+            "6442541939": "doexit$fin$0",
+            "6442541975": "_mtinitlocknum$fin$0",
+            "6442542050": "?",
+            "6442542123": "?",
+            "6442542182": "?",
+            "6442542209": "?",
+            "6442542234": "raise$fin$0"
+        }
+    }
+}

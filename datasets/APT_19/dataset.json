@@ -1,0 +1,12 @@
+{
+  "id": "APT_19",
+  "name": "APT 19",
+  "description": "APT19 malware binaries — SAFE embeddings reduced to 2D (MAPTER).",
+  "reduced": "reduced.pkl",
+  "avclass": "avclass.pkl",
+  "avclass_apt_group": "APT_19",
+  "default_function_threshold": 5.0,
+  "default_binary_threshold": 0.2,
+  "default_distance_threshold": 0.75,
+  "avclass_threshold": 0.9
+}

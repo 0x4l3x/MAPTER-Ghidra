@@ -1,0 +1,32 @@
+# SAFE model: too large for git (GitHub limit 100 MB). Published as the
+# Release asset safe-model.zip; fetch with MAPTER_backend/tools/fetch_model.py.
+MAPTER_backend/model/
+
+# Release assets prepared locally (upload them to the GitHub Release)
+release/
+
+# Build output
+MapterBridge/build/
+MapterBridge/dist/
+MapterBridge/bin/
+MapterBridge/lib/*.jar
+.gradle/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Pipeline work folders and logs
+mapter-runs/
+*.log
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Docs set aside for review (not part of the repo)
+review/

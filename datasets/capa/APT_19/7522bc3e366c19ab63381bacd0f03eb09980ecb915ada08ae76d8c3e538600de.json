@@ -1,0 +1,296 @@
+{
+    "timestamp": "2024-12-14T01:01:37.270300",
+    "version": "7.4.0",
+    "extractor": "VivisectFeatureExtractor",
+    "rules": {
+        "link function at runtime on Windows": {
+            "rule_name": "link function at runtime on Windows",
+            "rule_namespace": "linking/runtime-linking",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Shared Modules",
+                "subtechnique_attck": "",
+                "attck_id": "T1129"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [],
+            "associated_addresses": [
+                4198905,
+                4198918,
+                4198931,
+                4198944,
+                4198957,
+                4198970,
+                4198983,
+                4198996,
+                4199009,
+                4199022,
+                4199035,
+                4199048,
+                4199061,
+                4199310
+            ],
+            "rules_non_code_related": [
+                [
+                    "linked against ZLIB",
+                    "file",
+                    103600
+                ]
+            ]
+        },
+        "create or open file": {
+            "rule_name": "create or open file",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Create File",
+                "method_mbc": "",
+                "mbc_id": "C0016"
+            },
+            "associated_funcs": [
+                4198800
+            ],
+            "associated_addresses": [
+                4199237
+            ],
+            "rules_non_code_related": [
+                [
+                    "linked against ZLIB",
+                    "file",
+                    103600
+                ]
+            ]
+        },
+        "link many functions at runtime": {
+            "rule_name": "link many functions at runtime",
+            "rule_namespace": "linking/runtime-linking",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Shared Modules",
+                "subtechnique_attck": "",
+                "attck_id": "T1129"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                4198800
+            ],
+            "associated_addresses": [
+                4198800
+            ],
+            "rules_non_code_related": [
+                [
+                    "linked against ZLIB",
+                    "file",
+                    103600
+                ]
+            ]
+        },
+        "contain loop": {
+            "rule_name": "contain loop",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                4206566,
+                4215136
+            ],
+            "associated_addresses": [
+                4206566,
+                4215136
+            ],
+            "rules_non_code_related": [
+                [
+                    "linked against ZLIB",
+                    "file",
+                    103600
+                ]
+            ]
+        },
+        "linked against ZLIB": {
+            "rule_name": "linked against ZLIB",
+            "rule_namespace": "linking/static/zlib",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Compression Library",
+                "method_mbc": "",
+                "mbc_id": "C0060"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [],
+            "rules_non_code_related": [
+                [
+                    "linked against ZLIB",
+                    "file",
+                    103600
+                ]
+            ]
+        }
+    },
+    "analysis": {
+        "base_address": {
+            "type": "absolute",
+            "value": 4194304
+        },
+        "file_functions": {
+            "4198400": 4198400,
+            "4198504": 4198400,
+            "4198528": 4198400,
+            "4198538": 4198400,
+            "4198573": 4198400,
+            "4198583": 4198400,
+            "4198800": 4198800,
+            "4198893": 4198800,
+            "4199139": 4198800,
+            "4199188": 4198800,
+            "4199237": 4198800,
+            "4199261": 4198800,
+            "4199330": 4198800,
+            "4199496": 4199496,
+            "4206566": 4206566,
+            "4206656": 4206566,
+            "4215120": 4215120,
+            "4215265": 4215136,
+            "4215270": 4215136,
+            "4215136": 4215136,
+            "4215164": 4215136
+        },
+        "library_functions": {
+            "4199360": "??3@YAXPAX@Z",
+            "4199371": "_fclose",
+            "4199420": "__fclose_lk",
+            "4199543": "?",
+            "4199809": "__fsopen",
+            "4199858": "_fopen",
+            "4199877": "_WinMainCRTStartup",
+            "4200141": "__amsg_exit",
+            "4200178": "_fast_error_exit",
+            "4200214": "_free",
+            "4200635": "__lock_file",
+            "4200682": "__lock_file2",
+            "4200717": "__unlock_file",
+            "4200764": "__unlock_file2",
+            "4200799": "__close",
+            "4200892": "__close_lk",
+            "4201023": "__freebuf",
+            "4201112": "__flush",
+            "4201377": "__flsbuf",
+            "4201657": "__write",
+            "4201758": "__write_lk",
+            "4202160": "?",
+            "4202272": "?",
+            "4202316": "?",
+            "4202352": "?",
+            "4202412": "?",
+            "4202664": "?",
+            "4202696": "?",
+            "4202736": "?",
+            "4202820": "?",
+            "4202981": "__openfile",
+            "4203349": "__getstream",
+            "4203549": "__cinit",
+            "4203594": "_exit",
+            "4203611": "__exit",
+            "4203628": "_doexit",
+            "4203802": "__unlockexit",
+            "4203811": "__initterm",
+            "4203837": "__XcptFilter",
+            "4204155": "_xcptlookup",
+            "4204213": "__wincmdln",
+            "4204301": "__setenvp",
+            "4204486": "__setargv",
+            "4204639": "_parse_cmdline",
+            "4205075": "___crtGetEnvironmentStringsA",
+            "4205381": "__ioinit",
+            "4205825": "__mtinit",
+            "4205909": "__initptd",
+            "4205928": "__getptd",
+            "4206031": "__GetLinkerVersion",
+            "4206076": "___heap_select",
+            "4206404": "__heap_init",
+            "4206500": "__global_unwind2",
+            "4206532": "__unwind_handler",
+            "4206748": "__except_handler3",
+            "4206964": "__FF_MSGBANNER",
+            "4207021": "__NMSG_WRITE",
+            "4207360": "___sbh_heap_init",
+            "4207432": "___sbh_find_block",
+            "4207475": "___sbh_free_block",
+            "4208284": "___sbh_alloc_block",
+            "4209061": "___sbh_alloc_new_region",
+            "4209238": "___sbh_alloc_new_group",
+            "4209489": "___old_sbh_new_region",
+            "4209813": "___old_sbh_release_region",
+            "4209899": "___old_sbh_decommit_pages",
+            "4210093": "___old_sbh_find_block",
+            "4210180": "___old_sbh_free_block",
+            "4210249": "___old_sbh_alloc_block",
+            "4210769": "___old_sbh_alloc_block_from_page",
+            "4211061": "__mtinitlocks",
+            "4211102": "__lock",
+            "4211199": "__unlock",
+            "4211220": "_calloc",
+            "4211666": "__dosmaperr",
+            "4211781": "__errno",
+            "4211790": "___doserrno",
+            "4211799": "__alloc_osfhnd",
+            "4212090": "__set_osfhnd",
+            "4212214": "__free_osfhnd",
+            "4212341": "__get_osfhandle",
+            "4212407": "__lock_fhandle",
+            "4212502": "__unlock_fhandle",
+            "4212683": "__lseek",
+            "4212784": "__lseek_lk",
+            "4212899": "__getbuf",
+            "4212967": "__isatty",
+            "4213008": "__sopen",
+            "4213727": "_malloc",
+            "4213745": "__nh_malloc",
+            "4213789": "__heap_alloc",
+            "4214041": "__ismbblead",
+            "4214058": "_x_ismbbtype",
+            "4214107": "__setmbcp",
+            "4214536": "_getSystemCP",
+            "4214610": "_CPtoLCID",
+            "4214661": "_setSBCS",
+            "4214702": "_setSBUpLow",
+            "4215091": "___initmbctable",
+            "4215120": "?",
+            "4215360": "_strlen",
+            "4215483": "_strtol",
+            "4215506": "_strtoxl",
+            "4216048": "_strchr",
+            "4216240": "_strstr",
+            "4216368": "_strncmp",
+            "4216432": "__alloca_probe",
+            "4216479": "___crtMessageBoxA",
+            "4216624": "_strncpy",
+            "4216880": "?",
+            "4216992": "?",
+            "4217036": "?",
+            "4217072": "?",
+            "4217132": "?",
+            "4217384": "?",
+            "4217416": "?",
+            "4217456": "?",
+            "4217540": "?",
+            "4217712": "_memset",
+            "4217800": "__callnewh",
+            "4217827": "__chsize_lk",
+            "4218120": "__read_lk",
+            "4218593": "___crtLCMapStringA",
+            "4219141": "_strncnt",
+            "4219184": "___crtGetStringTypeA",
+            "4219513": "_toupper",
+            "4219624": "?",
+            "4219828": "__isctype",
+            "4219945": "__setmode_lk",
+            "4220192": "_strcspn",
+            "4220256": "_strpbrk",
+            "4220320": "__strcmpi",
+            "4220528": "__strnicmp",
+            "4221029": "?"
+        }
+    }
+}

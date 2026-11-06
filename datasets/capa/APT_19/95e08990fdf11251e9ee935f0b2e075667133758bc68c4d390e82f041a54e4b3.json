@@ -1,0 +1,4055 @@
+{
+    "timestamp": "2024-12-14T09:35:58.445597",
+    "version": "7.4.0",
+    "extractor": "VivisectFeatureExtractor",
+    "rules": {
+        "link function at runtime on Windows": {
+            "rule_name": "link function at runtime on Windows",
+            "rule_namespace": "linking/runtime-linking",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Shared Modules",
+                "subtechnique_attck": "",
+                "attck_id": "T1129"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [],
+            "associated_addresses": [
+                268450251,
+                268457477,
+                268493694,
+                268499766,
+                268499785,
+                268499804,
+                268499823,
+                268499842,
+                268499861,
+                268499880,
+                268499899,
+                268499918,
+                268499937,
+                268499956,
+                268499975,
+                268503052,
+                268504000,
+                268505560,
+                268505589,
+                268508052,
+                268508076,
+                268508093,
+                268508110,
+                268508052,
+                268508076,
+                268508093,
+                268508110,
+                268509495,
+                268510462,
+                268514595,
+                268516984,
+                268517062,
+                268517242,
+                268517259,
+                268517276,
+                268517293,
+                268517310
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "encrypt data using DES": {
+            "rule_name": "encrypt data using DES",
+            "rule_namespace": "data-manipulation/encryption/des",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Obfuscated Files or Information",
+                "method_mbc": "Encryption-Standard Algorithm",
+                "mbc_id": "E1027.m05"
+            },
+            "associated_funcs": [
+                268440226
+            ],
+            "associated_addresses": [
+                268440374
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "create UDP socket": {
+            "rule_name": "create UDP socket",
+            "rule_namespace": "communication/socket/udp/send",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "Socket Communication",
+                "method_mbc": "Create UDP Socket",
+                "mbc_id": "C0001.010"
+            },
+            "associated_funcs": [
+                268441687
+            ],
+            "associated_addresses": [
+                268441728
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "create thread": {
+            "rule_name": "create thread",
+            "rule_namespace": "host-interaction/thread/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Create Thread",
+                "method_mbc": "",
+                "mbc_id": "C0038"
+            },
+            "associated_funcs": [
+                268441687,
+                268472490,
+                268473196,
+                268512422,
+                268512422,
+                268517171
+            ],
+            "associated_addresses": [
+                268442043,
+                268472663,
+                268473552,
+                268512357,
+                268512357,
+                268517666
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "delay execution": {
+            "rule_name": "delay execution",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Anti-Behavioral Analysis",
+                "behavior_mbc": "Dynamic Analysis Evasion",
+                "method_mbc": "Delayed Execution",
+                "mbc_id": "B0003.003"
+            },
+            "associated_funcs": [
+                268442169,
+                268507294,
+                268442894,
+                268466578,
+                268472825,
+                268473196,
+                268473876,
+                268482869,
+                268482869,
+                268482869,
+                268482869,
+                268484850,
+                268486236,
+                268507294,
+                268507321,
+                268508154,
+                268508154,
+                268510888,
+                268510888,
+                268510888,
+                268510888,
+                268510888,
+                268512448,
+                268517171
+            ],
+            "associated_addresses": [
+                268442190,
+                268442387,
+                268443026,
+                268466734,
+                268472870,
+                268473217,
+                268476427,
+                268483061,
+                268483250,
+                268483308,
+                268483341,
+                268485088,
+                268486426,
+                268442387,
+                268442477,
+                268508129,
+                268508129,
+                268510888,
+                268511305,
+                268511793,
+                268512086,
+                268512105,
+                268512474,
+                268517685
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "terminate thread": {
+            "rule_name": "terminate thread",
+            "rule_namespace": "host-interaction/thread/terminate",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Terminate Thread",
+                "method_mbc": "",
+                "mbc_id": "C0039"
+            },
+            "associated_funcs": [
+                268442169,
+                268472825,
+                268512448
+            ],
+            "associated_addresses": [
+                268442190,
+                268472870,
+                268512474
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "open process": {
+            "rule_name": "open process",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Open Process",
+                "method_mbc": "",
+                "mbc_id": "C0065"
+            },
+            "associated_funcs": [
+                268450145,
+                268465478,
+                268493004,
+                268493004,
+                268503408,
+                268517716
+            ],
+            "associated_addresses": [
+                268450290,
+                268465478,
+                268493052,
+                268493393,
+                268503475,
+                268517818
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "create process on Windows": {
+            "rule_name": "create process on Windows",
+            "rule_namespace": "host-interaction/process/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Create Process",
+                "method_mbc": "",
+                "mbc_id": "C0017"
+            },
+            "associated_funcs": [
+                268450145,
+                268456317,
+                268458563,
+                268466578,
+                268512519
+            ],
+            "associated_addresses": [
+                268450452,
+                268456317,
+                268461761,
+                268466578,
+                268513645
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "get file attributes": {
+            "rule_name": "get file attributes",
+            "rule_namespace": "host-interaction/file-system/meta",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Get File Attributes",
+                "method_mbc": "",
+                "mbc_id": "C0049"
+            },
+            "associated_funcs": [
+                268453833,
+                268454794,
+                268454794,
+                268466458,
+                268499351,
+                268499351,
+                268500098,
+                268500528
+            ],
+            "associated_addresses": [
+                268454636,
+                268454853,
+                268454944,
+                268466500,
+                268499162,
+                268499162,
+                268500421,
+                268500620
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "create or open file": {
+            "rule_name": "create or open file",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Create File",
+                "method_mbc": "",
+                "mbc_id": "C0016"
+            },
+            "associated_funcs": [
+                268458563,
+                268458563,
+                268467995,
+                268505304,
+                268508159,
+                268509399,
+                268510231
+            ],
+            "associated_addresses": [
+                268459884,
+                268461511,
+                268468234,
+                268505576,
+                268508390,
+                268509542,
+                268510231
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "enumerate processes via NtQuerySystemInformation": {
+            "rule_name": "enumerate processes via NtQuerySystemInformation",
+            "rule_namespace": "host-interaction/process/list",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "Process Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1057"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268465114,
+                268465303,
+                268493004
+            ],
+            "associated_addresses": [
+                268465167,
+                268465356,
+                268493219
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "create or open registry key": {
+            "rule_name": "create or open registry key",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Create Registry Key",
+                "mbc_id": "C0036.004"
+            },
+            "associated_funcs": [
+                268469623,
+                268469623,
+                268490545,
+                268490545,
+                268490545,
+                268490545,
+                268490545,
+                268490545,
+                268490545,
+                268494246,
+                268494246,
+                268496875,
+                268500098,
+                268500098,
+                268502734,
+                268504996,
+                268504996,
+                268505304,
+                268505304,
+                268505304,
+                268505304,
+                268508154,
+                268508154,
+                268508558,
+                268509218,
+                268512519,
+                268512519,
+                268512519,
+                268512519,
+                268513869
+            ],
+            "associated_addresses": [
+                268470117,
+                268470363,
+                268490806,
+                268490911,
+                268491123,
+                268491195,
+                268491285,
+                268491321,
+                268491384,
+                268494744,
+                268494861,
+                268496875,
+                268500098,
+                268500267,
+                268502734,
+                268504996,
+                268505050,
+                268505678,
+                268505713,
+                268505736,
+                268505760,
+                268507503,
+                268507503,
+                268508558,
+                268509218,
+                268512587,
+                268512899,
+                268513137,
+                268513170,
+                268513869
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "encode data using XOR": {
+            "rule_name": "encode data using XOR",
+            "rule_namespace": "data-manipulation/encoding/xor",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Obfuscated Files or Information",
+                "method_mbc": "Encoding-Standard Algorithm",
+                "mbc_id": "E1027.m02"
+            },
+            "associated_funcs": [
+                268483381,
+                268483685,
+                268508154,
+                268508154,
+                268508558,
+                268508773,
+                268509218,
+                268512422,
+                268512422,
+                268512519,
+                268512519,
+                268513869
+            ],
+            "associated_addresses": [
+                268483628,
+                268483940,
+                268507738,
+                268507738,
+                268508700,
+                268508908,
+                268509305,
+                268512296,
+                268512296,
+                268513326,
+                268513375,
+                268514045
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "check for sandbox and av modules": {
+            "rule_name": "check for sandbox and av modules",
+            "rule_namespace": "anti-analysis/anti-av",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Anti-Behavioral Analysis",
+                "behavior_mbc": "Virtual Machine Detection",
+                "method_mbc": "",
+                "mbc_id": "B0009"
+            },
+            "associated_funcs": [
+                268493638
+            ],
+            "associated_addresses": [
+                268493638
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "acquire debug privileges": {
+            "rule_name": "acquire debug privileges",
+            "rule_namespace": "host-interaction/process/modify",
+            "rule_attack": {
+                "tactic_attck": "Privilege Escalation",
+                "technique_attck": "Access Token Manipulation",
+                "subtechnique_attck": "",
+                "attck_id": "T1134"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268512422,
+                268512422
+            ],
+            "associated_addresses": [
+                268512158,
+                268512158
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "allocate memory": {
+            "rule_name": "allocate memory",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Memory",
+                "behavior_mbc": "Allocate Memory",
+                "method_mbc": "",
+                "mbc_id": "C0007"
+            },
+            "associated_funcs": [
+                268517075
+            ],
+            "associated_addresses": [
+                268517075
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "change memory protection": {
+            "rule_name": "change memory protection",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Memory",
+                "behavior_mbc": "Change Memory Protection",
+                "method_mbc": "",
+                "mbc_id": "C0008"
+            },
+            "associated_funcs": [
+                268517075
+            ],
+            "associated_addresses": [
+                268517130
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "contain loop": {
+            "rule_name": "contain loop",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                268439652,
+                268439783,
+                268439847,
+                268439944,
+                268440226,
+                268440791,
+                268442169,
+                268442641,
+                268442894,
+                268443278,
+                268444308,
+                268446294,
+                268446710,
+                268447046,
+                268448420,
+                268448469,
+                268448624,
+                268450737,
+                268450974,
+                268451663,
+                268453156,
+                268454794,
+                268455502,
+                268456130,
+                268457068,
+                268458563,
+                268461995,
+                268462055,
+                268463407,
+                268464810,
+                268465114,
+                268465303,
+                268465882,
+                268466458,
+                268467501,
+                268467631,
+                268467995,
+                268468598,
+                268468756,
+                268469623,
+                268471481,
+                268472825,
+                268473196,
+                268473876,
+                268477588,
+                268477945,
+                268478038,
+                268478099,
+                268478414,
+                268478766,
+                268478930,
+                268480213,
+                268483381,
+                268483685,
+                268484231,
+                268486236,
+                268486574,
+                268487340,
+                268489181,
+                268489418,
+                268489627,
+                268490545,
+                268493004,
+                268493638,
+                268494246,
+                268495577,
+                268496255,
+                268496503,
+                268496875,
+                268497501,
+                268498767,
+                268499351,
+                268500890,
+                268502479,
+                268506176,
+                268508154,
+                268508154,
+                268508558,
+                268508773,
+                268509218,
+                268509399,
+                268510093,
+                268510888,
+                268512422,
+                268512422,
+                268512519,
+                268513869,
+                268514618,
+                268515352,
+                268515559,
+                268517716,
+                268518210,
+                268520582,
+                268521066,
+                268521184
+            ],
+            "associated_addresses": [
+                268439652,
+                268439783,
+                268439847,
+                268439944,
+                268440226,
+                268440791,
+                268440993,
+                268442169,
+                268442641,
+                268442894,
+                268443278,
+                268444308,
+                268446217,
+                268446294,
+                268446710,
+                268447046,
+                268448420,
+                268448469,
+                268448624,
+                268450737,
+                268450886,
+                268450974,
+                268451663,
+                268453156,
+                268454794,
+                268455502,
+                268456130,
+                268457068,
+                268457978,
+                268458121,
+                268458385,
+                268458441,
+                268458563,
+                268461995,
+                268462055,
+                268463407,
+                268464270,
+                268464810,
+                268465066,
+                268465114,
+                268465303,
+                268465882,
+                268466121,
+                268466458,
+                268467501,
+                268467631,
+                268467995,
+                268468598,
+                268468756,
+                268469623,
+                268471481,
+                268472825,
+                268473196,
+                268473876,
+                268477588,
+                268477875,
+                268477945,
+                268478038,
+                268478099,
+                268478414,
+                268478766,
+                268478930,
+                268480007,
+                268480213,
+                268482617,
+                268483381,
+                268483685,
+                268484231,
+                268486236,
+                268486574,
+                268487340,
+                268489129,
+                268489181,
+                268489418,
+                268489627,
+                268490545,
+                268493004,
+                268493638,
+                268494246,
+                268495577,
+                268496255,
+                268496503,
+                268496875,
+                268497501,
+                268498767,
+                268499351,
+                268500890,
+                268502479,
+                268506176,
+                268507503,
+                268508154,
+                268508558,
+                268508773,
+                268509218,
+                268509399,
+                268510093,
+                268510888,
+                268512158,
+                268512422,
+                268512519,
+                268513869,
+                268514156,
+                268514618,
+                268515352,
+                268515559,
+                268516216,
+                268517716,
+                268518210,
+                268520582,
+                268520972,
+                268521066,
+                268521184
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "get networking parameters": {
+            "rule_name": "get networking parameters",
+            "rule_namespace": "host-interaction/network",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Network Configuration Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1016"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [],
+            "associated_addresses": [
+                268441108
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "get socket information": {
+            "rule_name": "get socket information",
+            "rule_namespace": "communication/socket",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Network Configuration Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1016"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268441515
+            ],
+            "associated_addresses": [
+                268441515,
+                268488535,
+                268488619
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "get local IPv4 addresses": {
+            "rule_name": "get local IPv4 addresses",
+            "rule_namespace": "host-interaction/network/address",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Network Configuration Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1016"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268441515
+            ],
+            "associated_addresses": [
+                268441515,
+                268488535,
+                268488619
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "send data on socket": {
+            "rule_name": "send data on socket",
+            "rule_namespace": "communication/socket/send",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "Socket Communication",
+                "method_mbc": "Send Data",
+                "mbc_id": "C0001.007"
+            },
+            "associated_funcs": [
+                268443278,
+                268444308,
+                268446060,
+                268473876,
+                268477945,
+                268480213,
+                268481946,
+                268482289,
+                268484231,
+                268484350,
+                268484502
+            ],
+            "associated_addresses": [
+                268443278,
+                268444308,
+                268446060,
+                268473876,
+                268477875,
+                268477945,
+                268480007,
+                268480213,
+                268481946,
+                268482289,
+                268482617,
+                268484231,
+                268484350,
+                268484502
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "send data": {
+            "rule_name": "send data",
+            "rule_namespace": "communication",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Command and Control",
+                "behavior_mbc": "C2 Communication",
+                "method_mbc": "Send Data",
+                "mbc_id": "B0030.001"
+            },
+            "associated_funcs": [
+                268443278,
+                268444308,
+                268446060,
+                268473876,
+                268477945,
+                268480213,
+                268480213,
+                268481946,
+                268481946,
+                268482289,
+                268482289,
+                268484231,
+                268484350,
+                268484350,
+                268484502,
+                268484502
+            ],
+            "associated_addresses": [
+                268443278,
+                268444308,
+                268446060,
+                268473876,
+                268477875,
+                268477945,
+                268480007,
+                268480213,
+                268480213,
+                268481946,
+                268481946,
+                268482289,
+                268482289,
+                268482617,
+                268484231,
+                268484350,
+                268484350,
+                268484502,
+                268484502
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "receive data on socket": {
+            "rule_name": "receive data on socket",
+            "rule_namespace": "communication/socket/receive",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "Socket Communication",
+                "method_mbc": "Receive Data",
+                "mbc_id": "C0001.006"
+            },
+            "associated_funcs": [
+                268445825,
+                268473876,
+                268478038,
+                268478099,
+                268480213,
+                268481946,
+                268482289,
+                268483685,
+                268484502,
+                268485395
+            ],
+            "associated_addresses": [
+                268445825,
+                268473876,
+                268478038,
+                268478099,
+                268480007,
+                268480213,
+                268481946,
+                268482289,
+                268482617,
+                268483685,
+                268484502,
+                268485395
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "receive data": {
+            "rule_name": "receive data",
+            "rule_namespace": "communication",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Command and Control",
+                "behavior_mbc": "C2 Communication",
+                "method_mbc": "Receive Data",
+                "mbc_id": "B0030.002"
+            },
+            "associated_funcs": [
+                268445825,
+                268473876,
+                268478038,
+                268478099,
+                268480213,
+                268481946,
+                268482289,
+                268483685,
+                268484502,
+                268485395
+            ],
+            "associated_addresses": [
+                268445825,
+                268473876,
+                268478038,
+                268478099,
+                268480007,
+                268480213,
+                268481946,
+                268482289,
+                268482617,
+                268483685,
+                268484502,
+                268485395
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "hash data using murmur3": {
+            "rule_name": "hash data using murmur3",
+            "rule_namespace": "data-manipulation/hashing/murmur",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Non-Cryptographic Hash",
+                "method_mbc": "MurmurHash",
+                "mbc_id": "C0030.001"
+            },
+            "associated_funcs": [
+                268448624
+            ],
+            "associated_addresses": [
+                268448624
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "terminate process": {
+            "rule_name": "terminate process",
+            "rule_namespace": "host-interaction/process/terminate",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Terminate Process",
+                "method_mbc": "",
+                "mbc_id": "C0018"
+            },
+            "associated_funcs": [
+                268493004,
+                268517989,
+                268518769
+            ],
+            "associated_addresses": [
+                268450049,
+                268493004,
+                268514156,
+                268517989,
+                268518769
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "create a process with modified I/O handles and window": {
+            "rule_name": "create a process with modified I/O handles and window",
+            "rule_namespace": "host-interaction/process/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Create Process",
+                "method_mbc": "",
+                "mbc_id": "C0017"
+            },
+            "associated_funcs": [
+                268450145
+            ],
+            "associated_addresses": [
+                268450145
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "create pipe": {
+            "rule_name": "create pipe",
+            "rule_namespace": "communication/named-pipe/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "Interprocess Communication",
+                "method_mbc": "Create Pipe",
+                "mbc_id": "C0003.001"
+            },
+            "associated_funcs": [
+                268450145
+            ],
+            "associated_addresses": [
+                268450145
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "create two anonymous pipes": {
+            "rule_name": "create two anonymous pipes",
+            "rule_namespace": "communication/named-pipe/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "Interprocess Communication",
+                "method_mbc": "Create Pipe",
+                "mbc_id": "C0003.001"
+            },
+            "associated_funcs": [
+                268450145
+            ],
+            "associated_addresses": [
+                268450145
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "write file on Windows": {
+            "rule_name": "write file on Windows",
+            "rule_namespace": "host-interaction/file-system/write",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Writes File",
+                "method_mbc": "",
+                "mbc_id": "C0052"
+            },
+            "associated_funcs": [
+                268451093,
+                268458563,
+                268467995,
+                268505304,
+                268510231
+            ],
+            "associated_addresses": [
+                268451093,
+                268458563,
+                268467995,
+                268505304,
+                268510231
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "read file on Windows": {
+            "rule_name": "read file on Windows",
+            "rule_namespace": "host-interaction/file-system/read",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Read File",
+                "method_mbc": "",
+                "mbc_id": "C0051"
+            },
+            "associated_funcs": [
+                268451307,
+                268458563,
+                268509399
+            ],
+            "associated_addresses": [
+                268451307,
+                268458563,
+                268509399
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "accept command line arguments": {
+            "rule_name": "accept command line arguments",
+            "rule_namespace": "host-interaction/cli",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Command and Scripting Interpreter",
+                "subtechnique_attck": "",
+                "attck_id": "T1059"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Execution",
+                "behavior_mbc": "Command and Scripting Interpreter",
+                "method_mbc": "",
+                "mbc_id": "E1059"
+            },
+            "associated_funcs": [
+                268451663
+            ],
+            "associated_addresses": [
+                268451663
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "delete directory": {
+            "rule_name": "delete directory",
+            "rule_namespace": "host-interaction/file-system/delete",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Delete Directory",
+                "method_mbc": "",
+                "mbc_id": "C0048"
+            },
+            "associated_funcs": [
+                268451663
+            ],
+            "associated_addresses": [
+                268451663
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "create directory": {
+            "rule_name": "create directory",
+            "rule_namespace": "host-interaction/file-system/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Create Directory",
+                "method_mbc": "",
+                "mbc_id": "C0046"
+            },
+            "associated_funcs": [
+                268451663
+            ],
+            "associated_addresses": [
+                268451663
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "check if file exists": {
+            "rule_name": "check if file exists",
+            "rule_namespace": "host-interaction/file-system/exists",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "File and Directory Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1083"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "File and Directory Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1083"
+            },
+            "associated_funcs": [
+                268453833,
+                268454794,
+                268466458,
+                268498767,
+                268499351,
+                268500098,
+                268500528
+            ],
+            "associated_addresses": [
+                268453833,
+                268454794,
+                268466458,
+                268498767,
+                268499351,
+                268500098,
+                268500528
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "enumerate files on Windows": {
+            "rule_name": "enumerate files on Windows",
+            "rule_namespace": "host-interaction/file-system/files/list",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "File and Directory Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1083"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "File and Directory Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1083"
+            },
+            "associated_funcs": [
+                268454794,
+                268455502,
+                268458563,
+                268461995,
+                268463407
+            ],
+            "associated_addresses": [
+                268454794,
+                268455502,
+                268458563,
+                268461995,
+                268463407
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "delete file": {
+            "rule_name": "delete file",
+            "rule_namespace": "host-interaction/file-system/delete",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Delete File",
+                "method_mbc": "",
+                "mbc_id": "C0047"
+            },
+            "associated_funcs": [
+                268455502,
+                268467501,
+                268467631,
+                268467995,
+                268505304,
+                268510231,
+                268514212,
+                268514529
+            ],
+            "associated_addresses": [
+                268455502,
+                268467501,
+                268467631,
+                268467995,
+                268505304,
+                268510231,
+                268514212,
+                268514529
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "copy file": {
+            "rule_name": "copy file",
+            "rule_namespace": "host-interaction/file-system/copy",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Copy File",
+                "method_mbc": "",
+                "mbc_id": "C0045"
+            },
+            "associated_funcs": [
+                268508159,
+                268512519
+            ],
+            "associated_addresses": [
+                268455906,
+                268508159,
+                268512519
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "move file": {
+            "rule_name": "move file",
+            "rule_namespace": "host-interaction/file-system/move",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Move File",
+                "method_mbc": "",
+                "mbc_id": "C0063"
+            },
+            "associated_funcs": [
+                268510093,
+                268512519,
+                268514212,
+                268514529
+            ],
+            "associated_addresses": [
+                268456019,
+                268510093,
+                268512519,
+                268514212,
+                268514529
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "shutdown system": {
+            "rule_name": "shutdown system",
+            "rule_namespace": "host-interaction/os",
+            "rule_attack": {
+                "tactic_attck": "Impact",
+                "technique_attck": "System Shutdown/Reboot",
+                "subtechnique_attck": "",
+                "attck_id": "T1529"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268456546
+            ],
+            "associated_addresses": [
+                268456546,
+                268456618
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "access the Windows event log": {
+            "rule_name": "access the Windows event log",
+            "rule_namespace": "host-interaction/log/winevt/access",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "File and Directory Discovery",
+                "method_mbc": "Log File",
+                "mbc_id": "E1083.m01"
+            },
+            "associated_funcs": [
+                268456695
+            ],
+            "associated_addresses": [
+                268456695
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "clear Windows event logs": {
+            "rule_name": "clear Windows event logs",
+            "rule_namespace": "anti-analysis/anti-forensic/clear-logs",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Indicator Removal",
+                "subtechnique_attck": "Clear Windows Event Logs",
+                "attck_id": "T1070.001"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268456695
+            ],
+            "associated_addresses": [
+                268456695
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "get file size": {
+            "rule_name": "get file size",
+            "rule_namespace": "host-interaction/file-system/meta",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "File and Directory Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1083"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "File and Directory Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1083"
+            },
+            "associated_funcs": [
+                268458563
+            ],
+            "associated_addresses": [
+                268458563
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "write and execute a file": {
+            "rule_name": "write and execute a file",
+            "rule_namespace": "communication/c2/file-transfer",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Execution",
+                "behavior_mbc": "Install Additional Program",
+                "method_mbc": "",
+                "mbc_id": "B0023"
+            },
+            "associated_funcs": [
+                268458563
+            ],
+            "associated_addresses": [
+                268458563
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "get disk information": {
+            "rule_name": "get disk information",
+            "rule_namespace": "host-interaction/hardware/storage",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "System Information Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1082"
+            },
+            "associated_funcs": [
+                268458563
+            ],
+            "associated_addresses": [
+                268458563
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "get disk size": {
+            "rule_name": "get disk size",
+            "rule_namespace": "host-interaction/hardware/storage",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "System Information Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1082"
+            },
+            "associated_funcs": [
+                268458563
+            ],
+            "associated_addresses": [
+                268458563
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "enumerate files recursively": {
+            "rule_name": "enumerate files recursively",
+            "rule_namespace": "host-interaction/file-system/files/list",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "File and Directory Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1083"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "File and Directory Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1083"
+            },
+            "associated_funcs": [
+                268463407
+            ],
+            "associated_addresses": [
+                268463407
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "get OS version": {
+            "rule_name": "get OS version",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                268464410,
+                268503864
+            ],
+            "associated_addresses": [
+                268464410,
+                268503864
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "modify access privileges": {
+            "rule_name": "modify access privileges",
+            "rule_namespace": "host-interaction/process/modify",
+            "rule_attack": {
+                "tactic_attck": "Privilege Escalation",
+                "technique_attck": "Access Token Manipulation",
+                "subtechnique_attck": "",
+                "attck_id": "T1134"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268464569
+            ],
+            "associated_addresses": [
+                268464569
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "resolve DNS": {
+            "rule_name": "resolve DNS",
+            "rule_namespace": "communication/dns",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "DNS Communication",
+                "method_mbc": "Resolve",
+                "mbc_id": "C0011.001"
+            },
+            "associated_funcs": [
+                268464742
+            ],
+            "associated_addresses": [
+                268464742
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "get socket status": {
+            "rule_name": "get socket status",
+            "rule_namespace": "communication/socket",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Network Configuration Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1016"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "Socket Communication",
+                "method_mbc": "Get Socket Status",
+                "mbc_id": "C0001.012"
+            },
+            "associated_funcs": [
+                268464810,
+                268473876
+            ],
+            "associated_addresses": [
+                268464810,
+                268472253,
+                268473876,
+                268476899
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "get system information on Windows": {
+            "rule_name": "get system information on Windows",
+            "rule_namespace": "host-interaction/os/info",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268465114,
+                268465303,
+                268493004,
+                268503864
+            ],
+            "associated_addresses": [
+                268465114,
+                268465303,
+                268493004,
+                268503864
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "get session user name": {
+            "rule_name": "get session user name",
+            "rule_namespace": "host-interaction/session",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Owner/User Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1033"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268468756,
+                268506685
+            ],
+            "associated_addresses": [
+                268465807,
+                268468756,
+                268506685
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "encode data using Base64": {
+            "rule_name": "encode data using Base64",
+            "rule_namespace": "data-manipulation/encoding/base64",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Obfuscated Files or Information",
+                "method_mbc": "Encoding-Standard Algorithm",
+                "mbc_id": "E1027.m02"
+            },
+            "associated_funcs": [
+                268465882
+            ],
+            "associated_addresses": [
+                268465882
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "get common file path": {
+            "rule_name": "get common file path",
+            "rule_namespace": "host-interaction/file-system",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "File and Directory Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1083"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "File and Directory Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1083"
+            },
+            "associated_funcs": [
+                268467995,
+                268500528,
+                268505304,
+                268508159,
+                268510231,
+                268512519,
+                268517171,
+                268517989
+            ],
+            "associated_addresses": [
+                268467995,
+                268500528,
+                268505304,
+                268508159,
+                268510231,
+                268512519,
+                268517171,
+                268517989
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "get MAC address on Windows": {
+            "rule_name": "get MAC address on Windows",
+            "rule_namespace": "collection/network",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268469623
+            ],
+            "associated_addresses": [
+                268469623
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "get proxy": {
+            "rule_name": "get proxy",
+            "rule_namespace": "host-interaction/network/proxy",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Network Configuration Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1016"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268469623
+            ],
+            "associated_addresses": [
+                268469623
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "query or enumerate registry value": {
+            "rule_name": "query or enumerate registry value",
+            "rule_namespace": "host-interaction/registry",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "Query Registry",
+                "subtechnique_attck": "",
+                "attck_id": "T1012"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Query Registry Value",
+                "mbc_id": "C0036.006"
+            },
+            "associated_funcs": [
+                268469623,
+                268490545,
+                268494246,
+                268496875,
+                268500098,
+                268502734,
+                268508154,
+                268508154,
+                268508558,
+                268512519,
+                268513869
+            ],
+            "associated_addresses": [
+                268469623,
+                268490545,
+                268494246,
+                268496875,
+                268500098,
+                268502734,
+                268507503,
+                268508154,
+                268508558,
+                268512519,
+                268513869
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "query or enumerate registry key": {
+            "rule_name": "query or enumerate registry key",
+            "rule_namespace": "host-interaction/registry",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "Query Registry",
+                "subtechnique_attck": "",
+                "attck_id": "T1012"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Query Registry Key",
+                "mbc_id": "C0036.005"
+            },
+            "associated_funcs": [
+                268469623,
+                268490545,
+                268494246
+            ],
+            "associated_addresses": [
+                268469623,
+                268490545,
+                268494246
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "set socket configuration": {
+            "rule_name": "set socket configuration",
+            "rule_namespace": "communication/socket",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "Socket Communication",
+                "method_mbc": "Set Socket Config",
+                "mbc_id": "C0001.001"
+            },
+            "associated_funcs": [
+                268477588,
+                268478228,
+                268478414
+            ],
+            "associated_addresses": [
+                268477233,
+                268477588,
+                268478228,
+                268478414
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "hash data with MD5": {
+            "rule_name": "hash data with MD5",
+            "rule_namespace": "data-manipulation/hashing/md5",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Cryptography",
+                "behavior_mbc": "Cryptographic Hash",
+                "method_mbc": "MD5",
+                "mbc_id": "C0029.001"
+            },
+            "associated_funcs": [
+                268478930
+            ],
+            "associated_addresses": [
+                268478930
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "send HTTP request": {
+            "rule_name": "send HTTP request",
+            "rule_namespace": "communication/http/client",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "HTTP Communication",
+                "method_mbc": "Send Request",
+                "mbc_id": "C0002.003"
+            },
+            "associated_funcs": [
+                268480213,
+                268481946,
+                268482289,
+                268484350,
+                268484502
+            ],
+            "associated_addresses": [
+                268480213,
+                268481946,
+                268482289,
+                268484350,
+                268484502
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "send HTTP request with Host header": {
+            "rule_name": "send HTTP request with Host header",
+            "rule_namespace": "communication/http",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                268480213,
+                268481946,
+                268482289
+            ],
+            "associated_addresses": [
+                268480213,
+                268481946,
+                268482289
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "get service handle": {
+            "rule_name": "get service handle",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                268489627
+            ],
+            "associated_addresses": [
+                268489627
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "enumerate services": {
+            "rule_name": "enumerate services",
+            "rule_namespace": "host-interaction/service/list",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Service Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1007"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268489627
+            ],
+            "associated_addresses": [
+                268489627
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "start service": {
+            "rule_name": "start service",
+            "rule_namespace": "host-interaction/service/start",
+            "rule_attack": {
+                "tactic_attck": "Persistence",
+                "technique_attck": "Create or Modify System Process",
+                "subtechnique_attck": "Windows Service",
+                "attck_id": "T1543.003"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268489627
+            ],
+            "associated_addresses": [
+                268489627
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "delete service": {
+            "rule_name": "delete service",
+            "rule_namespace": "host-interaction/service/delete",
+            "rule_attack": {
+                "tactic_attck": "Persistence",
+                "technique_attck": "Create or Modify System Process",
+                "subtechnique_attck": "Windows Service",
+                "attck_id": "T1543.003"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268489627
+            ],
+            "associated_addresses": [
+                268489627
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "stop service": {
+            "rule_name": "stop service",
+            "rule_namespace": "host-interaction/service/stop",
+            "rule_attack": {
+                "tactic_attck": "Persistence",
+                "technique_attck": "Create or Modify System Process",
+                "subtechnique_attck": "Windows Service",
+                "attck_id": "T1543.003"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268489627
+            ],
+            "associated_addresses": [
+                268489627
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "set registry value": {
+            "rule_name": "set registry value",
+            "rule_namespace": "host-interaction/registry/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Set Registry Key",
+                "mbc_id": "C0036.001"
+            },
+            "associated_funcs": [
+                268490545,
+                268504996,
+                268505304,
+                268509218,
+                268512519,
+                268513869
+            ],
+            "associated_addresses": [
+                268490545,
+                268504996,
+                268505304,
+                268509218,
+                268512519,
+                268513869
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "delete registry key": {
+            "rule_name": "delete registry key",
+            "rule_namespace": "host-interaction/registry/delete",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Modify Registry",
+                "subtechnique_attck": "",
+                "attck_id": "T1112"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Delete Registry Key",
+                "mbc_id": "C0036.002"
+            },
+            "associated_funcs": [
+                268490545,
+                268505304,
+                268513869
+            ],
+            "associated_addresses": [
+                268490545,
+                268505304,
+                268513869
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "delete registry value": {
+            "rule_name": "delete registry value",
+            "rule_namespace": "host-interaction/registry/delete",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Modify Registry",
+                "subtechnique_attck": "",
+                "attck_id": "T1112"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Delete Registry Value",
+                "mbc_id": "C0036.007"
+            },
+            "associated_funcs": [
+                268490545,
+                268505304
+            ],
+            "associated_addresses": [
+                268490545,
+                268505304
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "migrate process to active window station": {
+            "rule_name": "migrate process to active window station",
+            "rule_namespace": "host-interaction/gui/window-station",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                268492336
+            ],
+            "associated_addresses": [
+                268492336
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "capture screenshot": {
+            "rule_name": "capture screenshot",
+            "rule_namespace": "collection/screenshot",
+            "rule_attack": {
+                "tactic_attck": "Collection",
+                "technique_attck": "Screen Capture",
+                "subtechnique_attck": "",
+                "attck_id": "T1113"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Collection",
+                "behavior_mbc": "Screen Capture",
+                "method_mbc": "WinAPI",
+                "mbc_id": "E1113.m01"
+            },
+            "associated_funcs": [
+                268492336
+            ],
+            "associated_addresses": [
+                268492336
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "encrypt data using DPAPI": {
+            "rule_name": "encrypt data using DPAPI",
+            "rule_namespace": "data-manipulation/encryption/dpapi",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Cryptography",
+                "behavior_mbc": "Encrypt Data",
+                "method_mbc": "",
+                "mbc_id": "C0027"
+            },
+            "associated_funcs": [
+                268495577,
+                268496875
+            ],
+            "associated_addresses": [
+                268495577,
+                268496875
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "acquire credentials from Windows Credential Manager": {
+            "rule_name": "acquire credentials from Windows Credential Manager",
+            "rule_namespace": "collection",
+            "rule_attack": {
+                "tactic_attck": "Credential Access",
+                "technique_attck": "Credentials from Password Stores",
+                "subtechnique_attck": "Windows Credential Manager",
+                "attck_id": "T1555.004"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268495577
+            ],
+            "associated_addresses": [
+                268495577
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "enumerate browser history": {
+            "rule_name": "enumerate browser history",
+            "rule_namespace": "host-interaction/browser/history/list",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                268496255
+            ],
+            "associated_addresses": [
+                268496255
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "hash data via WinCrypt": {
+            "rule_name": "hash data via WinCrypt",
+            "rule_namespace": "data-manipulation/hashing",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Cryptography",
+                "behavior_mbc": "Cryptographic Hash",
+                "method_mbc": "",
+                "mbc_id": "C0029"
+            },
+            "associated_funcs": [
+                268496503
+            ],
+            "associated_addresses": [
+                268496503
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "initialize hashing via WinCrypt": {
+            "rule_name": "initialize hashing via WinCrypt",
+            "rule_namespace": "data-manipulation/hashing",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                268496503
+            ],
+            "associated_addresses": [
+                268496503
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "hash data using SHA1 via WinCrypt": {
+            "rule_name": "hash data using SHA1 via WinCrypt",
+            "rule_namespace": "data-manipulation/hashing/sha1",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                268496503
+            ],
+            "associated_addresses": [
+                268496503
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "hash data using SHA1": {
+            "rule_name": "hash data using SHA1",
+            "rule_namespace": "data-manipulation/hashing/sha1",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Cryptography",
+                "behavior_mbc": "Cryptographic Hash",
+                "method_mbc": "SHA1",
+                "mbc_id": "C0029.002"
+            },
+            "associated_funcs": [
+                268496503
+            ],
+            "associated_addresses": [
+                268496503
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "read .ini file": {
+            "rule_name": "read .ini file",
+            "rule_namespace": "host-interaction/file-system/read",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Read File",
+                "method_mbc": "",
+                "mbc_id": "C0051"
+            },
+            "associated_funcs": [
+                268498767,
+                268499351,
+                268500890,
+                268502479
+            ],
+            "associated_addresses": [
+                268498767,
+                268499351,
+                268500890,
+                268502479
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "gather firefox profile information": {
+            "rule_name": "gather firefox profile information",
+            "rule_namespace": "collection/browser",
+            "rule_attack": {
+                "tactic_attck": "Credential Access",
+                "technique_attck": "Credentials from Password Stores",
+                "subtechnique_attck": "Credentials from Web Browsers",
+                "attck_id": "T1555.003"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268498767,
+                268499351
+            ],
+            "associated_addresses": [
+                268498767,
+                268499351
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "link many functions at runtime": {
+            "rule_name": "link many functions at runtime",
+            "rule_namespace": "linking/runtime-linking",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Shared Modules",
+                "subtechnique_attck": "",
+                "attck_id": "T1129"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268499404,
+                268517171
+            ],
+            "associated_addresses": [
+                268499404,
+                268517171
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "impersonate user": {
+            "rule_name": "impersonate user",
+            "rule_namespace": "host-interaction/user",
+            "rule_attack": {
+                "tactic_attck": "Privilege Escalation",
+                "technique_attck": "Access Token Manipulation",
+                "subtechnique_attck": "Token Impersonation/Theft",
+                "attck_id": "T1134.001"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268502952,
+                268503408
+            ],
+            "associated_addresses": [
+                268502952,
+                268503408
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "check OS version": {
+            "rule_name": "check OS version",
+            "rule_namespace": "host-interaction/os/version",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "System Information Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1082"
+            },
+            "associated_funcs": [
+                268503864
+            ],
+            "associated_addresses": [
+                268503864
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "persist via Windows service": {
+            "rule_name": "persist via Windows service",
+            "rule_namespace": "persistence/service",
+            "rule_attack": {
+                "tactic_attck": "Persistence",
+                "technique_attck": "Create or Modify System Process",
+                "subtechnique_attck": "Windows Service",
+                "attck_id": "T1543.003"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268504996,
+                268505304,
+                268512519,
+                268512519,
+                268513869
+            ],
+            "associated_addresses": [
+                268504996,
+                268505304,
+                268512519,
+                268512519,
+                268513869
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "query environment variable": {
+            "rule_name": "query environment variable",
+            "rule_namespace": "host-interaction/environment-variable",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "System Information Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1082"
+            },
+            "associated_funcs": [
+                268508154,
+                268508154
+            ],
+            "associated_addresses": [
+                268507503,
+                268508154
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "timestomp file": {
+            "rule_name": "timestomp file",
+            "rule_namespace": "anti-analysis/anti-forensic/timestomp",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Indicator Removal",
+                "subtechnique_attck": "Timestomp",
+                "attck_id": "T1070.006"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268508159
+            ],
+            "associated_addresses": [
+                268508159
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "get hostname": {
+            "rule_name": "get hostname",
+            "rule_namespace": "host-interaction/os/hostname",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "System Information Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1082"
+            },
+            "associated_funcs": [
+                268509010,
+                268510535,
+                268514212
+            ],
+            "associated_addresses": [
+                268509010,
+                268510535,
+                268514212
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "initialize Winsock library": {
+            "rule_name": "initialize Winsock library",
+            "rule_namespace": "communication/socket",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "Socket Communication",
+                "method_mbc": "Initialize Winsock Library",
+                "mbc_id": "C0001.009"
+            },
+            "associated_funcs": [
+                268512422,
+                268512422
+            ],
+            "associated_addresses": [
+                268512158,
+                268512422
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "compress data using LZO": {
+            "rule_name": "compress data using LZO",
+            "rule_namespace": "data-manipulation/compression",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Compress Data",
+                "method_mbc": "",
+                "mbc_id": "C0024"
+            },
+            "associated_funcs": [
+                268514618
+            ],
+            "associated_addresses": [
+                268514618
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "decompress data using LZO": {
+            "rule_name": "decompress data using LZO",
+            "rule_namespace": "data-manipulation/compression",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Decompress Data",
+                "method_mbc": "",
+                "mbc_id": "C0025"
+            },
+            "associated_funcs": [
+                268515559
+            ],
+            "associated_addresses": [
+                268515559
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "write process memory": {
+            "rule_name": "write process memory",
+            "rule_namespace": "Unknown",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Process Injection",
+                "subtechnique_attck": "",
+                "attck_id": "T1055"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268517075
+            ],
+            "associated_addresses": [
+                268517075
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "enumerate process modules": {
+            "rule_name": "enumerate process modules",
+            "rule_namespace": "host-interaction/process/modules/list",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "Process Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1057"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268517716
+            ],
+            "associated_addresses": [
+                268517716
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "run as service": {
+            "rule_name": "run as service",
+            "rule_namespace": "host-interaction/service",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Anti-Behavioral Analysis",
+                "behavior_mbc": "Conditional Execution",
+                "method_mbc": "Runs as Service",
+                "mbc_id": "B0025.007"
+            },
+            "associated_funcs": [
+                268508154
+            ],
+            "associated_addresses": [
+                [
+                    268507503
+                ]
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ]
+            ]
+        },
+        "reference anti-VM strings": {
+            "rule_name": "reference anti-VM strings",
+            "rule_namespace": "anti-analysis/anti-vm/vm-detection",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Virtualization/Sandbox Evasion",
+                "subtechnique_attck": "System Checks",
+                "attck_id": "T1497.001"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Anti-Behavioral Analysis",
+                "behavior_mbc": "Virtual Machine Detection",
+                "method_mbc": "",
+                "mbc_id": "B0009"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ],
+                [
+                    "reference Base64 string",
+                    "file",
+                    87080
+                ]
+            ]
+        },
+        "reference Base64 string": {
+            "rule_name": "reference Base64 string",
+            "rule_namespace": "data-manipulation/encoding/base64",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Encode Data",
+                "method_mbc": "Base64",
+                "mbc_id": "C0026.001"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [],
+            "rules_non_code_related": [
+                [
+                    "reference anti-VM strings",
+                    "file",
+                    91868
+                ],
+                [
+                    "reference Base64 string",
+                    "file",
+                    87080
+                ]
+            ]
+        }
+    },
+    "analysis": {
+        "base_address": {
+            "type": "absolute",
+            "value": 268435456
+        },
+        "file_functions": {
+            "268439552": 268439552,
+            "268439573": 268439573,
+            "268439652": 268439652,
+            "268439662": 268439652,
+            "268439783": 268439783,
+            "268439792": 268439783,
+            "268439847": 268439847,
+            "268439889": 268439847,
+            "268439917": 268439847,
+            "268439944": 268439944,
+            "268439985": 268439944,
+            "268440009": 268440009,
+            "268440130": 268440130,
+            "268440182": 268440130,
+            "268440195": 268440130,
+            "268440206": 268440130,
+            "268440210": 268440130,
+            "268440226": 268440226,
+            "268440374": 268440226,
+            "268440671": 268440226,
+            "268440791": 268440791,
+            "268440813": 268440791,
+            "268440903": 268440791,
+            "268440920": 268440791,
+            "268441515": 268441515,
+            "268441589": 268441589,
+            "268441687": 268441687,
+            "268441728": 268441687,
+            "268441951": 268441687,
+            "268442043": 268441687,
+            "268442169": 268442169,
+            "268442190": 268442169,
+            "268442343": 268442343,
+            "268442387": 268507294,
+            "268442519": 268442519,
+            "268442641": 268442641,
+            "268442735": 268442641,
+            "268442762": 268442641,
+            "268442780": 268442641,
+            "268442819": 268442641,
+            "268442839": 268442641,
+            "268442894": 268442894,
+            "268442949": 268442894,
+            "268442987": 268442894,
+            "268443026": 268442894,
+            "268443092": 268443092,
+            "268443160": 268443092,
+            "268443278": 268443278,
+            "268443330": 268443278,
+            "268443435": 268443278,
+            "268443504": 268443278,
+            "268443720": 268443278,
+            "268444068": 268443278,
+            "268444172": 268443278,
+            "268444308": 268444308,
+            "268444353": 268444308,
+            "268444819": 268444308,
+            "268444953": 268444308,
+            "268445016": 268444308,
+            "268445218": 268444308,
+            "268445276": 268444308,
+            "268445334": 268444308,
+            "268445406": 268445406,
+            "268445449": 268445406,
+            "268445596": 268445596,
+            "268445667": 268445667,
+            "268445693": 268445667,
+            "268445797": 268445667,
+            "268445825": 268445825,
+            "268445960": 268445825,
+            "268446060": 268446060,
+            "268446115": 268446060,
+            "268446294": 268446294,
+            "268446330": 268446294,
+            "268446347": 268446294,
+            "268446367": 268446367,
+            "268446448": 268446367,
+            "268446546": 268446367,
+            "268446710": 268446710,
+            "268446743": 268446710,
+            "268446812": 268446710,
+            "268446958": 268446710,
+            "268447046": 268447046,
+            "268447250": 268447046,
+            "268447323": 268447046,
+            "268447442": 268447046,
+            "268447690": 268447046,
+            "268447795": 268447046,
+            "268448092": 268448092,
+            "268448139": 268448092,
+            "268448156": 268448092,
+            "268448188": 268448188,
+            "268448200": 268448188,
+            "268448238": 268448238,
+            "268448247": 268448238,
+            "268448347": 268448347,
+            "268448394": 268448347,
+            "268448411": 268448347,
+            "268448420": 268448420,
+            "268448424": 268448420,
+            "268448436": 268448420,
+            "268448469": 268448469,
+            "268448506": 268448469,
+            "268448523": 268448469,
+            "268448562": 268448469,
+            "268448599": 268448469,
+            "268448624": 268448624,
+            "268448658": 268448624,
+            "268448699": 268448624,
+            "268449804": 268449804,
+            "268449824": 268449804,
+            "268449902": 268449902,
+            "268449959": 268449902,
+            "268450145": 268450145,
+            "268450290": 268450145,
+            "268450329": 268450145,
+            "268450392": 268450145,
+            "268450452": 268450145,
+            "268450737": 268450737,
+            "268450810": 268450737,
+            "268450974": 268450974,
+            "268451027": 268450974,
+            "268451052": 268450974,
+            "268451093": 268451093,
+            "268451113": 268451093,
+            "268451307": 268451307,
+            "268451455": 268451307,
+            "268451604": 268451307,
+            "268451663": 268451663,
+            "268451749": 268451663,
+            "268451774": 268451663,
+            "268452035": 268451663,
+            "268452075": 268451663,
+            "268452161": 268451663,
+            "268452319": 268451663,
+            "268452355": 268451663,
+            "268452394": 268451663,
+            "268452646": 268451663,
+            "268452743": 268451663,
+            "268452839": 268451663,
+            "268453028": 268451663,
+            "268453156": 268453156,
+            "268453202": 268453156,
+            "268453230": 268453156,
+            "268453306": 268453156,
+            "268453325": 268453156,
+            "268453397": 268453397,
+            "268453464": 268453397,
+            "268453474": 268453397,
+            "268453512": 268453397,
+            "268453599": 268453397,
+            "268453639": 268453397,
+            "268453709": 268453397,
+            "268453755": 268453397,
+            "268453833": 268453833,
+            "268453862": 268453833,
+            "268453960": 268453833,
+            "268454027": 268453833,
+            "268454120": 268453833,
+            "268454230": 268453833,
+            "268454381": 268453833,
+            "268454474": 268453833,
+            "268454633": 268453833,
+            "268454636": 268453833,
+            "268454739": 268453833,
+            "268454794": 268454794,
+            "268454853": 268454794,
+            "268454904": 268454794,
+            "268454944": 268454794,
+            "268454995": 268454794,
+            "268455030": 268454794,
+            "268455196": 268454794,
+            "268455230": 268454794,
+            "268455296": 268454794,
+            "268455502": 268455502,
+            "268455651": 268455502,
+            "268455793": 268455502,
+            "268456130": 268456130,
+            "268456211": 268456130,
+            "268456240": 268456130,
+            "268456317": 268456317,
+            "268456546": 268456546,
+            "268456590": 268456546,
+            "268456695": 268456695,
+            "268456762": 268456695,
+            "268456809": 268456695,
+            "268456850": 268456695,
+            "268457068": 268457068,
+            "268457132": 268457068,
+            "268457167": 268457068,
+            "268457381": 268457068,
+            "268457496": 268457068,
+            "268457641": 268457641,
+            "268457893": 268457893,
+            "268457903": 268457893,
+            "268458226": 268458226,
+            "268458250": 268458226,
+            "268458296": 268458226,
+            "268458326": 268458226,
+            "268458510": 268458510,
+            "268458533": 268458510,
+            "268458563": 268458563,
+            "268458691": 268458563,
+            "268458736": 268458563,
+            "268458821": 268458563,
+            "268458921": 268458563,
+            "268458947": 268458563,
+            "268459033": 268458563,
+            "268459058": 268458563,
+            "268459127": 268458563,
+            "268459165": 268458563,
+            "268459272": 268458563,
+            "268459317": 268458563,
+            "268459431": 268458563,
+            "268459669": 268458563,
+            "268459779": 268458563,
+            "268459830": 268458563,
+            "268459884": 268458563,
+            "268459963": 268458563,
+            "268460084": 268458563,
+            "268460130": 268458563,
+            "268460169": 268458563,
+            "268460239": 268458563,
+            "268460527": 268458563,
+            "268460623": 268458563,
+            "268460689": 268458563,
+            "268460741": 268458563,
+            "268460825": 268458563,
+            "268460866": 268458563,
+            "268460995": 268458563,
+            "268461024": 268458563,
+            "268461052": 268458563,
+            "268461080": 268458563,
+            "268461172": 268458563,
+            "268461511": 268458563,
+            "268461711": 268458563,
+            "268461761": 268458563,
+            "268461995": 268461995,
+            "268462153": 268462055,
+            "268462197": 268462055,
+            "268462236": 268462055,
+            "268462379": 268462055,
+            "268462437": 268462055,
+            "268462512": 268462055,
+            "268462592": 268462055,
+            "268462631": 268462055,
+            "268462881": 268461995,
+            "268462967": 268461995,
+            "268463006": 268461995,
+            "268462055": 268462055,
+            "268463253": 268463253,
+            "268463321": 268463253,
+            "268463407": 268463407,
+            "268463516": 268463407,
+            "268463582": 268463407,
+            "268463731": 268463407,
+            "268463811": 268463407,
+            "268463850": 268463407,
+            "268464084": 268463407,
+            "268464142": 268463407,
+            "268464410": 268464410,
+            "268464498": 268464410,
+            "268464569": 268464569,
+            "268464644": 268464569,
+            "268464742": 268464742,
+            "268464766": 268464742,
+            "268464810": 268464810,
+            "268464910": 268464810,
+            "268465114": 268465114,
+            "268465145": 268465114,
+            "268465167": 268465114,
+            "268465218": 268465114,
+            "268465234": 268465114,
+            "268465265": 268465114,
+            "268465303": 268465303,
+            "268465334": 268465303,
+            "268465356": 268465303,
+            "268465407": 268465303,
+            "268465423": 268465303,
+            "268465454": 268465303,
+            "268465478": 268465478,
+            "268465738": 268465478,
+            "268465882": 268465882,
+            "268465903": 268465882,
+            "268466007": 268465882,
+            "268466068": 268465882,
+            "268466106": 268465882,
+            "268466458": 268466458,
+            "268466500": 268466458,
+            "268466578": 268466578,
+            "268466734": 268466578,
+            "268466892": 268466892,
+            "268467012": 268466892,
+            "268467116": 268466892,
+            "268467339": 268467339,
+            "268467359": 268467339,
+            "268467379": 268467379,
+            "268467501": 268467501,
+            "268467538": 268467501,
+            "268467631": 268467631,
+            "268467662": 268467631,
+            "268467728": 268467631,
+            "268467753": 268467753,
+            "268467775": 268467753,
+            "268467874": 268467874,
+            "268467896": 268467874,
+            "268467937": 268467874,
+            "268467967": 268467874,
+            "268467995": 268467995,
+            "268468086": 268467995,
+            "268468133": 268467995,
+            "268468168": 268467995,
+            "268468180": 268467995,
+            "268468209": 268467995,
+            "268468234": 268467995,
+            "268468380": 268467995,
+            "268468423": 268467995,
+            "268468598": 268468598,
+            "268468683": 268468598,
+            "268468736": 268468598,
+            "268468756": 268468756,
+            "268469076": 268468756,
+            "268469162": 268468756,
+            "268469232": 268468756,
+            "268469280": 268468756,
+            "268469334": 268468756,
+            "268469358": 268468756,
+            "268469407": 268468756,
+            "268469455": 268468756,
+            "268469534": 268468756,
+            "268469582": 268468756,
+            "268469623": 268469623,
+            "268469824": 268469623,
+            "268469913": 268469623,
+            "268469924": 268469623,
+            "268469933": 268469623,
+            "268469996": 268469623,
+            "268470117": 268469623,
+            "268470259": 268469623,
+            "268470363": 268469623,
+            "268470550": 268469623,
+            "268470659": 268469623,
+            "268471415": 268469623,
+            "268471421": 268469623,
+            "268471435": 268469623,
+            "268471481": 268471481,
+            "268471527": 268471481,
+            "268471553": 268471481,
+            "268471589": 268471481,
+            "268471668": 268471481,
+            "268471702": 268471481,
+            "268471743": 268471481,
+            "268471770": 268471481,
+            "268471793": 268471481,
+            "268471979": 268471481,
+            "268472175": 268472175,
+            "268472413": 268472399,
+            "268472399": 268472399,
+            "268472490": 268472490,
+            "268472663": 268472490,
+            "268472825": 268472825,
+            "268472870": 268472825,
+            "268472973": 268472825,
+            "268473006": 268472825,
+            "268473196": 268473196,
+            "268473217": 268473196,
+            "268473312": 268473196,
+            "268473345": 268473196,
+            "268473480": 268473196,
+            "268473552": 268473196,
+            "268473758": 268473758,
+            "268473793": 268473758,
+            "268473813": 268473758,
+            "268473834": 268473758,
+            "268473876": 268473876,
+            "268474102": 268473876,
+            "268474202": 268473876,
+            "268474213": 268473876,
+            "268474239": 268473876,
+            "268474246": 268473876,
+            "268474321": 268473876,
+            "268474448": 268473876,
+            "268474457": 268473876,
+            "268474506": 268473876,
+            "268474572": 268473876,
+            "268474632": 268473876,
+            "268474699": 268473876,
+            "268474776": 268473876,
+            "268474832": 268473876,
+            "268474880": 268473876,
+            "268474962": 268473876,
+            "268475211": 268473876,
+            "268475321": 268473876,
+            "268475349": 268473876,
+            "268475364": 268473876,
+            "268475467": 268473876,
+            "268475537": 268473876,
+            "268475547": 268473876,
+            "268475697": 268473876,
+            "268475866": 268473876,
+            "268475902": 268473876,
+            "268475947": 268473876,
+            "268475965": 268473876,
+            "268476023": 268473876,
+            "268476081": 268473876,
+            "268476149": 268473876,
+            "268476207": 268473876,
+            "268476224": 268473876,
+            "268476301": 268473876,
+            "268476333": 268473876,
+            "268476391": 268473876,
+            "268476418": 268473876,
+            "268476427": 268473876,
+            "268476563": 268476563,
+            "268476610": 268476563,
+            "268476627": 268476563,
+            "268476631": 268476563,
+            "268476753": 268476753,
+            "268476797": 268476753,
+            "268476814": 268476753,
+            "268477527": 268477527,
+            "268477588": 268477588,
+            "268477676": 268477588,
+            "268477945": 268477945,
+            "268477956": 268477945,
+            "268477973": 268477945,
+            "268478003": 268477945,
+            "268478038": 268478038,
+            "268478073": 268478038,
+            "268478099": 268478099,
+            "268478228": 268478228,
+            "268478414": 268478414,
+            "268478489": 268478414,
+            "268478603": 268478414,
+            "268478719": 268478414,
+            "268478766": 268478766,
+            "268478812": 268478766,
+            "268478825": 268478766,
+            "268478930": 268478930,
+            "268479051": 268478930,
+            "268479156": 268478930,
+            "268479238": 268479238,
+            "268479395": 268479395,
+            "268479846": 268479395,
+            "268479875": 268479395,
+            "268480213": 268480213,
+            "268480295": 268480213,
+            "268480466": 268480213,
+            "268480495": 268480213,
+            "268480670": 268480213,
+            "268480713": 268480213,
+            "268480847": 268480213,
+            "268481102": 268480213,
+            "268481131": 268480213,
+            "268481309": 268480213,
+            "268481530": 268480213,
+            "268481609": 268480213,
+            "268481622": 268480213,
+            "268481822": 268480213,
+            "268481855": 268480213,
+            "268481946": 268481946,
+            "268482001": 268481946,
+            "268482147": 268481946,
+            "268482183": 268481946,
+            "268482289": 268482289,
+            "268482361": 268482289,
+            "268482504": 268482289,
+            "268482540": 268482289,
+            "268482869": 268482869,
+            "268483061": 268482869,
+            "268483154": 268482869,
+            "268483250": 268482869,
+            "268483308": 268482869,
+            "268483341": 268482869,
+            "268483381": 268483381,
+            "268483444": 268483381,
+            "268483478": 268483381,
+            "268483522": 268483381,
+            "268483539": 268483381,
+            "268483599": 268483381,
+            "268483616": 268483381,
+            "268483628": 268483381,
+            "268483685": 268483685,
+            "268483874": 268483685,
+            "268483940": 268483685,
+            "268483975": 268483685,
+            "268484066": 268483685,
+            "268484101": 268483685,
+            "268484231": 268484231,
+            "268484350": 268484350,
+            "268484393": 268484350,
+            "268484502": 268484502,
+            "268484653": 268484502,
+            "268484850": 268484850,
+            "268485088": 268484850,
+            "268485128": 268485128,
+            "268485395": 268485395,
+            "268485599": 268485395,
+            "268485736": 268485395,
+            "268485828": 268485828,
+            "268485989": 268485989,
+            "268486236": 268486236,
+            "268486318": 268486236,
+            "268486426": 268486236,
+            "268486574": 268486574,
+            "268486611": 268486574,
+            "268486702": 268486574,
+            "268486763": 268486574,
+            "268486780": 268486574,
+            "268486851": 268486574,
+            "268486955": 268486574,
+            "268486980": 268486574,
+            "268487038": 268486574,
+            "268487059": 268486574,
+            "268487126": 268486574,
+            "268487207": 268486574,
+            "268487243": 268486574,
+            "268487340": 268487340,
+            "268487401": 268487340,
+            "268487471": 268487340,
+            "268487486": 268487340,
+            "268487543": 268487340,
+            "268487632": 268487340,
+            "268487673": 268487340,
+            "268487776": 268487340,
+            "268487801": 268487340,
+            "268487859": 268487340,
+            "268487876": 268487340,
+            "268487939": 268487340,
+            "268488030": 268488030,
+            "268488067": 268488030,
+            "268488092": 268488030,
+            "268488231": 268488030,
+            "268488976": 268488976,
+            "268488998": 268488976,
+            "268489039": 268488976,
+            "268489069": 268488976,
+            "268489181": 268489181,
+            "268489209": 268489181,
+            "268489232": 268489232,
+            "268489278": 268489232,
+            "268489307": 268489232,
+            "268489346": 268489232,
+            "268489418": 268489418,
+            "268489441": 268489418,
+            "268489627": 268489627,
+            "268489864": 268489627,
+            "268490114": 268489627,
+            "268490146": 268489627,
+            "268490198": 268489627,
+            "268490218": 268489627,
+            "268490415": 268490415,
+            "268490518": 268490415,
+            "268490545": 268490545,
+            "268490612": 268490545,
+            "268490653": 268490545,
+            "268490702": 268490545,
+            "268490806": 268490545,
+            "268490911": 268490545,
+            "268491123": 268490545,
+            "268491195": 268490545,
+            "268491285": 268490545,
+            "268491321": 268490545,
+            "268491384": 268490545,
+            "268491491": 268490545,
+            "268491630": 268490545,
+            "268491778": 268490545,
+            "268491916": 268490545,
+            "268492000": 268490545,
+            "268492139": 268490545,
+            "268492336": 268492336,
+            "268492492": 268492336,
+            "268493004": 268493004,
+            "268493052": 268493004,
+            "268493177": 268493004,
+            "268493219": 268493004,
+            "268493297": 268493004,
+            "268493301": 268493004,
+            "268493337": 268493004,
+            "268493393": 268493004,
+            "268493482": 268493004,
+            "268493533": 268493004,
+            "268493558": 268493004,
+            "268493600": 268493004,
+            "268493638": 268493638,
+            "268493845": 268493638,
+            "268493991": 268493638,
+            "268494131": 268493638,
+            "268494246": 268494246,
+            "268494320": 268494246,
+            "268494387": 268494246,
+            "268494520": 268494246,
+            "268494551": 268494246,
+            "268494600": 268494246,
+            "268494613": 268494246,
+            "268494672": 268494246,
+            "268494696": 268494246,
+            "268494744": 268494246,
+            "268494861": 268494246,
+            "268494979": 268494246,
+            "268495188": 268494246,
+            "268495314": 268494246,
+            "268495351": 268494246,
+            "268495378": 268494246,
+            "268495524": 268494246,
+            "268495577": 268495577,
+            "268495605": 268495577,
+            "268495709": 268495577,
+            "268495742": 268495577,
+            "268495859": 268495577,
+            "268495918": 268495577,
+            "268495980": 268495577,
+            "268496012": 268495577,
+            "268496075": 268495577,
+            "268496255": 268496255,
+            "268496420": 268496255,
+            "268496428": 268496255,
+            "268496503": 268496503,
+            "268496635": 268496503,
+            "268496710": 268496503,
+            "268496785": 268496503,
+            "268496875": 268496875,
+            "268497300": 268496875,
+            "268497326": 268496875,
+            "268497378": 268496875,
+            "268497501": 268497501,
+            "268497555": 268497501,
+            "268497600": 268497501,
+            "268497710": 268497501,
+            "268497971": 268497971,
+            "268498061": 268497971,
+            "268498212": 268497971,
+            "268498495": 268497971,
+            "268498767": 268498767,
+            "268498845": 268499351,
+            "268499034": 268499351,
+            "268499162": 268499351,
+            "268499210": 268499351,
+            "268499293": 268499351,
+            "268499351": 268499351,
+            "268499404": 268499404,
+            "268499672": 268499404,
+            "268500098": 268500098,
+            "268500176": 268500098,
+            "268500267": 268500098,
+            "268500343": 268500098,
+            "268500421": 268500098,
+            "268500442": 268500098,
+            "268500528": 268500528,
+            "268500620": 268500528,
+            "268500713": 268500713,
+            "268500738": 268500713,
+            "268500797": 268500713,
+            "268500890": 268500890,
+            "268501196": 268500890,
+            "268501452": 268500890,
+            "268501487": 268500890,
+            "268501625": 268500890,
+            "268501688": 268500890,
+            "268501916": 268500890,
+            "268501926": 268500890,
+            "268501970": 268500890,
+            "268502008": 268500890,
+            "268502252": 268502479,
+            "268502405": 268502479,
+            "268502456": 268502479,
+            "268502467": 268502479,
+            "268502515": 268502479,
+            "268502479": 268502479,
+            "268502734": 268502734,
+            "268502885": 268502734,
+            "268502900": 268502734,
+            "268502952": 268502952,
+            "268503238": 268502952,
+            "268503408": 268503408,
+            "268503475": 268503408,
+            "268503527": 268503408,
+            "268503724": 268503408,
+            "268503864": 268503864,
+            "268504172": 268503864,
+            "268504425": 268503864,
+            "268504450": 268503864,
+            "268504492": 268503864,
+            "268504544": 268503864,
+            "268504589": 268503864,
+            "268504655": 268503864,
+            "268504687": 268503864,
+            "268504927": 268503864,
+            "268504996": 268504996,
+            "268505050": 268504996,
+            "268505175": 268504996,
+            "268505212": 268504996,
+            "268505257": 268504996,
+            "268505304": 268505304,
+            "268505576": 268505304,
+            "268505678": 268505304,
+            "268505713": 268505304,
+            "268505736": 268505304,
+            "268505760": 268505304,
+            "268505929": 268505304,
+            "268505999": 268505304,
+            "268506176": 268506176,
+            "268506327": 268506176,
+            "268506374": 268506176,
+            "268506501": 268506176,
+            "268506552": 268506176,
+            "268506588": 268506176,
+            "268506685": 268506685,
+            "268506850": 268506685,
+            "268507294": 268507294,
+            "268507321": 268507321,
+            "268442477": 268507321,
+            "268507503": 268508154,
+            "268507738": 268508154,
+            "268508129": 268508154,
+            "268508154": 268508154,
+            "268508159": 268508159,
+            "268508390": 268508159,
+            "268508504": 268508159,
+            "268508558": 268508558,
+            "268508700": 268508558,
+            "268508725": 268508558,
+            "268508773": 268508773,
+            "268508908": 268508773,
+            "268508965": 268508773,
+            "268509010": 268509010,
+            "268509069": 268509010,
+            "268509140": 268509010,
+            "268509218": 268509218,
+            "268509279": 268509218,
+            "268509305": 268509218,
+            "268509399": 268509399,
+            "268509542": 268509399,
+            "268509568": 268509399,
+            "268509644": 268509399,
+            "268509766": 268509399,
+            "268509843": 268509399,
+            "268509871": 268509399,
+            "268509898": 268509399,
+            "268509946": 268509399,
+            "268509998": 268509998,
+            "268510044": 268509998,
+            "268510068": 268509998,
+            "268510093": 268510093,
+            "268510202": 268510093,
+            "268510219": 268510093,
+            "268510231": 268510231,
+            "268510358": 268510231,
+            "268510535": 268510535,
+            "268510794": 268510535,
+            "268510812": 268510535,
+            "268510888": 268510888,
+            "268510947": 268510888,
+            "268511020": 268510888,
+            "268511064": 268510888,
+            "268511119": 268510888,
+            "268511305": 268510888,
+            "268511390": 268510888,
+            "268511498": 268510888,
+            "268511768": 268510888,
+            "268511793": 268510888,
+            "268511819": 268510888,
+            "268511906": 268510888,
+            "268512086": 268510888,
+            "268512105": 268510888,
+            "268512158": 268512422,
+            "268512296": 268512422,
+            "268512357": 268512422,
+            "268512422": 268512422,
+            "268512448": 268512448,
+            "268512474": 268512448,
+            "268512519": 268512519,
+            "268512587": 268512519,
+            "268512630": 268512519,
+            "268512794": 268512519,
+            "268512899": 268512519,
+            "268513032": 268512519,
+            "268513108": 268512519,
+            "268513137": 268512519,
+            "268513170": 268512519,
+            "268513216": 268512519,
+            "268513309": 268512519,
+            "268513326": 268512519,
+            "268513359": 268512519,
+            "268513375": 268512519,
+            "268513419": 268512519,
+            "268513521": 268512519,
+            "268513645": 268512519,
+            "268513869": 268513869,
+            "268514045": 268513869,
+            "268514059": 268513869,
+            "268514095": 268513869,
+            "268514212": 268514212,
+            "268514294": 268514212,
+            "268514338": 268514212,
+            "268514401": 268514212,
+            "268514529": 268514529,
+            "268514543": 268514529,
+            "268514618": 268514618,
+            "268514644": 268514618,
+            "268514714": 268514618,
+            "268514789": 268514618,
+            "268514908": 268514618,
+            "268514934": 268514618,
+            "268515042": 268514618,
+            "268515060": 268514618,
+            "268515086": 268514618,
+            "268515107": 268514618,
+            "268515123": 268514618,
+            "268515153": 268514618,
+            "268515187": 268514618,
+            "268515200": 268514618,
+            "268515215": 268514618,
+            "268515243": 268514618,
+            "268515287": 268514618,
+            "268515304": 268514618,
+            "268515319": 268514618,
+            "268515352": 268515352,
+            "268515380": 268515352,
+            "268515413": 268515352,
+            "268515477": 268515352,
+            "268515532": 268515352,
+            "268515559": 268515559,
+            "268515592": 268515559,
+            "268515639": 268515559,
+            "268515659": 268515559,
+            "268515674": 268515559,
+            "268515721": 268515559,
+            "268515790": 268515559,
+            "268515816": 268515559,
+            "268515842": 268515559,
+            "268515881": 268515559,
+            "268515901": 268515559,
+            "268515941": 268515559,
+            "268515961": 268515559,
+            "268515991": 268515559,
+            "268516003": 268515559,
+            "268516014": 268515559,
+            "268516050": 268515559,
+            "268516082": 268515559,
+            "268517075": 268517075,
+            "268517130": 268517075,
+            "268517171": 268517171,
+            "268517666": 268517171,
+            "268517685": 268517171,
+            "268517716": 268517716,
+            "268517762": 268517716,
+            "268517818": 268517716,
+            "268517989": 268517989,
+            "268518137": 268517989,
+            "268518210": 268518210,
+            "268518332": 268518210,
+            "268518337": 268518210,
+            "268518769": 268518769,
+            "268518821": 268518821,
+            "268520582": 268520582,
+            "268520719": 268520582,
+            "268520755": 268520755,
+            "268520788": 268520755,
+            "268521066": 268521066,
+            "268521184": 268521184,
+            "268521191": 268521184,
+            "268521210": 268521184,
+            "268522067": 268522067,
+            "268522113": 268522113,
+            "268522124": 268522124,
+            "268522173": 268522173,
+            "268522184": 268522184
+        },
+        "library_functions": {
+            "268479990": "??$?R_W@__crt_internal_free_policy@@QBEXQB_W@Z",
+            "268507488": "?_set_com_error_handler@@YGXP6GXJPAUIErrorInfo@@@Z@Z",
+            "268518368": "?_com_issue_error@@YGXJ@Z",
+            "268518400": "?",
+            "268518528": "??1_com_error@@UAE@XZ",
+            "268518576": "?_com_raise_error@@YGXJPAUIErrorInfo@@@Z",
+            "268518640": "??0_com_error@@QAE@ABV0@@Z",
+            "268518704": "??_G_com_error@@UAEPAXI@Z",
+            "268518784": "__except_handler4",
+            "268518821": "___report_gsfailure",
+            "268519088": "__except_handler4_common",
+            "268519488": "__local_unwind4",
+            "268519632": "__unwind_handler4",
+            "268519730": "@_EH4_CallFilterFunc@8",
+            "268519753": "@_EH4_TransferToHandler@8",
+            "268519798": "ReturnPoint",
+            "268519803": "@_EH4_LocalUnwind@16",
+            "268519840": "__ValidateImageBase",
+            "268519904": "__FindPESection",
+            "268519984": "__IsNonwritableInCurrentImage",
+            "268520176": "__global_unwind2",
+            "268520208": "__unwind_handler",
+            "268520277": "__local_unwind2",
+            "268520443": "_at_done",
+            "268520453": "__NLG_Notify",
+            "268520484": "__NLG_Call",
+            "268520500": "??_Estringdispid@CComTypeInfoHolder@ATL@@QAEPAXI@Z",
+            "268521344": "__SEH_prolog4_GS",
+            "268521440": "__SEH_prolog4",
+            "268521552": "__alldiv",
+            "268521730": "__EH_prolog3",
+            "268521781": "__EH_prolog3_GS",
+            "268521835": "__EH_epilog3"
+        }
+    }
+}

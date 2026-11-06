@@ -1,0 +1,188 @@
+{
+    "timestamp": "2024-12-13T10:14:41.190784",
+    "version": "7.4.0",
+    "extractor": "VivisectFeatureExtractor",
+    "rules": {
+        "link function at runtime on Windows": {
+            "rule_name": "link function at runtime on Windows",
+            "rule_namespace": "linking/runtime-linking",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Shared Modules",
+                "subtechnique_attck": "",
+                "attck_id": "T1129"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [],
+            "associated_addresses": [
+                4199195,
+                4199566
+            ],
+            "rules_non_code_related": []
+        },
+        "allocate memory": {
+            "rule_name": "allocate memory",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Memory",
+                "behavior_mbc": "Allocate Memory",
+                "method_mbc": "",
+                "mbc_id": "C0007"
+            },
+            "associated_funcs": [
+                4198869,
+                4198869,
+                4199647,
+                4199647,
+                4199647
+            ],
+            "associated_addresses": [
+                4198939,
+                4198968,
+                4199690,
+                4199721,
+                4199741
+            ],
+            "rules_non_code_related": []
+        },
+        "allocate or change RW memory": {
+            "rule_name": "allocate or change RW memory",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Memory",
+                "behavior_mbc": "Allocate Memory",
+                "method_mbc": "",
+                "mbc_id": "C0007"
+            },
+            "associated_funcs": [
+                4198869,
+                4198869,
+                4199647,
+                4199647,
+                4199647
+            ],
+            "associated_addresses": [
+                4198939,
+                4198968,
+                4199690,
+                4199721,
+                4199741
+            ],
+            "rules_non_code_related": []
+        },
+        "change memory protection": {
+            "rule_name": "change memory protection",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Memory",
+                "behavior_mbc": "Change Memory Protection",
+                "method_mbc": "",
+                "mbc_id": "C0008"
+            },
+            "associated_funcs": [
+                4199033
+            ],
+            "associated_addresses": [
+                4199178
+            ],
+            "rules_non_code_related": []
+        },
+        "contain loop": {
+            "rule_name": "contain loop",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                4198869,
+                4199033,
+                4199241,
+                4199364,
+                4199932,
+                4200073,
+                4200608
+            ],
+            "associated_addresses": [
+                4198869,
+                4199033,
+                4199241,
+                4199364,
+                4199932,
+                4200073,
+                4200608
+            ],
+            "rules_non_code_related": []
+        },
+        "parse PE header": {
+            "rule_name": "parse PE header",
+            "rule_namespace": "load-code/pe",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Shared Modules",
+                "subtechnique_attck": "",
+                "attck_id": "T1129"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                4199647
+            ],
+            "associated_addresses": [
+                4199647
+            ],
+            "rules_non_code_related": []
+        }
+    },
+    "analysis": {
+        "base_address": {
+            "type": "absolute",
+            "value": 4194304
+        },
+        "file_functions": {
+            "4198869": 4198869,
+            "4198939": 4198869,
+            "4198968": 4198869,
+            "4199005": 4198869,
+            "4199008": 4198869,
+            "4199033": 4199033,
+            "4199178": 4199033,
+            "4199212": 4199033,
+            "4199241": 4199241,
+            "4199260": 4199241,
+            "4199319": 4199241,
+            "4199331": 4199241,
+            "4199350": 4199241,
+            "4199364": 4199364,
+            "4199396": 4199364,
+            "4199422": 4199364,
+            "4199444": 4199364,
+            "4199516": 4199364,
+            "4199528": 4199364,
+            "4199557": 4199364,
+            "4199586": 4199364,
+            "4199607": 4199364,
+            "4199647": 4199647,
+            "4199669": 4199647,
+            "4199690": 4199647,
+            "4199721": 4199647,
+            "4199741": 4199647,
+            "4199894": 4199647,
+            "4199932": 4199932,
+            "4199958": 4199932,
+            "4199976": 4199932,
+            "4200003": 4199932,
+            "4200025": 4199932,
+            "4200057": 4199932,
+            "4200073": 4200073,
+            "4200085": 4200073,
+            "4200608": 4200608,
+            "4200620": 4200608,
+            "4200640": 4200608
+        },
+        "library_functions": {
+            "4200189": "_WinMainCRTStartup",
+            "4200552": "__setdefaultprecision"
+        }
+    }
+}

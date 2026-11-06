@@ -1,0 +1,29 @@
+/* MAPTER app styles (Dash serves this folder automatically). */
+
+/* Dropdown menus open over neighbouring cards and are wide enough for long
+   CAPA rule / function names; anything longer ends in "…" (hover shows the
+   full name via each option's title). */
+.dash-dropdown .Select-menu-outer {
+    z-index: 1050;
+    min-width: 100%;
+    width: 28rem;
+    max-width: 90vw;
+}
+.dash-dropdown .Select-option {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Selected values (chips in multi-selects, the value of single selects). */
+.dash-dropdown .Select-value-label {
+    display: inline-block;
+    max-width: 14rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: bottom;
+}
+.dash-dropdown .Select--single .Select-value {
+    max-width: calc(100% - 2.5rem);
+}

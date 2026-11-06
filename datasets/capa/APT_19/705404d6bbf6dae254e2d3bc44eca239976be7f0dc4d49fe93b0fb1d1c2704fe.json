@@ -1,0 +1,158 @@
+{
+    "timestamp": "2024-12-13T23:41:51.480338",
+    "version": "7.4.0",
+    "extractor": "VivisectFeatureExtractor",
+    "rules": {
+        "terminate process": {
+            "rule_name": "terminate process",
+            "rule_namespace": "host-interaction/process/terminate",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Terminate Process",
+                "method_mbc": "",
+                "mbc_id": "C0018"
+            },
+            "associated_funcs": [
+                268439953
+            ],
+            "associated_addresses": [
+                268439953
+            ],
+            "rules_non_code_related": []
+        },
+        "contain loop": {
+            "rule_name": "contain loop",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                268441760,
+                268442234,
+                268460032,
+                268473262,
+                268524458,
+                268525489
+            ],
+            "associated_addresses": [
+                268441760,
+                268442140,
+                268442234,
+                268460032,
+                268473262,
+                268524458,
+                268525489
+            ],
+            "rules_non_code_related": []
+        },
+        "run as service": {
+            "rule_name": "run as service",
+            "rule_namespace": "host-interaction/service",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Anti-Behavioral Analysis",
+                "behavior_mbc": "Conditional Execution",
+                "method_mbc": "Runs as Service",
+                "mbc_id": "B0025.007"
+            },
+            "associated_funcs": [
+                268524458
+            ],
+            "associated_addresses": [
+                [
+                    268524458
+                ]
+            ],
+            "rules_non_code_related": []
+        }
+    },
+    "analysis": {
+        "base_address": {
+            "type": "absolute",
+            "value": 268435456
+        },
+        "file_functions": {
+            "268439953": 268439953,
+            "268440005": 268440005,
+            "268441760": 268441760,
+            "268441897": 268441760,
+            "268441933": 268441933,
+            "268441966": 268441933,
+            "268442234": 268442234,
+            "268460032": 268460032,
+            "268460036": 268460032,
+            "268460129": 268460032,
+            "268460149": 268460032,
+            "268460185": 268460032,
+            "268460209": 268460032,
+            "268460236": 268460032,
+            "268460343": 268460032,
+            "268460394": 268460032,
+            "268460455": 268460032,
+            "268460498": 268460032,
+            "268460505": 268460032,
+            "268460526": 268460032,
+            "268460547": 268460032,
+            "268460589": 268460032,
+            "268460642": 268460032,
+            "268460663": 268460032,
+            "268460701": 268460032,
+            "268460743": 268460032,
+            "268460797": 268460032,
+            "268460835": 268460032,
+            "268460850": 268460032,
+            "268460881": 268460032,
+            "268460940": 268460032,
+            "268460973": 268460032,
+            "268461014": 268460032,
+            "268461060": 268460032,
+            "268461078": 268460032,
+            "268461110": 268460032,
+            "268461172": 268460032,
+            "268461215": 268460032,
+            "268461228": 268460032,
+            "268461275": 268460032,
+            "268461344": 268460032,
+            "268461365": 268460032,
+            "268461394": 268460032,
+            "268461444": 268460032,
+            "268461469": 268460032,
+            "268461519": 268460032,
+            "268473262": 268473262,
+            "268473245": 268473262,
+            "268524458": 268524458,
+            "268524443": 268524458,
+            "268525489": 268525489,
+            "268525476": 268525489,
+            "268525493": 268525489,
+            "268525975": 268525975
+        },
+        "library_functions": {
+            "268439552": "?_com_issue_error@@YGXJ@Z",
+            "268439584": "?",
+            "268439712": "??1_com_error@@UAE@XZ",
+            "268439760": "?_com_raise_error@@YGXJPAUIErrorInfo@@@Z",
+            "268439824": "??0_com_error@@QAE@ABV0@@Z",
+            "268439888": "??_G_com_error@@UAEPAXI@Z",
+            "268439968": "__except_handler4",
+            "268440005": "___report_gsfailure",
+            "268440272": "__except_handler4_common",
+            "268440672": "__local_unwind4",
+            "268440816": "__unwind_handler4",
+            "268440914": "@_EH4_CallFilterFunc@8",
+            "268440937": "@_EH4_TransferToHandler@8",
+            "268440982": "ReturnPoint",
+            "268440987": "@_EH4_LocalUnwind@16",
+            "268441024": "__ValidateImageBase",
+            "268441088": "__FindPESection",
+            "268441168": "__IsNonwritableInCurrentImage",
+            "268441360": "__global_unwind2",
+            "268441392": "__unwind_handler",
+            "268441461": "__local_unwind2",
+            "268441627": "_at_done",
+            "268441637": "__NLG_Notify",
+            "268441668": "__NLG_Call",
+            "268441678": "??_Estringdispid@CComTypeInfoHolder@ATL@@QAEPAXI@Z"
+        }
+    }
+}

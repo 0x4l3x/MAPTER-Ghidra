@@ -1,0 +1,2122 @@
+{
+    "timestamp": "2024-12-14T18:34:19.636867",
+    "version": "7.4.0",
+    "extractor": "VivisectFeatureExtractor",
+    "rules": {
+        "link function at runtime on Windows": {
+            "rule_name": "link function at runtime on Windows",
+            "rule_namespace": "linking/runtime-linking",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Shared Modules",
+                "subtechnique_attck": "",
+                "attck_id": "T1129"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [],
+            "associated_addresses": [
+                268446498,
+                268450909,
+                268453606,
+                268454816,
+                268496089,
+                268496119,
+                268496135,
+                268496151,
+                268496171
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "delay execution": {
+            "rule_name": "delay execution",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Anti-Behavioral Analysis",
+                "behavior_mbc": "Dynamic Analysis Evasion",
+                "method_mbc": "Delayed Execution",
+                "mbc_id": "B0003.003"
+            },
+            "associated_funcs": [
+                268444856,
+                268444856,
+                268448529,
+                268448683,
+                268448683,
+                268450049,
+                268450049
+            ],
+            "associated_addresses": [
+                268444941,
+                268444966,
+                268448529,
+                268448754,
+                268448781,
+                268450049,
+                268450093
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "get file attributes": {
+            "rule_name": "get file attributes",
+            "rule_namespace": "host-interaction/file-system/meta",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Get File Attributes",
+                "method_mbc": "",
+                "mbc_id": "C0049"
+            },
+            "associated_funcs": [
+                268447118,
+                268447118,
+                268447118,
+                268451417,
+                268451417
+            ],
+            "associated_addresses": [
+                268447482,
+                268447504,
+                268447533,
+                268451537,
+                268451670
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "create process on Windows": {
+            "rule_name": "create process on Windows",
+            "rule_namespace": "host-interaction/process/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Create Process",
+                "method_mbc": "",
+                "mbc_id": "C0017"
+            },
+            "associated_funcs": [
+                268447118
+            ],
+            "associated_addresses": [
+                268447619
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "encode data using XOR": {
+            "rule_name": "encode data using XOR",
+            "rule_namespace": "data-manipulation/encoding/xor",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Obfuscated Files or Information",
+                "method_mbc": "Encoding-Standard Algorithm",
+                "mbc_id": "E1027.m02"
+            },
+            "associated_funcs": [
+                268448039,
+                268450212,
+                268451813,
+                268452018,
+                268452188
+            ],
+            "associated_addresses": [
+                268448079,
+                268450214,
+                268451826,
+                268452169,
+                268452223
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "create thread": {
+            "rule_name": "create thread",
+            "rule_namespace": "host-interaction/thread/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Create Thread",
+                "method_mbc": "",
+                "mbc_id": "C0038"
+            },
+            "associated_funcs": [
+                268448683,
+                268450049
+            ],
+            "associated_addresses": [
+                268448733,
+                268450093
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "create or open registry key": {
+            "rule_name": "create or open registry key",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Create Registry Key",
+                "mbc_id": "C0036.004"
+            },
+            "associated_funcs": [
+                268448967,
+                268448967,
+                268448967,
+                268449584,
+                268451225
+            ],
+            "associated_addresses": [
+                268448998,
+                268449341,
+                268449421,
+                268449692,
+                268451225
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "open process": {
+            "rule_name": "open process",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Open Process",
+                "method_mbc": "",
+                "mbc_id": "C0065"
+            },
+            "associated_funcs": [
+                268450230
+            ],
+            "associated_addresses": [
+                268450230
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "create or open file": {
+            "rule_name": "create or open file",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Create File",
+                "method_mbc": "",
+                "mbc_id": "C0016"
+            },
+            "associated_funcs": [
+                268451417,
+                268499630
+            ],
+            "associated_addresses": [
+                268451625,
+                268499630
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "change memory protection": {
+            "rule_name": "change memory protection",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Memory",
+                "behavior_mbc": "Change Memory Protection",
+                "method_mbc": "",
+                "mbc_id": "C0008"
+            },
+            "associated_funcs": [
+                268453543,
+                268454303
+            ],
+            "associated_addresses": [
+                268453577,
+                268454448
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "allocate memory": {
+            "rule_name": "allocate memory",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Memory",
+                "behavior_mbc": "Allocate Memory",
+                "method_mbc": "",
+                "mbc_id": "C0007"
+            },
+            "associated_funcs": [
+                268454139,
+                268454139,
+                268454897,
+                268454897,
+                268454897
+            ],
+            "associated_addresses": [
+                268454209,
+                268454238,
+                268454940,
+                268454971,
+                268454991
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "allocate or change RW memory": {
+            "rule_name": "allocate or change RW memory",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Memory",
+                "behavior_mbc": "Allocate Memory",
+                "method_mbc": "",
+                "mbc_id": "C0007"
+            },
+            "associated_funcs": [
+                268454139,
+                268454139,
+                268454897,
+                268454897,
+                268454897
+            ],
+            "associated_addresses": [
+                268454209,
+                268454238,
+                268454940,
+                268454971,
+                268454991
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "contain loop": {
+            "rule_name": "contain loop",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                268440164,
+                268440238,
+                268442406,
+                268444856,
+                268446930,
+                268447118,
+                268447796,
+                268447868,
+                268448039,
+                268448180,
+                268448529,
+                268448967,
+                268450049,
+                268450212,
+                268450666,
+                268450871,
+                268451225,
+                268451417,
+                268451813,
+                268451897,
+                268451956,
+                268452018,
+                268452188,
+                268452380,
+                268452725,
+                268453147,
+                268453212,
+                268453380,
+                268453437,
+                268453543,
+                268454139,
+                268454303,
+                268454492,
+                268454615,
+                268455182,
+                268455382,
+                268455488,
+                268458368,
+                268462668,
+                268462766,
+                268481709,
+                268481747,
+                268504222,
+                268505583,
+                268507088,
+                268512084,
+                268515053
+            ],
+            "associated_addresses": [
+                268440164,
+                268440238,
+                268442406,
+                268444140,
+                268444347,
+                268444856,
+                268446930,
+                268447118,
+                268447796,
+                268447868,
+                268448039,
+                268448180,
+                268448529,
+                268448967,
+                268450049,
+                268450212,
+                268450666,
+                268450871,
+                268451225,
+                268451417,
+                268451813,
+                268451897,
+                268451956,
+                268452018,
+                268452188,
+                268452380,
+                268452725,
+                268453147,
+                268453212,
+                268453380,
+                268453437,
+                268453543,
+                268454139,
+                268454303,
+                268454492,
+                268454615,
+                268455182,
+                268455382,
+                268455488,
+                268458368,
+                268462668,
+                268462766,
+                268477390,
+                268481709,
+                268481747,
+                268504222,
+                268505583,
+                268507088,
+                268512084,
+                268515053
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "print debug messages": {
+            "rule_name": "print debug messages",
+            "rule_namespace": "host-interaction/log/debug/write-event",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                268441474
+            ],
+            "associated_addresses": [
+                268441474
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "read HTTP header": {
+            "rule_name": "read HTTP header",
+            "rule_namespace": "communication/http",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "HTTP Communication",
+                "method_mbc": "Read Header",
+                "mbc_id": "C0002.014"
+            },
+            "associated_funcs": [
+                268442202
+            ],
+            "associated_addresses": [
+                268442156,
+                268442202
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "receive HTTP response": {
+            "rule_name": "receive HTTP response",
+            "rule_namespace": "communication/http/client",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "HTTP Communication",
+                "method_mbc": "Get Response",
+                "mbc_id": "C0002.017"
+            },
+            "associated_funcs": [
+                268442406,
+                268443521
+            ],
+            "associated_addresses": [
+                268442406,
+                268443521
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "initialize WinHTTP library": {
+            "rule_name": "initialize WinHTTP library",
+            "rule_namespace": "communication/http",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "HTTP Communication",
+                "method_mbc": "WinHTTP",
+                "mbc_id": "C0002.008"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [
+                268443403
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "send HTTP request": {
+            "rule_name": "send HTTP request",
+            "rule_namespace": "communication/http/client",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "HTTP Communication",
+                "method_mbc": "Send Request",
+                "mbc_id": "C0002.003"
+            },
+            "associated_funcs": [
+                268443521
+            ],
+            "associated_addresses": [
+                268443521
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "prepare HTTP request": {
+            "rule_name": "prepare HTTP request",
+            "rule_namespace": "communication/http/client",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "HTTP Communication",
+                "method_mbc": "Create Request",
+                "mbc_id": "C0002.012"
+            },
+            "associated_funcs": [
+                268443521
+            ],
+            "associated_addresses": [
+                268443521
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "send data": {
+            "rule_name": "send data",
+            "rule_namespace": "communication",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Command and Control",
+                "behavior_mbc": "C2 Communication",
+                "method_mbc": "Send Data",
+                "mbc_id": "B0030.001"
+            },
+            "associated_funcs": [
+                268443521
+            ],
+            "associated_addresses": [
+                268443521
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "initialize Winsock library": {
+            "rule_name": "initialize Winsock library",
+            "rule_namespace": "communication/socket",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "Socket Communication",
+                "method_mbc": "Initialize Winsock Library",
+                "mbc_id": "C0001.009"
+            },
+            "associated_funcs": [
+                268444406
+            ],
+            "associated_addresses": [
+                268444406
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "set current directory": {
+            "rule_name": "set current directory",
+            "rule_namespace": "host-interaction/file-system",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                268444681
+            ],
+            "associated_addresses": [
+                268444681
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "get session user name": {
+            "rule_name": "get session user name",
+            "rule_namespace": "host-interaction/session",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Owner/User Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1033"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268446140
+            ],
+            "associated_addresses": [
+                268446140
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "get hostname": {
+            "rule_name": "get hostname",
+            "rule_namespace": "host-interaction/os/hostname",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "System Information Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1082"
+            },
+            "associated_funcs": [
+                268446140,
+                268455382
+            ],
+            "associated_addresses": [
+                268446140,
+                268455382
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "get OS version": {
+            "rule_name": "get OS version",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                268446140,
+                268449847
+            ],
+            "associated_addresses": [
+                268446140,
+                268449847
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "get geographical location": {
+            "rule_name": "get geographical location",
+            "rule_namespace": "collection",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Location Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1614"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268446140
+            ],
+            "associated_addresses": [
+                268446140
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "get memory capacity": {
+            "rule_name": "get memory capacity",
+            "rule_namespace": "host-interaction/hardware/memory",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268446140
+            ],
+            "associated_addresses": [
+                268446140
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "self delete": {
+            "rule_name": "self delete",
+            "rule_namespace": "anti-analysis/anti-forensic/self-deletion",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Indicator Removal",
+                "subtechnique_attck": "File Deletion",
+                "attck_id": "T1070.004"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Self Deletion",
+                "method_mbc": "COMSPEC Environment Variable",
+                "mbc_id": "F0007.001"
+            },
+            "associated_funcs": [
+                268447118
+            ],
+            "associated_addresses": [
+                268447118
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "get common file path": {
+            "rule_name": "get common file path",
+            "rule_namespace": "host-interaction/file-system",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "File and Directory Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1083"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "File and Directory Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1083"
+            },
+            "associated_funcs": [
+                268447118,
+                268449847
+            ],
+            "associated_addresses": [
+                268447118,
+                268449847
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "check if file exists": {
+            "rule_name": "check if file exists",
+            "rule_namespace": "host-interaction/file-system/exists",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "File and Directory Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1083"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "File and Directory Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1083"
+            },
+            "associated_funcs": [
+                268447118,
+                268451417
+            ],
+            "associated_addresses": [
+                268447118,
+                268451417
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "reference HTTP User-Agent string": {
+            "rule_name": "reference HTTP User-Agent string",
+            "rule_namespace": "communication/http",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "HTTP Communication",
+                "method_mbc": "",
+                "mbc_id": "C0002"
+            },
+            "associated_funcs": [
+                268448180
+            ],
+            "associated_addresses": [
+                268448180
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "terminate process": {
+            "rule_name": "terminate process",
+            "rule_namespace": "host-interaction/process/terminate",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Terminate Process",
+                "method_mbc": "",
+                "mbc_id": "C0018"
+            },
+            "associated_funcs": [
+                268449584,
+                268450049,
+                268452018,
+                268453543,
+                268472027
+            ],
+            "associated_addresses": [
+                268448901,
+                268449584,
+                268450049,
+                268452018,
+                268453543,
+                268472027
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "get service handle": {
+            "rule_name": "get service handle",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                268448967
+            ],
+            "associated_addresses": [
+                268448967
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "create service": {
+            "rule_name": "create service",
+            "rule_namespace": "host-interaction/service/create",
+            "rule_attack": {
+                "tactic_attck": "Persistence",
+                "technique_attck": "Create or Modify System Process",
+                "subtechnique_attck": "Windows Service",
+                "attck_id": "T1543.003"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268448967
+            ],
+            "associated_addresses": [
+                268448967
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "set registry value": {
+            "rule_name": "set registry value",
+            "rule_namespace": "host-interaction/registry/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Set Registry Key",
+                "mbc_id": "C0036.001"
+            },
+            "associated_funcs": [
+                268448967,
+                268449584
+            ],
+            "associated_addresses": [
+                268448967,
+                268449584
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "persist via Windows service": {
+            "rule_name": "persist via Windows service",
+            "rule_namespace": "persistence/service",
+            "rule_attack": {
+                "tactic_attck": "Persistence",
+                "technique_attck": "Create or Modify System Process",
+                "subtechnique_attck": "Windows Service",
+                "attck_id": "T1543.003"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268448967,
+                268448967
+            ],
+            "associated_addresses": [
+                268448967,
+                268448967
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "query or enumerate registry value": {
+            "rule_name": "query or enumerate registry value",
+            "rule_namespace": "host-interaction/registry",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "Query Registry",
+                "subtechnique_attck": "",
+                "attck_id": "T1012"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Query Registry Value",
+                "mbc_id": "C0036.006"
+            },
+            "associated_funcs": [
+                268448967,
+                268451225
+            ],
+            "associated_addresses": [
+                268448967,
+                268451225
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "check OS version": {
+            "rule_name": "check OS version",
+            "rule_namespace": "host-interaction/os/version",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "System Information Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1082"
+            },
+            "associated_funcs": [
+                268449847
+            ],
+            "associated_addresses": [
+                268449847
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "impersonate user": {
+            "rule_name": "impersonate user",
+            "rule_namespace": "host-interaction/user",
+            "rule_attack": {
+                "tactic_attck": "Privilege Escalation",
+                "technique_attck": "Access Token Manipulation",
+                "subtechnique_attck": "Token Impersonation/Theft",
+                "attck_id": "T1134.001"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268450230
+            ],
+            "associated_addresses": [
+                268450230
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "enumerate processes": {
+            "rule_name": "enumerate processes",
+            "rule_namespace": "host-interaction/process/list",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "Process Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1057"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268450666
+            ],
+            "associated_addresses": [
+                268450666
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "modify access privileges": {
+            "rule_name": "modify access privileges",
+            "rule_namespace": "host-interaction/process/modify",
+            "rule_attack": {
+                "tactic_attck": "Privilege Escalation",
+                "technique_attck": "Access Token Manipulation",
+                "subtechnique_attck": "",
+                "attck_id": "T1134"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268451076
+            ],
+            "associated_addresses": [
+                268451076
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "delete file": {
+            "rule_name": "delete file",
+            "rule_namespace": "host-interaction/file-system/delete",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Delete File",
+                "method_mbc": "",
+                "mbc_id": "C0047"
+            },
+            "associated_funcs": [
+                268451417
+            ],
+            "associated_addresses": [
+                268451417
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "delete directory": {
+            "rule_name": "delete directory",
+            "rule_namespace": "host-interaction/file-system/delete",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Delete Directory",
+                "method_mbc": "",
+                "mbc_id": "C0048"
+            },
+            "associated_funcs": [
+                268451417
+            ],
+            "associated_addresses": [
+                268451417
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "encode data using Base64": {
+            "rule_name": "encode data using Base64",
+            "rule_namespace": "data-manipulation/encoding/base64",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Obfuscated Files or Information",
+                "method_mbc": "Encoding-Standard Algorithm",
+                "mbc_id": "E1027.m02"
+            },
+            "associated_funcs": [
+                268452380
+            ],
+            "associated_addresses": [
+                268452380
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "parse PE header": {
+            "rule_name": "parse PE header",
+            "rule_namespace": "load-code/pe",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Shared Modules",
+                "subtechnique_attck": "",
+                "attck_id": "T1129"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268453437,
+                268454897
+            ],
+            "associated_addresses": [
+                268453437,
+                268454897
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "get networking parameters": {
+            "rule_name": "get networking parameters",
+            "rule_namespace": "host-interaction/network",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Network Configuration Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1016"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [],
+            "associated_addresses": [
+                268455297
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "resolve DNS": {
+            "rule_name": "resolve DNS",
+            "rule_namespace": "communication/dns",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "DNS Communication",
+                "method_mbc": "Resolve",
+                "mbc_id": "C0011.001"
+            },
+            "associated_funcs": [
+                268455382
+            ],
+            "associated_addresses": [
+                268455382
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "decompress data using LZO": {
+            "rule_name": "decompress data using LZO",
+            "rule_namespace": "data-manipulation/compression",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Decompress Data",
+                "method_mbc": "",
+                "mbc_id": "C0025"
+            },
+            "associated_funcs": [
+                268455488
+            ],
+            "associated_addresses": [
+                268455488
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "allocate thread local storage": {
+            "rule_name": "allocate thread local storage",
+            "rule_namespace": "host-interaction/thread/tls",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Allocate Thread Local Storage",
+                "method_mbc": "",
+                "mbc_id": "C0040"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [
+                268470200
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "link many functions at runtime": {
+            "rule_name": "link many functions at runtime",
+            "rule_namespace": "linking/runtime-linking",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Shared Modules",
+                "subtechnique_attck": "",
+                "attck_id": "T1129"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                268496002
+            ],
+            "associated_addresses": [
+                268496002
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "run as service": {
+            "rule_name": "run as service",
+            "rule_namespace": "host-interaction/service",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Anti-Behavioral Analysis",
+                "behavior_mbc": "Conditional Execution",
+                "method_mbc": "Runs as Service",
+                "mbc_id": "B0025.007"
+            },
+            "associated_funcs": [
+                268448529
+            ],
+            "associated_addresses": [
+                [
+                    268448529,
+                    268448529,
+                    268448600
+                ]
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        },
+        "reference Base64 string": {
+            "rule_name": "reference Base64 string",
+            "rule_namespace": "data-manipulation/encoding/base64",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Encode Data",
+                "method_mbc": "Base64",
+                "mbc_id": "C0026.001"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    87552
+                ]
+            ]
+        }
+    },
+    "analysis": {
+        "base_address": {
+            "type": "absolute",
+            "value": 268435456
+        },
+        "file_functions": {
+            "268439981": 268439981,
+            "268439993": 268439981,
+            "268440164": 268440164,
+            "268440187": 268440164,
+            "268440272": 268440238,
+            "268440288": 268440238,
+            "268440238": 268440238,
+            "268440306": 268440306,
+            "268440561": 268440561,
+            "268440594": 268444576,
+            "268440718": 268440718,
+            "268440902": 268440718,
+            "268440938": 268440938,
+            "268440990": 268440990,
+            "268441067": 268441067,
+            "268441080": 268441067,
+            "268441124": 268441124,
+            "268441137": 268441124,
+            "268441176": 268441176,
+            "268441189": 268441176,
+            "268441228": 268441228,
+            "268441474": 268441474,
+            "268441680": 268441680,
+            "268441755": 268441680,
+            "268441790": 268441680,
+            "268441834": 268441680,
+            "268441869": 268441680,
+            "268441888": 268441680,
+            "268441966": 268441680,
+            "268442028": 268441680,
+            "268442202": 268442202,
+            "268442256": 268442202,
+            "268442318": 268442202,
+            "268442406": 268442406,
+            "268442474": 268442406,
+            "268442553": 268442406,
+            "268442594": 268442406,
+            "268442632": 268442406,
+            "268442674": 268442406,
+            "268442747": 268442747,
+            "268442794": 268442747,
+            "268442836": 268442747,
+            "268443154": 268442747,
+            "268443521": 268443521,
+            "268443858": 268443858,
+            "268444268": 268444268,
+            "268444294": 268444268,
+            "268444406": 268444406,
+            "268444478": 268444406,
+            "268444576": 268444576,
+            "268444681": 268444681,
+            "268444708": 268444681,
+            "268444856": 268444856,
+            "268444890": 268444856,
+            "268444941": 268444856,
+            "268444966": 268444856,
+            "268444996": 268444996,
+            "268445038": 268444996,
+            "268445058": 268444996,
+            "268445931": 268445931,
+            "268446075": 268445931,
+            "268446140": 268446140,
+            "268446315": 268446140,
+            "268446530": 268446140,
+            "268446652": 268446140,
+            "268446711": 268446140,
+            "268446930": 268446930,
+            "268446964": 268446930,
+            "268446982": 268446930,
+            "268447027": 268446930,
+            "268447049": 268446930,
+            "268447070": 268446930,
+            "268447102": 268446930,
+            "268447118": 268447118,
+            "268447305": 268447118,
+            "268447358": 268447118,
+            "268447448": 268447118,
+            "268447482": 268447118,
+            "268447504": 268447118,
+            "268447533": 268447118,
+            "268447619": 268447118,
+            "268447796": 268447796,
+            "268447804": 268447796,
+            "268447834": 268447796,
+            "268447868": 268447868,
+            "268447878": 268447868,
+            "268447919": 268447919,
+            "268448039": 268448039,
+            "268448079": 268448039,
+            "268448180": 268448180,
+            "268448224": 268448180,
+            "268448529": 268448529,
+            "268448615": 268448529,
+            "268448683": 268448683,
+            "268448733": 268448683,
+            "268448754": 268448683,
+            "268448781": 268448683,
+            "268448793": 268448793,
+            "268448967": 268448967,
+            "268448998": 268448967,
+            "268449037": 268448967,
+            "268449175": 268448967,
+            "268449291": 268448967,
+            "268449341": 268448967,
+            "268449421": 268448967,
+            "268449482": 268448967,
+            "268449584": 268449584,
+            "268449611": 268449584,
+            "268449692": 268449584,
+            "268449716": 268449584,
+            "268449847": 268449847,
+            "268450049": 268450049,
+            "268450093": 268450049,
+            "268450212": 268450212,
+            "268450214": 268450212,
+            "268450230": 268450230,
+            "268450330": 268450230,
+            "268450666": 268450666,
+            "268450871": 268450871,
+            "268451076": 268451076,
+            "268451160": 268451076,
+            "268451225": 268451225,
+            "268451384": 268451225,
+            "268451417": 268451417,
+            "268451537": 268451417,
+            "268451625": 268451417,
+            "268451670": 268451417,
+            "268451723": 268451723,
+            "268451742": 268451723,
+            "268451813": 268451813,
+            "268451826": 268451813,
+            "268451843": 268451843,
+            "268451872": 268451843,
+            "268451897": 268451897,
+            "268451927": 268451897,
+            "268451956": 268451956,
+            "268451990": 268451956,
+            "268452018": 268452018,
+            "268452060": 268452018,
+            "268452169": 268452018,
+            "268452188": 268452188,
+            "268452223": 268452188,
+            "268452250": 268452188,
+            "268452316": 268452188,
+            "268452380": 268452380,
+            "268452481": 268452380,
+            "268452589": 268452380,
+            "268452596": 268452380,
+            "268452635": 268452380,
+            "268452640": 268452380,
+            "268452697": 268452380,
+            "268452725": 268452725,
+            "268452848": 268452725,
+            "268452933": 268452725,
+            "268452944": 268452725,
+            "268453073": 268453073,
+            "268453147": 268453147,
+            "268453190": 268453147,
+            "268453196": 268453147,
+            "268453212": 268453212,
+            "268453271": 268453212,
+            "268453273": 268453212,
+            "268453380": 268453380,
+            "268453415": 268453380,
+            "268453437": 268453437,
+            "268453514": 268453437,
+            "268453526": 268453437,
+            "268453543": 268453543,
+            "268453577": 268453543,
+            "268453748": 268453543,
+            "268453814": 268453543,
+            "268453856": 268453543,
+            "268453881": 268453543,
+            "268453940": 268453940,
+            "268454056": 268453940,
+            "268454106": 268454106,
+            "268454139": 268454139,
+            "268454209": 268454139,
+            "268454238": 268454139,
+            "268454275": 268454139,
+            "268454278": 268454139,
+            "268454303": 268454303,
+            "268454448": 268454303,
+            "268454463": 268454303,
+            "268454492": 268454492,
+            "268454511": 268454492,
+            "268454570": 268454492,
+            "268454582": 268454492,
+            "268454601": 268454492,
+            "268454615": 268454615,
+            "268454647": 268454615,
+            "268454673": 268454615,
+            "268454695": 268454615,
+            "268454766": 268454615,
+            "268454778": 268454615,
+            "268454807": 268454615,
+            "268454836": 268454615,
+            "268454857": 268454615,
+            "268454897": 268454897,
+            "268454919": 268454897,
+            "268454940": 268454897,
+            "268454971": 268454897,
+            "268454991": 268454897,
+            "268455144": 268454897,
+            "268455182": 268455182,
+            "268455194": 268455182,
+            "268455382": 268455382,
+            "268455440": 268455382,
+            "268455458": 268455382,
+            "268455488": 268455488,
+            "268455521": 268455488,
+            "268455568": 268455488,
+            "268455588": 268455488,
+            "268455603": 268455488,
+            "268455650": 268455488,
+            "268455719": 268455488,
+            "268455745": 268455488,
+            "268455771": 268455488,
+            "268455810": 268455488,
+            "268455830": 268455488,
+            "268455870": 268455488,
+            "268455890": 268455488,
+            "268455920": 268455488,
+            "268455932": 268455488,
+            "268455943": 268455488,
+            "268455979": 268455488,
+            "268456011": 268455488,
+            "268458368": 268458368,
+            "268458392": 268461232,
+            "268458424": 268461232,
+            "268458580": 268458580,
+            "268458558": 268458580,
+            "268458806": 268458806,
+            "268461232": 268461232,
+            "268462668": 268462668,
+            "268462694": 268462668,
+            "268462766": 268462766,
+            "268462955": 268462766,
+            "268462995": 268462766,
+            "268463281": 268462766,
+            "268463298": 268462766,
+            "268463385": 268462766,
+            "268463552": 268462766,
+            "268463586": 268462766,
+            "268463804": 268462766,
+            "268463897": 268462766,
+            "268464002": 268462766,
+            "268464023": 268462766,
+            "268464107": 268462766,
+            "268464293": 268462766,
+            "268464407": 268462766,
+            "268464521": 268462766,
+            "268464582": 268462766,
+            "268464851": 268462766,
+            "268464899": 268462766,
+            "268465082": 268462766,
+            "268465116": 268462766,
+            "268465192": 268462766,
+            "268465310": 268462766,
+            "268465522": 268462766,
+            "268472027": 268472027,
+            "268486096": 268486096,
+            "268476737": 268476737,
+            "268476874": 268476737,
+            "268478751": 268478751,
+            "268478753": 268478751,
+            "268481709": 268481709,
+            "268481737": 268481709,
+            "268481747": 268481747,
+            "268481775": 268481747,
+            "268488806": 268488806,
+            "268488891": 268488806,
+            "268489002": 268489002,
+            "268495700": 268495700,
+            "268496002": 268496002,
+            "268499630": 268499630,
+            "268503021": 268503021,
+            "268503127": 268503021,
+            "268503154": 268503021,
+            "268503189": 268503189,
+            "268503295": 268503189,
+            "268503322": 268503189,
+            "268504222": 268504222,
+            "268504330": 268504222,
+            "268504346": 268504222,
+            "268504457": 268504222,
+            "268504483": 268504222,
+            "268504605": 268504222,
+            "268504643": 268504222,
+            "268504753": 268504222,
+            "268504789": 268504222,
+            "268504880": 268504222,
+            "268504906": 268504222,
+            "268505014": 268504222,
+            "268505120": 268504222,
+            "268505156": 268504222,
+            "268505184": 268504222,
+            "268505297": 268504222,
+            "268505333": 268504222,
+            "268505353": 268504222,
+            "268505467": 268504222,
+            "268505506": 268504222,
+            "268505583": 268505583,
+            "268505691": 268505583,
+            "268505707": 268505583,
+            "268505818": 268505583,
+            "268505844": 268505583,
+            "268505966": 268505583,
+            "268506004": 268505583,
+            "268506114": 268505583,
+            "268506150": 268505583,
+            "268506241": 268505583,
+            "268506267": 268505583,
+            "268506375": 268505583,
+            "268506481": 268505583,
+            "268506517": 268505583,
+            "268506545": 268505583,
+            "268506658": 268505583,
+            "268506694": 268505583,
+            "268506714": 268505583,
+            "268506828": 268505583,
+            "268506867": 268505583,
+            "268506944": 268506944,
+            "268507149": 268507088,
+            "268507161": 268507088,
+            "268507226": 268507088,
+            "268507419": 268507088,
+            "268507519": 268507088,
+            "268507712": 268507088,
+            "268507743": 268507088,
+            "268507751": 268507088,
+            "268507784": 268507088,
+            "268507845": 268507088,
+            "268508098": 268507088,
+            "268508126": 268507088,
+            "268508178": 268507088,
+            "268508195": 268507088,
+            "268508210": 268507088,
+            "268508228": 268507088,
+            "268508276": 268507088,
+            "268508287": 268507088,
+            "268508443": 268507088,
+            "268508507": 268507088,
+            "268508574": 268507088,
+            "268507088": 268507088,
+            "268512084": 268512084,
+            "268512129": 268512084,
+            "268512310": 268512084,
+            "268512457": 268512084,
+            "268512510": 268512084,
+            "268514560": 268514560,
+            "268515123": 268515053,
+            "268515145": 268515053,
+            "268515181": 268515053,
+            "268515204": 268515053,
+            "268515316": 268515053,
+            "268515053": 268515053
+        },
+        "library_functions": {
+            "268456046": "_sprintf",
+            "268456178": "??_U@YAPAXI@Z",
+            "268456192": "_memset",
+            "268456336": "??2@YAPAXI@Z",
+            "268456464": "?",
+            "268456612": "?",
+            "268456656": "?",
+            "268456692": "?",
+            "268456756": "?",
+            "268457008": "?",
+            "268457044": "?",
+            "268457084": "?",
+            "268457168": "?",
+            "268457329": "??0exception@std@@QAE@ABQBDH@Z",
+            "268457371": "?_Copy_str@exception@std@@AAEXPBD@Z",
+            "268457435": "?_Tidy@exception@std@@AAEXXZ",
+            "268457465": "??0exception@std@@QAE@ABQBD@Z",
+            "268457504": "??4exception@std@@QAEAAV01@ABV01@@Z",
+            "268457607": "??0exception@std@@QAE@ABV01@@Z",
+            "268457644": "__freea",
+            "268457676": "??0_LocaleUpdate@@QAE@PAUlocaleinfo_struct@@@Z",
+            "268457811": "?_strlwr_s_l_stat@@YAHPADIPAUlocaleinfo_struct@@@Z",
+            "268458193": "__strlwr_s_l",
+            "268458245": "__strlwr",
+            "268458591": "_wcslen",
+            "268458618": "__fsopen",
+            "268458832": "_strcmp",
+            "268458968": "_srand",
+            "268458986": "_rand",
+            "268459019": "_wcscmp",
+            "268459130": "_wcscpy_s",
+            "268459229": "__fclose_nolock",
+            "268459338": "_fclose",
+            "268459472": "?",
+            "268459620": "?",
+            "268459664": "?",
+            "268459700": "?",
+            "268459764": "?",
+            "268460016": "?",
+            "268460052": "?",
+            "268460092": "?",
+            "268460176": "?",
+            "268460337": "__isdigit_l",
+            "268460418": "_isdigit",
+            "268460464": "__isspace_l",
+            "268460545": "_isspace",
+            "268460592": "_strlen",
+            "268460731": "__vsnprintf_l",
+            "268460903": "__vsnprintf",
+            "268461232": "_strstr",
+            "268461376": "_strcpy",
+            "268461405": "dest_misaligned",
+            "268461624": "__CRT_INIT@12",
+            "268461980": "___DllMainCRTStartup",
+            "268462226": "__DllMainCRTStartup@12",
+            "268462261": "__flsbuf",
+            "268462617": "_write_char",
+            "268465846": "?AFXSetTopLevelFrame@@YAXPAVCFrameWnd@@@Z",
+            "268465861": "__call_reportfault",
+            "268466158": "__invoke_watson",
+            "268466195": "__invalid_parameter",
+            "268466240": "__invalid_parameter_noinfo",
+            "268466256": "__get_errno_from_oserr",
+            "268466322": "__errno",
+            "268466341": "___doserrno",
+            "268466360": "__dosmaperr",
+            "268466655": "__onexit_nolock",
+            "268466837": "___onexitinit",
+            "268466886": "__onexit",
+            "268466946": "_atexit",
+            "268466969": "_malloc",
+            "268467117": "?AFXSetTopLevelFrame@@YAXPAVCFrameWnd@@@Z",
+            "268467132": "__callnewh",
+            "268467172": "__CxxThrowException@8",
+            "268467507": "_strcpy_s",
+            "268467602": "?CPtoLCID@@YAHH@Z",
+            "268467649": "?setSBCS@@YAXPAUthreadmbcinfostruct@@@Z",
+            "268467749": "?setSBUpLow@@YAXPAUthreadmbcinfostruct@@@Z",
+            "268468149": "___updatetmbcinfo",
+            "268468304": "__unlockexit",
+            "268468313": "?getSystemCP@@YAHH@Z",
+            "268468437": "__setmbcp_nolock",
+            "268468926": "__setmbcp",
+            "268469279": "__unlockexit",
+            "268469336": "___initmbctable",
+            "268469366": "___addlocaleref",
+            "268469509": "___removelocaleref",
+            "268469662": "___freetlocinfo",
+            "268469993": "__updatetlocinfoEx_nolock",
+            "268470070": "___updatetlocinfo",
+            "268470209": "___set_flsgetvalue",
+            "268470261": "__mtterm",
+            "268470322": "__initptd",
+            "268470484": "__unlockexit",
+            "268470502": "__getptd_noexit",
+            "268470623": "__getptd",
+            "268470649": "__freefls@4",
+            "268470931": "__unlockexit",
+            "268470952": "__freeptd",
+            "268471062": "__mtinit",
+            "268471441": "?__crtLCMapStringA_stat@@YAHPAUlocaleinfo_struct@@KKPBDHPADHHH@Z",
+            "268471928": "___crtLCMapStringA",
+            "268471998": "_strnlen",
+            "268472048": "__alloca_probe_16",
+            "268472092": "?strtoxl@@YAKPAUlocaleinfo_struct@@PBDPAPBDHH@Z",
+            "268472647": "_strtol",
+            "268472696": "___initstdio",
+            "268472873": "___endstdio",
+            "268472905": "__lock_file",
+            "268472970": "__lock_file2",
+            "268473020": "__unlock_file",
+            "268473080": "__unlock_file2",
+            "268473127": "__openfile",
+            "268473790": "__getstream",
+            "268474112": "__SEH_prolog4",
+            "268474208": "__except_handler4",
+            "268474608": "__local_unwind4",
+            "268474752": "__unwind_handler4",
+            "268474850": "@_EH4_CallFilterFunc@8",
+            "268474873": "@_EH4_TransferToHandler@8",
+            "268474918": "ReturnPoint",
+            "268474923": "@_EH4_LocalUnwind@16",
+            "268474948": "__write_nolock",
+            "268476949": "__fileno",
+            "268476987": "__flush",
+            "268477091": "__fflush_nolock",
+            "268477163": "_flsall",
+            "268477502": "__close_nolock",
+            "268477658": "__close",
+            "268477854": "__freebuf",
+            "268477903": "__isctype_l",
+            "268478087": "___libm_error_support",
+            "268478819": "__ceil_default",
+            "268479144": "?",
+            "268479213": "?",
+            "268479289": "?",
+            "268479367": "___crtCorExitProcess",
+            "268479410": "___crtExitProcess",
+            "268479434": "__lockexit",
+            "268479443": "__unlockexit",
+            "268479452": "__init_pointers",
+            "268479503": "__initterm_e",
+            "268479539": "__cinit",
+            "268479690": "_doexit",
+            "268480010": "__exit",
+            "268480032": "__cexit",
+            "268480047": "__amsg_exit",
+            "268480077": "__ioinit",
+            "268480658": "__ioterm",
+            "268480741": "__setenvp",
+            "268480961": "_parse_cmdline",
+            "268481371": "__setargv",
+            "268481558": "___crtGetEnvironmentStringsA",
+            "268481785": "__heap_init",
+            "268481835": "__XcptFilter",
+            "268482165": "___CppXcptFilter",
+            "268482197": "___security_init_cookie",
+            "268482352": "__lseeki64_nolock",
+            "268482485": "__lseeki64",
+            "268482719": "__getbuf",
+            "268482792": "__isatty",
+            "268482878": "__initp_misc_cfltcvt_tab",
+            "268482913": "__get_printf_count_output",
+            "268482935": "__wctomb_s_l",
+            "268483276": "_wctomb_s",
+            "268483305": "__isleadbyte_l",
+            "268483361": "_isleadbyte",
+            "268483392": "__aulldvrm",
+            "268483549": "?",
+            "268483600": "__GET_RTERRMSG",
+            "268483638": "__NMSG_WRITE",
+            "268484069": "__FF_MSGBANNER",
+            "268484126": "__mtinitlocks",
+            "268484287": "__unlock",
+            "268484310": "__mtinitlocknum",
+            "268484504": "__lock",
+            "268484555": "?__crtGetStringTypeA_stat@@YAHPAUlocaleinfo_struct@@KPBDHPAGHHH@Z",
+            "268484786": "___crtGetStringTypeA",
+            "268484850": "___free_lc_time",
+            "268485737": "___free_lconv_num",
+            "268485842": "___free_lconv_mon",
+            "268486096": "___report_gsfailure",
+            "268486368": "__alloca_probe",
+            "268486416": "_strcspn",
+            "268486486": "_strncmp",
+            "268486688": "_strpbrk",
+            "268486804": "__fcloseall",
+            "268486962": "__tsopen_nolock",
+            "268489034": "__mbsnbicmp_l",
+            "268489550": "__mbsnbicmp",
+            "268489576": "__mbsnbcmp_l",
+            "268489908": "__mbsnbcmp",
+            "268489936": "__ValidateImageBase",
+            "268490000": "__FindPESection",
+            "268490080": "__IsNonwritableInCurrentImage",
+            "268490272": "__global_unwind2",
+            "268490304": "__unwind_handler",
+            "268490373": "__local_unwind2",
+            "268490539": "_at_done",
+            "268490549": "__NLG_Notify",
+            "268490580": "__NLG_Call",
+            "268490583": "__putwch_nolock",
+            "268490649": "__mbtowc_l",
+            "268490927": "_mbtowc",
+            "268490953": "__set_osfhnd",
+            "268491082": "__free_osfhnd",
+            "268491216": "__get_osfhandle",
+            "268491321": "___lock_fhandle",
+            "268491480": "__unlock_fhandle",
+            "268491519": "__alloc_osfhnd",
+            "268491928": "__commit",
+            "268492148": "__cfltcvt_init",
+            "268492244": "__fpmath",
+            "268492269": "__raise_exc_ex",
+            "268493001": "__handle_exc",
+            "268493485": "__set_errno_from_matherr",
+            "268493530": "__errcode",
+            "268493582": "__umatherr",
+            "268493742": "__handle_qnan1",
+            "268493827": "__except1",
+            "268494029": "__frnd",
+            "268494049": "__set_exp",
+            "268494094": "__sptype",
+            "268494196": "__decomp",
+            "268494391": "__statfp",
+            "268494407": "__clrfp",
+            "268494424": "__ctrlfp",
+            "268494467": "__set_statfp",
+            "268494555": "___set_fpsr_sse2",
+            "268494669": "__calloc_impl",
+            "268494799": "_realloc",
+            "268494972": "?terminate@@YAXXZ",
+            "268495076": "_siglookup",
+            "268495144": "_raise",
+            "268495563": "?AFXSetTopLevelFrame@@YAXPAVCFrameWnd@@@Z",
+            "268495578": "?AFXSetTopLevelFrame@@YAXPAVCFrameWnd@@@Z",
+            "268495593": "?x_ismbbtype_l@@YAHPAUlocaleinfo_struct@@IHH@Z",
+            "268495676": "__ismbblead",
+            "268495709": "__stbuf",
+            "268495865": "__ftbuf",
+            "268495917": "_iswctype",
+            "268496366": "_wcscat_s",
+            "268496483": "_wcsncpy_s",
+            "268496688": "__set_error_mode",
+            "268496751": "___ascii_stricmp",
+            "268496808": "__stricmp_l",
+            "268497000": "__stricmp",
+            "268497071": "__strnicmp_l",
+            "268497297": "__strnicmp",
+            "268497380": "__chsize_nolock",
+            "268497818": "__read_nolock",
+            "268499281": "__lseek_nolock",
+            "268499398": "__setmode_nolock",
+            "268499684": "__forcdecpt_l",
+            "268499800": "__cropzeros_l",
+            "268499930": "__positive",
+            "268499958": "__fassign_l",
+            "268500024": "__fassign",
+            "268500050": "__shift",
+            "268500081": "__forcdecpt",
+            "268500100": "__cropzeros",
+            "268500119": "__cftoe2_l",
+            "268500472": "__cftoe_l",
+            "268500671": "__cftoe",
+            "268500703": "__cftoa_l",
+            "268501589": "__cftof2_l",
+            "268501848": "__cftof_l",
+            "268502041": "__cftog_l",
+            "268502278": "__cfltcvt_l",
+            "268502414": "__cfltcvt",
+            "268502449": "__setdefaultprecision",
+            "268502489": "_abort",
+            "268502540": "__tolower_l",
+            "268502817": "_tolower",
+            "268502864": "___ascii_strnicmp",
+            "268502976": "_strrchr",
+            "268503357": "__fptostr",
+            "268503536": "___dtold",
+            "268503715": "__fltout2",
+            "268503872": "__alldvrm",
+            "268504096": "__aullshr",
+            "268504127": "__controlfp_s",
+            "268506944": "___strgtold12_l",
+            "268508700": "_$I10_OUTPUT",
+            "268510996": "__hw_cw",
+            "268511138": "___hw_cw_sse2",
+            "268511298": "__control87",
+            "268512576": "_strspn",
+            "268512646": "_fprintf",
+            "268512914": "__towlower_l",
+            "268513258": "__wcsicmp_l",
+            "268513517": "__wcsicmp",
+            "268513842": "___crtLCMapStringW",
+            "268513889": "_wcsnlen",
+            "268513936": "__SEH_prolog",
+            "268514024": "__except_handler3",
+            "268514305": "_CallDestructExceptionObject",
+            "268514368": "_ValidateScopeTableHandlers",
+            "268514560": "__ValidateEH3RN"
+        }
+    }
+}

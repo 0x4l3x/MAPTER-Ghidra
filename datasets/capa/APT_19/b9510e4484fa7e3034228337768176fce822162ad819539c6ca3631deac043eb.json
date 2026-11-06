@@ -1,0 +1,498 @@
+{
+    "timestamp": "2024-12-14T19:13:32.066278",
+    "version": "7.4.0",
+    "extractor": "VivisectFeatureExtractor",
+    "rules": {
+        "link function at runtime on Windows": {
+            "rule_name": "link function at runtime on Windows",
+            "rule_namespace": "linking/runtime-linking",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Shared Modules",
+                "subtechnique_attck": "",
+                "attck_id": "T1129"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [],
+            "associated_addresses": [
+                4198438,
+                4207639,
+                4207668,
+                4207689,
+                4207710,
+                4207734
+            ],
+            "rules_non_code_related": []
+        },
+        "allocate memory": {
+            "rule_name": "allocate memory",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Memory",
+                "behavior_mbc": "Allocate Memory",
+                "method_mbc": "",
+                "mbc_id": "C0007"
+            },
+            "associated_funcs": [
+                4198400
+            ],
+            "associated_addresses": [
+                4198461
+            ],
+            "rules_non_code_related": []
+        },
+        "allocate or change RW memory": {
+            "rule_name": "allocate or change RW memory",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Memory",
+                "behavior_mbc": "Allocate Memory",
+                "method_mbc": "",
+                "mbc_id": "C0007"
+            },
+            "associated_funcs": [
+                4198400
+            ],
+            "associated_addresses": [
+                4198461
+            ],
+            "rules_non_code_related": []
+        },
+        "encode data using XOR": {
+            "rule_name": "encode data using XOR",
+            "rule_namespace": "data-manipulation/encoding/xor",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Obfuscated Files or Information",
+                "method_mbc": "Encoding-Standard Algorithm",
+                "mbc_id": "E1027.m02"
+            },
+            "associated_funcs": [
+                4198400
+            ],
+            "associated_addresses": [
+                4198517
+            ],
+            "rules_non_code_related": []
+        },
+        "create or open file": {
+            "rule_name": "create or open file",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Create File",
+                "method_mbc": "",
+                "mbc_id": "C0016"
+            },
+            "associated_funcs": [
+                4198664,
+                4198810
+            ],
+            "associated_addresses": [
+                4198731,
+                4198810
+            ],
+            "rules_non_code_related": []
+        },
+        "create process on Windows": {
+            "rule_name": "create process on Windows",
+            "rule_namespace": "host-interaction/process/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Create Process",
+                "method_mbc": "",
+                "mbc_id": "C0017"
+            },
+            "associated_funcs": [
+                4198906
+            ],
+            "associated_addresses": [
+                4198906
+            ],
+            "rules_non_code_related": []
+        },
+        "delay execution": {
+            "rule_name": "delay execution",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Anti-Behavioral Analysis",
+                "behavior_mbc": "Dynamic Analysis Evasion",
+                "method_mbc": "Delayed Execution",
+                "mbc_id": "B0003.003"
+            },
+            "associated_funcs": [
+                4198906,
+                4207571
+            ],
+            "associated_addresses": [
+                4198994,
+                4207606
+            ],
+            "rules_non_code_related": []
+        },
+        "contain loop": {
+            "rule_name": "contain loop",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                4198400,
+                4203010,
+                4203048
+            ],
+            "associated_addresses": [
+                4198400,
+                4203010,
+                4203048
+            ],
+            "rules_non_code_related": []
+        },
+        "compress data via WinAPI": {
+            "rule_name": "compress data via WinAPI",
+            "rule_namespace": "data-manipulation/compression",
+            "rule_attack": {
+                "tactic_attck": "Collection",
+                "technique_attck": "Archive Collected Data",
+                "subtechnique_attck": "Archive via Library",
+                "attck_id": "T1560.002"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Compress Data",
+                "method_mbc": "",
+                "mbc_id": "C0024"
+            },
+            "associated_funcs": [
+                4198400
+            ],
+            "associated_addresses": [
+                4198400
+            ],
+            "rules_non_code_related": []
+        },
+        "write file on Windows": {
+            "rule_name": "write file on Windows",
+            "rule_namespace": "host-interaction/file-system/write",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Writes File",
+                "method_mbc": "",
+                "mbc_id": "C0052"
+            },
+            "associated_funcs": [
+                4198810
+            ],
+            "associated_addresses": [
+                4198810
+            ],
+            "rules_non_code_related": []
+        },
+        "terminate process": {
+            "rule_name": "terminate process",
+            "rule_namespace": "host-interaction/process/terminate",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Terminate Process",
+                "method_mbc": "",
+                "mbc_id": "C0018"
+            },
+            "associated_funcs": [
+                4199057,
+                4215400
+            ],
+            "associated_addresses": [
+                4199057,
+                4215400
+            ],
+            "rules_non_code_related": []
+        },
+        "query environment variable": {
+            "rule_name": "query environment variable",
+            "rule_namespace": "host-interaction/environment-variable",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "System Information Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1082"
+            },
+            "associated_funcs": [
+                4199057
+            ],
+            "associated_addresses": [
+                4199057
+            ],
+            "rules_non_code_related": []
+        },
+        "create directory": {
+            "rule_name": "create directory",
+            "rule_namespace": "host-interaction/file-system/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Create Directory",
+                "method_mbc": "",
+                "mbc_id": "C0046"
+            },
+            "associated_funcs": [
+                4199057
+            ],
+            "associated_addresses": [
+                4199057
+            ],
+            "rules_non_code_related": []
+        },
+        "allocate thread local storage": {
+            "rule_name": "allocate thread local storage",
+            "rule_namespace": "host-interaction/thread/tls",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Allocate Thread Local Storage",
+                "method_mbc": "",
+                "mbc_id": "C0040"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [
+                4203323
+            ],
+            "rules_non_code_related": []
+        },
+        "link many functions at runtime": {
+            "rule_name": "link many functions at runtime",
+            "rule_namespace": "linking/runtime-linking",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Shared Modules",
+                "subtechnique_attck": "",
+                "attck_id": "T1129"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                4207571
+            ],
+            "associated_addresses": [
+                4207571
+            ],
+            "rules_non_code_related": []
+        }
+    },
+    "analysis": {
+        "base_address": {
+            "type": "absolute",
+            "value": 4194304
+        },
+        "file_functions": {
+            "4198400": 4198400,
+            "4198461": 4198400,
+            "4198517": 4198400,
+            "4198597": 4198400,
+            "4198664": 4198664,
+            "4198731": 4198664,
+            "4198810": 4198810,
+            "4198906": 4198906,
+            "4198994": 4198906,
+            "4199009": 4198906,
+            "4199057": 4199057,
+            "4199154": 4199057,
+            "4199224": 4199057,
+            "4199277": 4199057,
+            "4199306": 4199057,
+            "4200529": 4200529,
+            "4203010": 4203010,
+            "4203038": 4203010,
+            "4203048": 4203048,
+            "4203076": 4203048,
+            "4207571": 4207571,
+            "4207606": 4207571,
+            "4215400": 4215400,
+            "4221333": 4221333
+        },
+        "library_functions": {
+            "4199345": "_fast_error_exit",
+            "4199767": "_mainCRTStartup",
+            "4199777": "?__CxxUnhandledExceptionFilter@@YGJPAU_EXCEPTION_POINTERS@@@Z",
+            "4199857": "__crt_waiting_on_module_handle",
+            "4199905": "__amsg_exit",
+            "4199946": "___crtCorExitProcess",
+            "4199989": "___crtExitProcess",
+            "4200013": "__lockexit",
+            "4200022": "__unlockexit",
+            "4200031": "__initterm",
+            "4200060": "__initterm_e",
+            "4200096": "__cinit",
+            "4200229": "_doexit",
+            "4200551": "__exit",
+            "4200573": "__cexit",
+            "4200588": "__c_exit",
+            "4200603": "__init_pointers",
+            "4200681": "__NMSG_WRITE",
+            "4201108": "__FF_MSGBANNER",
+            "4201166": "__XcptFilter",
+            "4201518": "__wwincmdln",
+            "4201588": "__wsetenvp",
+            "4201810": "_wparse_cmdline",
+            "4202147": "__wsetargv",
+            "4202321": "___crtGetEnvironmentStringsW",
+            "4202414": "__ioinit",
+            "4203086": "__encode_pointer",
+            "4203200": "__encoded_null",
+            "4203209": "__decode_pointer",
+            "4203332": "___set_flsgetvalue",
+            "4203384": "__mtterm",
+            "4203445": "__initptd",
+            "4203658": "__unlockexit",
+            "4203676": "__getptd_noexit",
+            "4203797": "__getptd",
+            "4203823": "__freefls@4",
+            "4204105": "__unlockexit",
+            "4204126": "__mtinit",
+            "4204523": "__heap_init",
+            "4204572": "__SEH_prolog4",
+            "4204672": "__except_handler4",
+            "4205068": "___security_init_cookie",
+            "4205218": "?terminate@@YAXXZ",
+            "4205292": "__mtinitlocks",
+            "4205454": "__unlock",
+            "4205477": "__mtinitlocknum",
+            "4205672": "__lock",
+            "4205723": "?AFXSetTopLevelFrame@@YAXPAVCFrameWnd@@@Z",
+            "4205738": "__invoke_watson",
+            "4206034": "__invalid_parameter",
+            "4206072": "__get_errno_from_oserr",
+            "4206138": "__errno",
+            "4206157": "__onexit_nolock",
+            "4206343": "___onexitinit",
+            "4206392": "__onexit",
+            "4206452": "_atexit",
+            "4206475": "__initp_misc_cfltcvt_tab",
+            "4206512": "__ValidateImageBase",
+            "4206576": "__FindPESection",
+            "4206656": "__IsNonwritableInCurrentImage",
+            "4206875": "_siglookup",
+            "4206943": "?",
+            "4207375": "?AFXSetTopLevelFrame@@YAXPAVCFrameWnd@@@Z",
+            "4207390": "?AFXSetTopLevelFrame@@YAXPAVCFrameWnd@@@Z",
+            "4207405": "?AFXSetTopLevelFrame@@YAXPAVCFrameWnd@@@Z",
+            "4207420": "___crtInitCritSecAndSpinCount",
+            "4207516": "?AFXSetTopLevelFrame@@YAXPAVCFrameWnd@@@Z",
+            "4207531": "__callnewh",
+            "4207932": "_strcat_s",
+            "4208048": "_strncpy_s",
+            "4208240": "_strlen",
+            "4208379": "_strcpy_s",
+            "4208483": "__set_error_mode",
+            "4208558": "_free",
+            "4208700": "_wcscpy_s",
+            "4208811": "?",
+            "4208880": "?",
+            "4208956": "?",
+            "4209034": "_wcslen",
+            "4209072": "?",
+            "4209224": "?",
+            "4209268": "?",
+            "4209304": "?",
+            "4209368": "?",
+            "4209620": "?",
+            "4209656": "?",
+            "4209696": "?",
+            "4209780": "?",
+            "4209941": "___freetlocinfo",
+            "4210270": "___addlocaleref",
+            "4210413": "___removelocaleref",
+            "4210566": "__updatetlocinfoEx_nolock",
+            "4210628": "___updatetlocinfo",
+            "4210746": "?CPtoLCID@@YAHH@Z",
+            "4210793": "?setSBCS@@YAXPAUthreadmbcinfostruct@@@Z",
+            "4210893": "?setSBUpLow@@YAXPAUthreadmbcinfostruct@@@Z",
+            "4211296": "___updatetmbcinfo",
+            "4211451": "__unlockexit",
+            "4211460": "??0_LocaleUpdate@@QAE@PAUlocaleinfo_struct@@@Z",
+            "4211595": "?getSystemCP@@YAHH@Z",
+            "4211719": "__setmbcp_nolock",
+            "4212204": "__setmbcp",
+            "4212557": "__unlockexit",
+            "4212614": "___initmbctable",
+            "4212644": "___sbh_find_block",
+            "4212692": "___sbh_free_block",
+            "4213482": "___sbh_alloc_new_region",
+            "4213658": "___sbh_alloc_new_group",
+            "4213922": "___sbh_resize_block",
+            "4214659": "___sbh_alloc_block",
+            "4215416": "__local_unwind4",
+            "4215560": "__unwind_handler4",
+            "4215658": "@_EH4_CallFilterFunc@8",
+            "4215681": "@_EH4_TransferToHandler@8",
+            "4215706": "@_EH4_GlobalUnwind@4",
+            "4215732": "@_EH4_LocalUnwind@16",
+            "4215755": "_abort",
+            "4216048": "_memset",
+            "4216170": "__msize",
+            "4216333": "__fptrap",
+            "4216342": "__freea",
+            "4216374": "_V6_HeapAlloc",
+            "4216453": "_malloc",
+            "4216655": "__calloc_impl",
+            "4216941": "_realloc",
+            "4217480": "_fastcopy_I",
+            "4217615": "?",
+            "4217803": "?",
+            "4217842": "_has_osfxsr_set",
+            "4217922": "?",
+            "4218033": "___free_lc_time",
+            "4218438": "___free_lconv_num",
+            "4218507": "___free_lconv_mon",
+            "4218656": "_strcspn",
+            "4218872": "?__crtGetStringTypeA_stat@@YAHPAUlocaleinfo_struct@@KPBDHPAGHHH@Z",
+            "4219314": "___crtGetStringTypeA",
+            "4219392": "_strpbrk",
+            "4219456": "?__crtLCMapStringA_stat@@YAHPAUlocaleinfo_struct@@KKPBDHPADHHH@Z",
+            "4220389": "___crtLCMapStringA",
+            "4220464": "?",
+            "4220616": "?",
+            "4220660": "?",
+            "4220696": "?",
+            "4220760": "?",
+            "4221012": "?",
+            "4221048": "?",
+            "4221088": "?",
+            "4221172": "?",
+            "4221333": "___report_gsfailure",
+            "4221596": "__global_unwind2",
+            "4221628": "__unwind_handler",
+            "4221697": "__local_unwind2",
+            "4221863": "_at_done",
+            "4221873": "__NLG_Notify",
+            "4221904": "__NLG_Call",
+            "4221907": "_fastzero_I",
+            "4221994": "?",
+            "4222137": "__isctype_l",
+            "4222336": "__alloca_probe_16",
+            "4222380": "__isleadbyte_l",
+            "4222436": "_atol",
+            "4222458": "___ansicp",
+            "4222531": "___convertcp",
+            "4223019": "?strtoxl@@YAKPAUlocaleinfo_struct@@PBDPAPBDHH@Z",
+            "4223578": "_strtol",
+            "4223632": "___ascii_strnicmp"
+        }
+    }
+}

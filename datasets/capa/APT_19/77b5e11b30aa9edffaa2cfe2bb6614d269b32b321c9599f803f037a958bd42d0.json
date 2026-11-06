@@ -1,0 +1,1659 @@
+{
+    "timestamp": "2024-12-14T01:38:56.297829",
+    "version": "7.4.0",
+    "extractor": "DnfileFeatureExtractor",
+    "rules": {
+        "create TCP socket": {
+            "rule_name": "create TCP socket",
+            "rule_namespace": "communication/socket/tcp",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "Socket Communication",
+                "method_mbc": "Create TCP Socket",
+                "mbc_id": "C0001.011"
+            },
+            "associated_funcs": [
+                100663354,
+                100663694,
+                100663816,
+                100664032,
+                100664077,
+                100664087,
+                100664089
+            ],
+            "associated_addresses": [
+                100663354,
+                100663694,
+                100663816,
+                100664032,
+                100664077,
+                100664087,
+                100664089
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "create UDP socket": {
+            "rule_name": "create UDP socket",
+            "rule_namespace": "communication/socket/udp/send",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "Socket Communication",
+                "method_mbc": "Create UDP Socket",
+                "mbc_id": "C0001.010"
+            },
+            "associated_funcs": [
+                100663354
+            ],
+            "associated_addresses": [
+                100663354
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "suspend thread": {
+            "rule_name": "suspend thread",
+            "rule_namespace": "host-interaction/thread/suspend",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Suspend Thread",
+                "method_mbc": "",
+                "mbc_id": "C0055"
+            },
+            "associated_funcs": [
+                100663385,
+                100663694,
+                100663696,
+                100663780,
+                100663782,
+                100663784,
+                100664013,
+                100664084
+            ],
+            "associated_addresses": [
+                100663385,
+                100663694,
+                100663696,
+                100663780,
+                100663782,
+                100663784,
+                100664013,
+                100664084
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "create process on Windows": {
+            "rule_name": "create process on Windows",
+            "rule_namespace": "host-interaction/process/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Create Process",
+                "method_mbc": "",
+                "mbc_id": "C0017"
+            },
+            "associated_funcs": [
+                100663666,
+                100663778
+            ],
+            "associated_addresses": [
+                100663666,
+                100663778
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "create thread": {
+            "rule_name": "create thread",
+            "rule_namespace": "host-interaction/thread/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Create Thread",
+                "method_mbc": "",
+                "mbc_id": "C0038"
+            },
+            "associated_funcs": [
+                100663710,
+                100663743,
+                100663778,
+                100663996
+            ],
+            "associated_addresses": [
+                100663710,
+                100663743,
+                100663778,
+                100663996
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "get file attributes": {
+            "rule_name": "get file attributes",
+            "rule_namespace": "host-interaction/file-system/meta",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Get File Attributes",
+                "method_mbc": "",
+                "mbc_id": "C0049"
+            },
+            "associated_funcs": [
+                100663936,
+                100663937
+            ],
+            "associated_addresses": [
+                100663936,
+                100663937
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "set file attributes": {
+            "rule_name": "set file attributes",
+            "rule_namespace": "host-interaction/file-system/meta",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "File and Directory Permissions Modification",
+                "subtechnique_attck": "",
+                "attck_id": "T1222"
+            },
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Set File Attributes",
+                "method_mbc": "",
+                "mbc_id": "C0050"
+            },
+            "associated_funcs": [
+                100663936,
+                100663937,
+                100664013
+            ],
+            "associated_addresses": [
+                100663936,
+                100663937,
+                100664013
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "get OS version in .NET": {
+            "rule_name": "get OS version in .NET",
+            "rule_namespace": "host-interaction/os/version",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                100664030
+            ],
+            "associated_addresses": [
+                100664030
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "access WMI data in .NET": {
+            "rule_name": "access WMI data in .NET",
+            "rule_namespace": "host-interaction/wmi",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Windows Management Instrumentation",
+                "subtechnique_attck": "",
+                "attck_id": "T1047"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                100663309
+            ],
+            "associated_addresses": [
+                100663304,
+                100663309
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "manipulate console buffer": {
+            "rule_name": "manipulate console buffer",
+            "rule_namespace": "host-interaction/console",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Console",
+                "method_mbc": "",
+                "mbc_id": "C0033"
+            },
+            "associated_funcs": [
+                100663658,
+                100663694,
+                100663861,
+                100663936,
+                100663937,
+                100663938
+            ],
+            "associated_addresses": [
+                100663310,
+                100663656,
+                100663657,
+                100663658,
+                100663694,
+                100663698,
+                100663861,
+                100663936,
+                100663937,
+                100663938,
+                100663939,
+                100663945
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "access .NET resource": {
+            "rule_name": "access .NET resource",
+            "rule_namespace": "executable/resource",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                100663312
+            ],
+            "associated_addresses": [
+                100663312
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "compress data using GZip in .NET": {
+            "rule_name": "compress data using GZip in .NET",
+            "rule_namespace": "data-manipulation/compression",
+            "rule_attack": {
+                "tactic_attck": "Collection",
+                "technique_attck": "Archive Collected Data",
+                "subtechnique_attck": "Archive via Library",
+                "attck_id": "T1560.002"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Compress Data",
+                "method_mbc": "",
+                "mbc_id": "C0024"
+            },
+            "associated_funcs": [
+                100663403,
+                100663404
+            ],
+            "associated_addresses": [
+                100663403,
+                100663404
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "manipulate unmanaged memory in .NET": {
+            "rule_name": "manipulate unmanaged memory in .NET",
+            "rule_namespace": "host-interaction/memory",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                100663861
+            ],
+            "associated_addresses": [
+                100663525,
+                100663562,
+                100663667,
+                100663668,
+                100663669,
+                100663692,
+                100663861
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "generate method via reflection in .NET": {
+            "rule_name": "generate method via reflection in .NET",
+            "rule_namespace": "load-code/dotnet",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                100663576,
+                100663578,
+                100663579,
+                100663820
+            ],
+            "associated_addresses": [
+                100663576,
+                100663578,
+                100663579,
+                100663820
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "contain loop": {
+            "rule_name": "contain loop",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                100663582,
+                100663730
+            ],
+            "associated_addresses": [
+                100663582,
+                100663730
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "decode data using Base64 in .NET": {
+            "rule_name": "decode data using Base64 in .NET",
+            "rule_namespace": "data-manipulation/encoding/base64",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Deobfuscate/Decode Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1140"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Decode Data",
+                "method_mbc": "Base64",
+                "mbc_id": "C0053.001"
+            },
+            "associated_funcs": [
+                100663582,
+                100663595,
+                100663694,
+                100664032
+            ],
+            "associated_addresses": [
+                100663582,
+                100663586,
+                100663595,
+                100663694,
+                100664032
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "encode data using Base64": {
+            "rule_name": "encode data using Base64",
+            "rule_namespace": "data-manipulation/encoding/base64",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Obfuscated Files or Information",
+                "method_mbc": "Encoding-Standard Algorithm",
+                "mbc_id": "E1027.m02"
+            },
+            "associated_funcs": [
+                100663694
+            ],
+            "associated_addresses": [
+                100663639,
+                100663694
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "download URL": {
+            "rule_name": "download URL",
+            "rule_namespace": "communication/http/client",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "HTTP Communication",
+                "method_mbc": "Download URL",
+                "mbc_id": "C0002.006"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [
+                100663656
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "receive data": {
+            "rule_name": "receive data",
+            "rule_namespace": "communication",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Command and Control",
+                "behavior_mbc": "C2 Communication",
+                "method_mbc": "Receive Data",
+                "mbc_id": "B0030.002"
+            },
+            "associated_funcs": [
+                100663694
+            ],
+            "associated_addresses": [
+                100663656,
+                100663694
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "send data to Internet": {
+            "rule_name": "send data to Internet",
+            "rule_namespace": "communication/http/client",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [],
+            "associated_addresses": [
+                100663657
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "send data": {
+            "rule_name": "send data",
+            "rule_namespace": "communication",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Command and Control",
+                "behavior_mbc": "C2 Communication",
+                "method_mbc": "Send Data",
+                "mbc_id": "B0030.001"
+            },
+            "associated_funcs": [
+                100663694
+            ],
+            "associated_addresses": [
+                100663657,
+                100663694
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "find data using regex in .NET": {
+            "rule_name": "find data using regex in .NET",
+            "rule_namespace": "data-manipulation/regex",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                100663660,
+                100663937,
+                100663938
+            ],
+            "associated_addresses": [
+                100663660,
+                100663937,
+                100663938
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "find process by PID": {
+            "rule_name": "find process by PID",
+            "rule_namespace": "host-interaction/process/list",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "Process Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1057"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                100663666
+            ],
+            "associated_addresses": [
+                100663666
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "unmanaged call": {
+            "rule_name": "unmanaged call",
+            "rule_namespace": "runtime",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                100663666,
+                100663694,
+                100663787,
+                100663861,
+                100663895
+            ],
+            "associated_addresses": [
+                100663666,
+                100663694,
+                100663787,
+                100663852,
+                100663861,
+                100663895
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "get session user name": {
+            "rule_name": "get session user name",
+            "rule_namespace": "host-interaction/session",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Owner/User Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1033"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                100663694
+            ],
+            "associated_addresses": [
+                100663692,
+                100663694
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "get common file path": {
+            "rule_name": "get common file path",
+            "rule_namespace": "host-interaction/file-system",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "File and Directory Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1083"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "File and Directory Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1083"
+            },
+            "associated_funcs": [
+                100664037
+            ],
+            "associated_addresses": [
+                100663692,
+                100663852,
+                100663998,
+                100664037
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "receive data on socket": {
+            "rule_name": "receive data on socket",
+            "rule_namespace": "communication/socket/receive",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "Socket Communication",
+                "method_mbc": "Receive Data",
+                "mbc_id": "C0001.006"
+            },
+            "associated_funcs": [
+                100663694
+            ],
+            "associated_addresses": [
+                100663694
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "terminate process": {
+            "rule_name": "terminate process",
+            "rule_namespace": "host-interaction/process/terminate",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Terminate Process",
+                "method_mbc": "",
+                "mbc_id": "C0018"
+            },
+            "associated_funcs": [
+                100663694,
+                100663786
+            ],
+            "associated_addresses": [
+                100663694,
+                100663698,
+                100663786
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "send data on socket": {
+            "rule_name": "send data on socket",
+            "rule_namespace": "communication/socket/send",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "Socket Communication",
+                "method_mbc": "Send Data",
+                "mbc_id": "C0001.007"
+            },
+            "associated_funcs": [
+                100663694
+            ],
+            "associated_addresses": [
+                100663694
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "start TCP server": {
+            "rule_name": "start TCP server",
+            "rule_namespace": "communication/tcp/serve",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "Socket Communication",
+                "method_mbc": "Start TCP Server",
+                "mbc_id": "C0001.005"
+            },
+            "associated_funcs": [
+                100663694,
+                100663873
+            ],
+            "associated_addresses": [
+                100663694,
+                100663872,
+                100663873
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "hash data with MD5": {
+            "rule_name": "hash data with MD5",
+            "rule_namespace": "data-manipulation/hashing/md5",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Cryptography",
+                "behavior_mbc": "Cryptographic Hash",
+                "method_mbc": "MD5",
+                "mbc_id": "C0029.001"
+            },
+            "associated_funcs": [
+                100663694,
+                100663846,
+                100663929
+            ],
+            "associated_addresses": [
+                100663694,
+                100663846,
+                100663929
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "act as TCP client": {
+            "rule_name": "act as TCP client",
+            "rule_namespace": "communication/tcp/client",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Communication",
+                "behavior_mbc": "Socket Communication",
+                "method_mbc": "TCP Client",
+                "mbc_id": "C0001.008"
+            },
+            "associated_funcs": [
+                100663694,
+                100664032
+            ],
+            "associated_addresses": [
+                100663694,
+                100663901,
+                100664032
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "create a process with modified I/O handles and window": {
+            "rule_name": "create a process with modified I/O handles and window",
+            "rule_namespace": "host-interaction/process/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Create Process",
+                "method_mbc": "",
+                "mbc_id": "C0017"
+            },
+            "associated_funcs": [
+                100663778
+            ],
+            "associated_addresses": [
+                100663778
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "get file size": {
+            "rule_name": "get file size",
+            "rule_namespace": "host-interaction/file-system/meta",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "File and Directory Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1083"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "File and Directory Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1083"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [
+                100663824
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "invoke .NET assembly method": {
+            "rule_name": "invoke .NET assembly method",
+            "rule_namespace": "load-code/dotnet",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Reflective Code Loading",
+                "subtechnique_attck": "",
+                "attck_id": "T1620"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                100663835,
+                100663839,
+                100663840,
+                100663947,
+                100663977
+            ],
+            "associated_addresses": [
+                100663835,
+                100663839,
+                100663840,
+                100663841,
+                100663842,
+                100663947,
+                100663977
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "get disk information": {
+            "rule_name": "get disk information",
+            "rule_namespace": "host-interaction/hardware/storage",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "System Information Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1082"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [
+                100663852
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "get hostname": {
+            "rule_name": "get hostname",
+            "rule_namespace": "host-interaction/os/hostname",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "System Information Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1082"
+            },
+            "associated_funcs": [
+                100663853,
+                100664030
+            ],
+            "associated_addresses": [
+                100663853,
+                100664030
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "impersonate user": {
+            "rule_name": "impersonate user",
+            "rule_namespace": "host-interaction/user",
+            "rule_attack": {
+                "tactic_attck": "Privilege Escalation",
+                "technique_attck": "Access Token Manipulation",
+                "subtechnique_attck": "Token Impersonation/Theft",
+                "attck_id": "T1134.001"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                100663861
+            ],
+            "associated_addresses": [
+                100663861
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "enumerate files in .NET": {
+            "rule_name": "enumerate files in .NET",
+            "rule_namespace": "host-interaction/file-system/files/list",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "File and Directory Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1083"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "File and Directory Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1083"
+            },
+            "associated_funcs": [
+                100663936,
+                100663937
+            ],
+            "associated_addresses": [
+                100663936,
+                100663937
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "check if file exists": {
+            "rule_name": "check if file exists",
+            "rule_namespace": "host-interaction/file-system/exists",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "File and Directory Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1083"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "File and Directory Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1083"
+            },
+            "associated_funcs": [
+                100663936,
+                100663996,
+                100664022,
+                100664038
+            ],
+            "associated_addresses": [
+                100663936,
+                100663996,
+                100664022,
+                100664038
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "check if directory exists": {
+            "rule_name": "check if directory exists",
+            "rule_namespace": "host-interaction/file-system/exists",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "File and Directory Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1083"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                100663936,
+                100664037
+            ],
+            "associated_addresses": [
+                100663936,
+                100664037
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "delete file": {
+            "rule_name": "delete file",
+            "rule_namespace": "host-interaction/file-system/delete",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Delete File",
+                "method_mbc": "",
+                "mbc_id": "C0047"
+            },
+            "associated_funcs": [
+                100663938,
+                100664038
+            ],
+            "associated_addresses": [
+                100663938,
+                100664038
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "copy file": {
+            "rule_name": "copy file",
+            "rule_namespace": "host-interaction/file-system/copy",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Copy File",
+                "method_mbc": "",
+                "mbc_id": "C0045"
+            },
+            "associated_funcs": [
+                100663938
+            ],
+            "associated_addresses": [
+                100663938
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "generate random filename in .NET": {
+            "rule_name": "generate random filename in .NET",
+            "rule_namespace": "host-interaction/file-system",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                100663938
+            ],
+            "associated_addresses": [
+                100663938,
+                100663987
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "load .NET assembly": {
+            "rule_name": "load .NET assembly",
+            "rule_namespace": "load-code/dotnet",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Reflective Code Loading",
+                "subtechnique_attck": "",
+                "attck_id": "T1620"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                100664027,
+                100664037
+            ],
+            "associated_addresses": [
+                100663943,
+                100664027,
+                100664037
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "generate random numbers in .NET": {
+            "rule_name": "generate random numbers in .NET",
+            "rule_namespace": "data-manipulation/prng",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Cryptography",
+                "behavior_mbc": "Generate Pseudo-random Sequence",
+                "method_mbc": "Use API",
+                "mbc_id": "C0021.003"
+            },
+            "associated_funcs": [
+                100663980,
+                100664037
+            ],
+            "associated_addresses": [
+                100663980,
+                100664029,
+                100664037
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "execute via timer in .NET": {
+            "rule_name": "execute via timer in .NET",
+            "rule_namespace": "host-interaction/thread/timer",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [],
+            "associated_addresses": [
+                100664008,
+                100664025
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "write file on Windows": {
+            "rule_name": "write file on Windows",
+            "rule_namespace": "host-interaction/file-system/write",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Writes File",
+                "method_mbc": "",
+                "mbc_id": "C0052"
+            },
+            "associated_funcs": [
+                100664037
+            ],
+            "associated_addresses": [
+                100664037
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "create directory": {
+            "rule_name": "create directory",
+            "rule_namespace": "host-interaction/file-system/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Create Directory",
+                "method_mbc": "",
+                "mbc_id": "C0046"
+            },
+            "associated_funcs": [
+                100664037
+            ],
+            "associated_addresses": [
+                100664037
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "compiled to the .NET platform": {
+            "rule_name": "compiled to the .NET platform",
+            "rule_namespace": "runtime/dotnet",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [],
+            "associated_addresses": [],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ]
+            ]
+        },
+        "encrypt data using AES via .NET": {
+            "rule_name": "encrypt data using AES via .NET",
+            "rule_namespace": "data-manipulation/encryption/aes",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Obfuscated Files or Information",
+                "method_mbc": "Encryption-Standard Algorithm",
+                "mbc_id": "E1027.m05"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [
+                [
+                    16777286,
+                    16777263
+                ]
+            ],
+            "rules_non_code_related": [
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ],
+                [
+                    "obfuscated with Dotfuscator",
+                    "no address",
+                    null
+                ],
+                [
+                    "obfuscated with Dotfuscator",
+                    "no address",
+                    null
+                ],
+                [
+                    "obfuscated with Dotfuscator",
+                    "file",
+                    141651
+                ]
+            ]
+        },
+        "obfuscated with Dotfuscator": {
+            "rule_name": "obfuscated with Dotfuscator",
+            "rule_namespace": "anti-analysis/obfuscation",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Anti-Static Analysis",
+                "behavior_mbc": "Executable Code Obfuscation",
+                "method_mbc": "",
+                "mbc_id": "B0032"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [],
+            "rules_non_code_related": [
+                [
+                    "obfuscated with Dotfuscator",
+                    "no address",
+                    null
+                ],
+                [
+                    "compiled to the .NET platform",
+                    "no address",
+                    null
+                ],
+                [
+                    "obfuscated with Dotfuscator",
+                    "file",
+                    141651
+                ]
+            ]
+        }
+    },
+    "analysis": {
+        "base_address": {
+            "type": "no address"
+        },
+        "file_functions": {
+            "100663303": 100663303,
+            "100663305": 100663305,
+            "100663306": 100663306,
+            "100663307": 100663307,
+            "100663309": 100663309,
+            "100663312": 100663312,
+            "100663316": 100663316,
+            "100663317": 100663317,
+            "100663318": 100663318,
+            "100663319": 100663319,
+            "100663341": 100663341,
+            "100663342": 100663342,
+            "100663343": 100663343,
+            "100663344": 100663344,
+            "100663354": 100663354,
+            "100663356": 100663356,
+            "100663375": 100663375,
+            "100663376": 100663376,
+            "100663379": 100663379,
+            "100663380": 100663380,
+            "100663383": 100663383,
+            "100663385": 100663385,
+            "100663403": 100663403,
+            "100663404": 100663404,
+            "100663405": 100663405,
+            "100663407": 100663407,
+            "100663421": 100663421,
+            "100663423": 100663423,
+            "100663424": 100663424,
+            "100663472": 100663472,
+            "100663500": 100663500,
+            "100663501": 100663501,
+            "100663502": 100663502,
+            "100663503": 100663503,
+            "100663504": 100663504,
+            "100663505": 100663505,
+            "100663506": 100663506,
+            "100663507": 100663507,
+            "100663508": 100663508,
+            "100663509": 100663509,
+            "100663510": 100663510,
+            "100663511": 100663511,
+            "100663512": 100663512,
+            "100663513": 100663513,
+            "100663515": 100663515,
+            "100663516": 100663516,
+            "100663518": 100663518,
+            "100663519": 100663519,
+            "100663520": 100663520,
+            "100663521": 100663521,
+            "100663522": 100663522,
+            "100663545": 100663545,
+            "100663546": 100663546,
+            "100663547": 100663547,
+            "100663548": 100663548,
+            "100663549": 100663549,
+            "100663550": 100663550,
+            "100663551": 100663551,
+            "100663552": 100663552,
+            "100663553": 100663553,
+            "100663554": 100663554,
+            "100663555": 100663555,
+            "100663556": 100663556,
+            "100663557": 100663557,
+            "100663558": 100663558,
+            "100663559": 100663559,
+            "100663560": 100663560,
+            "100663561": 100663561,
+            "100663563": 100663563,
+            "100663564": 100663564,
+            "100663576": 100663576,
+            "100663577": 100663577,
+            "100663578": 100663578,
+            "100663579": 100663579,
+            "100663580": 100663580,
+            "100663581": 100663581,
+            "100663582": 100663582,
+            "100663583": 100663583,
+            "100663584": 100663584,
+            "100663587": 100663587,
+            "100663588": 100663588,
+            "100663589": 100663589,
+            "100663590": 100663590,
+            "100663591": 100663591,
+            "100663592": 100663592,
+            "100663593": 100663593,
+            "100663594": 100663594,
+            "100663595": 100663595,
+            "100663596": 100663596,
+            "100663612": 100663612,
+            "100663613": 100663613,
+            "100663614": 100663614,
+            "100663615": 100663615,
+            "100663616": 100663616,
+            "100663618": 100663618,
+            "100663621": 100663621,
+            "100663622": 100663622,
+            "100663626": 100663626,
+            "100663636": 100663636,
+            "100663641": 100663641,
+            "100663642": 100663642,
+            "100663643": 100663643,
+            "100663644": 100663644,
+            "100663645": 100663645,
+            "100663646": 100663646,
+            "100663648": 100663648,
+            "100663651": 100663651,
+            "100663652": 100663652,
+            "100663653": 100663653,
+            "100663655": 100663655,
+            "100663658": 100663658,
+            "100663660": 100663660,
+            "100663663": 100663663,
+            "100663666": 100663666,
+            "100663694": 100663694,
+            "100663696": 100663696,
+            "100663699": 100663699,
+            "100663700": 100663700,
+            "100663707": 100663707,
+            "100663710": 100663710,
+            "100663713": 100663713,
+            "100663717": 100663717,
+            "100663726": 100663726,
+            "100663727": 100663727,
+            "100663729": 100663729,
+            "100663730": 100663730,
+            "100663731": 100663731,
+            "100663732": 100663732,
+            "100663733": 100663733,
+            "100663741": 100663741,
+            "100663742": 100663742,
+            "100663743": 100663743,
+            "100663749": 100663749,
+            "100663750": 100663750,
+            "100663766": 100663766,
+            "100663774": 100663774,
+            "100663775": 100663775,
+            "100663778": 100663778,
+            "100663780": 100663780,
+            "100663781": 100663781,
+            "100663782": 100663782,
+            "100663784": 100663784,
+            "100663785": 100663785,
+            "100663786": 100663786,
+            "100663787": 100663787,
+            "100663793": 100663793,
+            "100663794": 100663794,
+            "100663795": 100663795,
+            "100663796": 100663796,
+            "100663800": 100663800,
+            "100663801": 100663801,
+            "100663814": 100663814,
+            "100663816": 100663816,
+            "100663819": 100663819,
+            "100663820": 100663820,
+            "100663825": 100663825,
+            "100663826": 100663826,
+            "100663827": 100663827,
+            "100663828": 100663828,
+            "100663829": 100663829,
+            "100663830": 100663830,
+            "100663835": 100663835,
+            "100663837": 100663837,
+            "100663838": 100663838,
+            "100663839": 100663839,
+            "100663840": 100663840,
+            "100663844": 100663844,
+            "100663846": 100663846,
+            "100663853": 100663853,
+            "100663861": 100663861,
+            "100663868": 100663868,
+            "100663869": 100663869,
+            "100663873": 100663873,
+            "100663883": 100663883,
+            "100663886": 100663886,
+            "100663895": 100663895,
+            "100663902": 100663902,
+            "100663906": 100663906,
+            "100663908": 100663908,
+            "100663911": 100663911,
+            "100663913": 100663913,
+            "100663916": 100663916,
+            "100663921": 100663921,
+            "100663922": 100663922,
+            "100663926": 100663926,
+            "100663928": 100663928,
+            "100663929": 100663929,
+            "100663932": 100663932,
+            "100663934": 100663934,
+            "100663936": 100663936,
+            "100663937": 100663937,
+            "100663938": 100663938,
+            "100663944": 100663944,
+            "100663947": 100663947,
+            "100663977": 100663977,
+            "100663979": 100663979,
+            "100663980": 100663980,
+            "100663981": 100663981,
+            "100663983": 100663983,
+            "100663984": 100663984,
+            "100663985": 100663985,
+            "100663986": 100663986,
+            "100663996": 100663996,
+            "100663997": 100663997,
+            "100663999": 100663999,
+            "100664000": 100664000,
+            "100664009": 100664009,
+            "100664011": 100664011,
+            "100664012": 100664012,
+            "100664013": 100664013,
+            "100664014": 100664014,
+            "100664017": 100664017,
+            "100664022": 100664022,
+            "100664027": 100664027,
+            "100664030": 100664030,
+            "100664031": 100664031,
+            "100664032": 100664032,
+            "100664033": 100664033,
+            "100664036": 100664036,
+            "100664037": 100664037,
+            "100664038": 100664038,
+            "100664045": 100664045,
+            "100664060": 100664060,
+            "100664063": 100664063,
+            "100664073": 100664073,
+            "100664074": 100664074,
+            "100664077": 100664077,
+            "100664080": 100664080,
+            "100664082": 100664082,
+            "100664084": 100664084,
+            "100664085": 100664085,
+            "100664087": 100664087,
+            "100664089": 100664089
+        },
+        "library_functions": {}
+    }
+}

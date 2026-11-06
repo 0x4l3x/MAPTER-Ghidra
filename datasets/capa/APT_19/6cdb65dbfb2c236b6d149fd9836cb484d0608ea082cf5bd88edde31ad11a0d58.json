@@ -1,0 +1,1490 @@
+{
+    "timestamp": "2024-12-13T22:38:24.778506",
+    "version": "7.4.0",
+    "extractor": "VivisectFeatureExtractor",
+    "rules": {
+        "delay execution": {
+            "rule_name": "delay execution",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Anti-Behavioral Analysis",
+                "behavior_mbc": "Dynamic Analysis Evasion",
+                "method_mbc": "Delayed Execution",
+                "mbc_id": "B0003.003"
+            },
+            "associated_funcs": [
+                72216,
+                77672,
+                77944,
+                78184,
+                78408,
+                78408,
+                78900,
+                79148,
+                79148,
+                79868,
+                79868,
+                80424,
+                83456,
+                86168,
+                120816
+            ],
+            "associated_addresses": [
+                72328,
+                77879,
+                78127,
+                78355,
+                78750,
+                78814,
+                79094,
+                79696,
+                79771,
+                80277,
+                80352,
+                80905,
+                83456,
+                86543,
+                121010
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "encode data using XOR": {
+            "rule_name": "encode data using XOR",
+            "rule_namespace": "data-manipulation/encoding/xor",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Obfuscated Files or Information",
+                "method_mbc": "Encoding-Standard Algorithm",
+                "mbc_id": "E1027.m02"
+            },
+            "associated_funcs": [
+                75500,
+                82724,
+                96208,
+                96556,
+                108540,
+                108540,
+                108540,
+                108540,
+                109332,
+                109816,
+                113220,
+                117664
+            ],
+            "associated_addresses": [
+                75661,
+                83204,
+                96448,
+                96608,
+                108831,
+                108989,
+                109112,
+                109230,
+                109590,
+                110194,
+                113349,
+                117669
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "create or open file": {
+            "rule_name": "create or open file",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Create File",
+                "method_mbc": "",
+                "mbc_id": "C0016"
+            },
+            "associated_funcs": [
+                76932,
+                77324,
+                88752,
+                89684
+            ],
+            "associated_addresses": [
+                77029,
+                77421,
+                88900,
+                89741
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "create or open registry key": {
+            "rule_name": "create or open registry key",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Create Registry Key",
+                "mbc_id": "C0036.004"
+            },
+            "associated_funcs": [
+                81080,
+                81080,
+                82724,
+                83500,
+                91132,
+                91132,
+                323684,
+                108540,
+                109332,
+                109816,
+                113220,
+                323684
+            ],
+            "associated_addresses": [
+                81080,
+                81420,
+                82966,
+                83500,
+                91132,
+                91498,
+                92536,
+                108540,
+                109601,
+                109941,
+                116155,
+                92536
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "terminate thread": {
+            "rule_name": "terminate thread",
+            "rule_namespace": "host-interaction/thread/terminate",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Terminate Thread",
+                "method_mbc": "",
+                "mbc_id": "C0039"
+            },
+            "associated_funcs": [
+                83956,
+                112012,
+                112832,
+                117312
+            ],
+            "associated_addresses": [
+                84001,
+                112791,
+                113193,
+                117352
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "create thread": {
+            "rule_name": "create thread",
+            "rule_namespace": "host-interaction/thread/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Create Thread",
+                "method_mbc": "",
+                "mbc_id": "C0038"
+            },
+            "associated_funcs": [
+                84028
+            ],
+            "associated_addresses": [
+                84076
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "enumerate processes via NtQuerySystemInformation": {
+            "rule_name": "enumerate processes via NtQuerySystemInformation",
+            "rule_namespace": "host-interaction/process/list",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "Process Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1057"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                85212
+            ],
+            "associated_addresses": [
+                85392
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "allocate memory": {
+            "rule_name": "allocate memory",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Memory",
+                "behavior_mbc": "Allocate Memory",
+                "method_mbc": "",
+                "mbc_id": "C0007"
+            },
+            "associated_funcs": [
+                87216
+            ],
+            "associated_addresses": [
+                87320
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "allocate or change RWX memory": {
+            "rule_name": "allocate or change RWX memory",
+            "rule_namespace": "host-interaction/process/inject",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Memory",
+                "behavior_mbc": "Allocate Memory",
+                "method_mbc": "",
+                "mbc_id": "C0007"
+            },
+            "associated_funcs": [
+                87216
+            ],
+            "associated_addresses": [
+                87320
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "contain obfuscated stackstrings": {
+            "rule_name": "contain obfuscated stackstrings",
+            "rule_namespace": "anti-analysis/obfuscation/string/stackstring",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "Indicator Removal from Tools",
+                "attck_id": "T1027.005"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Anti-Static Analysis",
+                "behavior_mbc": "Executable Code Obfuscation",
+                "method_mbc": "Argument Obfuscation",
+                "mbc_id": "B0032.020"
+            },
+            "associated_funcs": [
+                87604
+            ],
+            "associated_addresses": [
+                87604
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "set file attributes": {
+            "rule_name": "set file attributes",
+            "rule_namespace": "host-interaction/file-system/meta",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "File and Directory Permissions Modification",
+                "subtechnique_attck": "",
+                "attck_id": "T1222"
+            },
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Set File Attributes",
+                "method_mbc": "",
+                "mbc_id": "C0050"
+            },
+            "associated_funcs": [
+                113220
+            ],
+            "associated_addresses": [
+                116825
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "contain loop": {
+            "rule_name": "contain loop",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                69640,
+                69920,
+                70540,
+                71232,
+                72488,
+                73496,
+                74384,
+                74684,
+                75500,
+                76060,
+                76244,
+                76544,
+                81080,
+                82064,
+                82724,
+                83500,
+                84756,
+                85212,
+                86168,
+                86736,
+                86904,
+                87604,
+                88752,
+                89380,
+                91132,
+                93164,
+                93868,
+                94184,
+                95380,
+                96208,
+                96556,
+                96856,
+                96932,
+                100488,
+                101084,
+                101748,
+                102108,
+                102436,
+                103100,
+                104060,
+                104572,
+                105348,
+                107568,
+                108540,
+                109332,
+                109816,
+                110408,
+                112012,
+                112832,
+                113220,
+                117312,
+                117664,
+                117976,
+                119304,
+                120192,
+                121084,
+                122960
+            ],
+            "associated_addresses": [
+                69640,
+                69920,
+                70540,
+                71232,
+                72488,
+                73496,
+                74384,
+                74684,
+                75500,
+                76060,
+                76124,
+                76244,
+                76544,
+                81080,
+                82064,
+                82724,
+                83500,
+                84756,
+                85212,
+                86168,
+                86672,
+                86736,
+                86904,
+                87604,
+                88752,
+                89380,
+                91132,
+                93164,
+                93868,
+                94184,
+                95380,
+                96208,
+                96556,
+                96856,
+                96932,
+                100488,
+                101084,
+                101748,
+                102108,
+                102436,
+                103100,
+                104060,
+                104572,
+                105348,
+                107568,
+                108540,
+                109332,
+                109816,
+                110408,
+                112012,
+                112832,
+                113220,
+                117312,
+                117664,
+                117976,
+                119304,
+                120192,
+                121084,
+                122960
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "compress data using LZO": {
+            "rule_name": "compress data using LZO",
+            "rule_namespace": "data-manipulation/compression",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Compress Data",
+                "method_mbc": "",
+                "mbc_id": "C0024"
+            },
+            "associated_funcs": [
+                73496
+            ],
+            "associated_addresses": [
+                73496
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "hash data with CRC32": {
+            "rule_name": "hash data with CRC32",
+            "rule_namespace": "data-manipulation/checksum/crc32",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Checksum",
+                "method_mbc": "CRC32",
+                "mbc_id": "C0032.001"
+            },
+            "associated_funcs": [
+                75500
+            ],
+            "associated_addresses": [
+                75500
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "get OS version": {
+            "rule_name": "get OS version",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                75856,
+                90092
+            ],
+            "associated_addresses": [
+                75856,
+                90092
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "encode data using Base64": {
+            "rule_name": "encode data using Base64",
+            "rule_namespace": "data-manipulation/encoding/base64",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Obfuscated Files or Information",
+                "method_mbc": "Encoding-Standard Algorithm",
+                "mbc_id": "E1027.m02"
+            },
+            "associated_funcs": [
+                76244
+            ],
+            "associated_addresses": [
+                76244
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "query or enumerate registry value": {
+            "rule_name": "query or enumerate registry value",
+            "rule_namespace": "host-interaction/registry",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "Query Registry",
+                "subtechnique_attck": "",
+                "attck_id": "T1012"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Query Registry Value",
+                "mbc_id": "C0036.006"
+            },
+            "associated_funcs": [
+                81080,
+                82724,
+                83500,
+                91132,
+                323684,
+                108540,
+                109816,
+                113220,
+                323684
+            ],
+            "associated_addresses": [
+                81080,
+                82724,
+                83500,
+                91132,
+                92448,
+                108540,
+                109816,
+                113220,
+                323684
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "query or enumerate registry key": {
+            "rule_name": "query or enumerate registry key",
+            "rule_namespace": "host-interaction/registry",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "Query Registry",
+                "subtechnique_attck": "",
+                "attck_id": "T1012"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Query Registry Key",
+                "mbc_id": "C0036.005"
+            },
+            "associated_funcs": [
+                81080,
+                91132
+            ],
+            "associated_addresses": [
+                81080,
+                91132
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "reference Google Public DNS server": {
+            "rule_name": "reference Google Public DNS server",
+            "rule_namespace": "communication/dns",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                82724
+            ],
+            "associated_addresses": [
+                82724
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "find process by PID": {
+            "rule_name": "find process by PID",
+            "rule_namespace": "host-interaction/process/list",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "Process Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1057"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                85212
+            ],
+            "associated_addresses": [
+                85212
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "get system information on Windows": {
+            "rule_name": "get system information on Windows",
+            "rule_namespace": "host-interaction/os/info",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                85212
+            ],
+            "associated_addresses": [
+                85212
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "resolve function by parsing PE exports": {
+            "rule_name": "resolve function by parsing PE exports",
+            "rule_namespace": "load-code/pe",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                86736,
+                87604,
+                102436
+            ],
+            "associated_addresses": [
+                86736,
+                87604,
+                102436
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "attach user process memory": {
+            "rule_name": "attach user process memory",
+            "rule_namespace": "host-interaction/process/inject",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Process Injection",
+                "subtechnique_attck": "",
+                "attck_id": "T1055"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Process Injection",
+                "method_mbc": "",
+                "mbc_id": "E1055"
+            },
+            "associated_funcs": [
+                86904,
+                87216,
+                119304
+            ],
+            "associated_addresses": [
+                86904,
+                87216,
+                119304
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "check OS version": {
+            "rule_name": "check OS version",
+            "rule_namespace": "host-interaction/os/version",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "System Information Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1082"
+            },
+            "associated_funcs": [
+                90092
+            ],
+            "associated_addresses": [
+                90092
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "get proxy": {
+            "rule_name": "get proxy",
+            "rule_namespace": "host-interaction/network/proxy",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Network Configuration Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1016"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                91132
+            ],
+            "associated_addresses": [
+                91132
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "read file on Windows": {
+            "rule_name": "read file on Windows",
+            "rule_namespace": "host-interaction/file-system/read",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Read File",
+                "method_mbc": "",
+                "mbc_id": "C0051"
+            },
+            "associated_funcs": [
+                108032
+            ],
+            "associated_addresses": [
+                108032
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "set registry value": {
+            "rule_name": "set registry value",
+            "rule_namespace": "host-interaction/registry/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Set Registry Key",
+                "mbc_id": "C0036.001"
+            },
+            "associated_funcs": [
+                109332
+            ],
+            "associated_addresses": [
+                109332
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "write file on Windows": {
+            "rule_name": "write file on Windows",
+            "rule_namespace": "host-interaction/file-system/write",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Writes File",
+                "method_mbc": "",
+                "mbc_id": "C0052"
+            },
+            "associated_funcs": [
+                112012
+            ],
+            "associated_addresses": [
+                112012
+            ],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        },
+        "reference Base64 string": {
+            "rule_name": "reference Base64 string",
+            "rule_namespace": "data-manipulation/encoding/base64",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Data",
+                "behavior_mbc": "Encode Data",
+                "method_mbc": "Base64",
+                "mbc_id": "C0026.001"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [],
+            "rules_non_code_related": [
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ],
+                [
+                    "contain an embedded PE file",
+                    "file",
+                    128520
+                ]
+            ]
+        },
+        "contain an embedded PE file": {
+            "rule_name": "contain an embedded PE file",
+            "rule_namespace": "executable/subfile/pe",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Execution",
+                "behavior_mbc": "Install Additional Program",
+                "method_mbc": "",
+                "mbc_id": "B0023"
+            },
+            "associated_funcs": [],
+            "associated_addresses": [],
+            "rules_non_code_related": [
+                [
+                    "contain an embedded PE file",
+                    "file",
+                    128520
+                ],
+                [
+                    "reference Base64 string",
+                    "file",
+                    59168
+                ]
+            ]
+        }
+    },
+    "analysis": {
+        "base_address": {
+            "type": "absolute",
+            "value": 65536
+        },
+        "file_functions": {
+            "69640": 69640,
+            "69867": 69640,
+            "69920": 69920,
+            "70375": 69920,
+            "70505": 69920,
+            "70540": 70540,
+            "70834": 70540,
+            "70868": 70868,
+            "70932": 70932,
+            "70980": 70932,
+            "71078": 70932,
+            "71083": 70932,
+            "71203": 70932,
+            "71232": 71232,
+            "71454": 71232,
+            "71518": 71232,
+            "71548": 71548,
+            "71598": 71548,
+            "72084": 72084,
+            "72120": 72084,
+            "72132": 72084,
+            "72203": 72084,
+            "72216": 72216,
+            "72328": 72216,
+            "72460": 72216,
+            "72488": 72488,
+            "72611": 72488,
+            "72634": 72488,
+            "72705": 72488,
+            "72740": 72488,
+            "72800": 72488,
+            "72906": 72488,
+            "72944": 72944,
+            "72969": 72944,
+            "73061": 72944,
+            "73072": 73072,
+            "73134": 73072,
+            "73254": 73072,
+            "73288": 73288,
+            "73479": 73288,
+            "73496": 73496,
+            "73556": 73496,
+            "73636": 73496,
+            "73700": 73496,
+            "73824": 73496,
+            "74010": 73496,
+            "74035": 73496,
+            "74060": 73496,
+            "74085": 73496,
+            "74103": 73496,
+            "74135": 73496,
+            "74194": 73496,
+            "74212": 73496,
+            "74238": 73496,
+            "74279": 73496,
+            "74294": 73496,
+            "74336": 73496,
+            "74384": 74384,
+            "74473": 74384,
+            "74542": 74384,
+            "74621": 74384,
+            "74684": 74684,
+            "74743": 74684,
+            "74765": 74684,
+            "74787": 74684,
+            "74811": 74684,
+            "74822": 74684,
+            "74837": 74684,
+            "74862": 74684,
+            "74891": 74684,
+            "74910": 74684,
+            "74927": 74684,
+            "74940": 74684,
+            "75003": 74684,
+            "75045": 74684,
+            "75067": 74684,
+            "75102": 74684,
+            "75113": 74684,
+            "75128": 74684,
+            "75185": 74684,
+            "75196": 74684,
+            "75211": 74684,
+            "75252": 74684,
+            "75268": 74684,
+            "75285": 74684,
+            "75313": 74684,
+            "75331": 74684,
+            "75362": 74684,
+            "75388": 74684,
+            "75405": 74684,
+            "75423": 74684,
+            "75435": 74684,
+            "75447": 74684,
+            "75500": 75500,
+            "75610": 75500,
+            "75661": 75500,
+            "75698": 75500,
+            "75720": 75720,
+            "75788": 75788,
+            "75856": 75856,
+            "76022": 75856,
+            "76060": 76060,
+            "76082": 76060,
+            "76104": 76060,
+            "76244": 76244,
+            "76275": 76244,
+            "76375": 76244,
+            "76408": 76244,
+            "76474": 76244,
+            "76513": 76244,
+            "76544": 76544,
+            "76897": 76544,
+            "76932": 76932,
+            "77029": 76932,
+            "77324": 77324,
+            "77421": 77324,
+            "77672": 77672,
+            "77879": 77672,
+            "77944": 77944,
+            "78127": 77944,
+            "78184": 78184,
+            "78295": 78184,
+            "78355": 78184,
+            "78384": 78184,
+            "78408": 78408,
+            "78750": 78408,
+            "78814": 78408,
+            "78900": 78900,
+            "79094": 78900,
+            "79123": 78900,
+            "79148": 79148,
+            "79263": 79148,
+            "79696": 79148,
+            "79771": 79148,
+            "79868": 79868,
+            "80277": 79868,
+            "80352": 79868,
+            "80397": 79868,
+            "80424": 80424,
+            "80905": 80424,
+            "80975": 80424,
+            "81000": 81000,
+            "81080": 81080,
+            "81403": 81080,
+            "81420": 81080,
+            "81755": 81080,
+            "81769": 81080,
+            "81912": 81080,
+            "81926": 81080,
+            "82035": 81080,
+            "82064": 82064,
+            "82206": 82064,
+            "82238": 82064,
+            "82303": 82064,
+            "82429": 82064,
+            "82463": 82064,
+            "82688": 82064,
+            "82700": 82064,
+            "82724": 82724,
+            "82823": 82724,
+            "82838": 82724,
+            "82863": 82724,
+            "82887": 82724,
+            "82918": 82724,
+            "82966": 82724,
+            "83204": 82724,
+            "83371": 82724,
+            "83385": 82724,
+            "83408": 83408,
+            "83445": 83408,
+            "83456": 83456,
+            "83500": 83500,
+            "83843": 83500,
+            "83849": 83500,
+            "83956": 83956,
+            "84001": 83956,
+            "84028": 84028,
+            "84076": 84028,
+            "84172": 84028,
+            "84196": 84196,
+            "84280": 84280,
+            "84375": 84280,
+            "84388": 84388,
+            "84452": 84388,
+            "84464": 84464,
+            "84726": 84464,
+            "84756": 84756,
+            "84900": 84756,
+            "84966": 84756,
+            "85193": 84756,
+            "85212": 85212,
+            "85344": 85212,
+            "85392": 85212,
+            "86095": 85212,
+            "86168": 86168,
+            "86543": 86168,
+            "86644": 86644,
+            "86658": 86644,
+            "86736": 86736,
+            "86778": 86736,
+            "86802": 86736,
+            "86827": 86736,
+            "86840": 86736,
+            "86872": 86736,
+            "86904": 86904,
+            "87188": 86904,
+            "87216": 87216,
+            "87320": 87216,
+            "87445": 87216,
+            "87604": 87604,
+            "88044": 87604,
+            "88094": 87604,
+            "88154": 87604,
+            "88174": 87604,
+            "88197": 87604,
+            "88230": 87604,
+            "88256": 87604,
+            "88273": 87604,
+            "88284": 87604,
+            "88313": 87604,
+            "88338": 87604,
+            "88347": 87604,
+            "88354": 87604,
+            "88379": 87604,
+            "88403": 87604,
+            "88456": 87604,
+            "88479": 87604,
+            "88494": 87604,
+            "88550": 87604,
+            "88566": 87604,
+            "88604": 87604,
+            "88629": 87604,
+            "88652": 87604,
+            "88677": 87604,
+            "88690": 87604,
+            "88727": 87604,
+            "88752": 88752,
+            "88849": 88752,
+            "88900": 88752,
+            "89043": 88752,
+            "89147": 88752,
+            "89166": 88752,
+            "89380": 89380,
+            "89521": 89380,
+            "89552": 89380,
+            "89629": 89380,
+            "89645": 89380,
+            "89684": 89684,
+            "89741": 89684,
+            "89968": 89968,
+            "90050": 89968,
+            "90092": 90092,
+            "90390": 90092,
+            "91132": 91132,
+            "91498": 91132,
+            "91898": 91132,
+            "91948": 91132,
+            "92289": 91132,
+            "92328": 92328,
+            "92405": 92328,
+            "92448": 323684,
+            "92536": 323684,
+            "92832": 323684,
+            "92863": 323684,
+            "93138": 323684,
+            "93164": 93164,
+            "93367": 93164,
+            "93404": 93404,
+            "93460": 93404,
+            "93480": 93480,
+            "93588": 93480,
+            "93686": 93480,
+            "93716": 93716,
+            "93777": 93716,
+            "93792": 93792,
+            "93856": 93792,
+            "93868": 93868,
+            "93972": 93868,
+            "93990": 93868,
+            "94024": 94024,
+            "94184": 94184,
+            "94262": 94184,
+            "94455": 94184,
+            "94484": 94184,
+            "94534": 94184,
+            "94593": 94184,
+            "94800": 94800,
+            "94867": 94800,
+            "94880": 94880,
+            "94943": 94880,
+            "94956": 94956,
+            "95380": 95380,
+            "96042": 95380,
+            "96072": 96072,
+            "96104": 96072,
+            "96152": 96152,
+            "96208": 96208,
+            "96399": 96208,
+            "96448": 96208,
+            "96519": 96208,
+            "96556": 96556,
+            "96601": 96556,
+            "96608": 96556,
+            "96715": 96556,
+            "96784": 96556,
+            "96813": 96556,
+            "96856": 96856,
+            "96881": 96856,
+            "96909": 96856,
+            "96932": 96932,
+            "97021": 96932,
+            "97199": 96932,
+            "98084": 96932,
+            "98152": 98152,
+            "98276": 98276,
+            "98317": 98276,
+            "98340": 98340,
+            "98452": 98452,
+            "98522": 98452,
+            "98536": 98536,
+            "98670": 98536,
+            "98731": 98536,
+            "98760": 98760,
+            "98896": 98760,
+            "98957": 98760,
+            "98984": 98984,
+            "99465": 98984,
+            "99488": 99488,
+            "99699": 99488,
+            "99728": 99728,
+            "100244": 99728,
+            "100450": 99728,
+            "100488": 100488,
+            "100558": 100488,
+            "101084": 101084,
+            "101192": 101084,
+            "101528": 101084,
+            "101748": 101748,
+            "101882": 101748,
+            "101995": 101748,
+            "102074": 101748,
+            "102108": 102108,
+            "102213": 102108,
+            "102293": 102108,
+            "102343": 102108,
+            "102404": 102108,
+            "102436": 102436,
+            "102826": 102436,
+            "102850": 102436,
+            "103067": 102436,
+            "103100": 103100,
+            "103167": 103100,
+            "103393": 103100,
+            "103416": 103416,
+            "104029": 103416,
+            "104060": 104060,
+            "104203": 104060,
+            "104243": 104060,
+            "104266": 104060,
+            "104533": 104060,
+            "104572": 104572,
+            "104686": 104572,
+            "104735": 104572,
+            "104871": 104572,
+            "105153": 104572,
+            "105193": 104572,
+            "105315": 104572,
+            "105348": 105348,
+            "105507": 105348,
+            "105583": 105348,
+            "105902": 105348,
+            "106179": 105348,
+            "106197": 105348,
+            "106317": 105348,
+            "106348": 105348,
+            "106888": 106888,
+            "106989": 106888,
+            "107004": 107004,
+            "107105": 107004,
+            "107120": 107120,
+            "107243": 107120,
+            "107264": 107120,
+            "107300": 107300,
+            "107448": 107300,
+            "107457": 107300,
+            "107488": 107488,
+            "107547": 107488,
+            "107568": 107568,
+            "107996": 107568,
+            "108032": 108032,
+            "108218": 108032,
+            "108540": 108540,
+            "108831": 108540,
+            "108842": 108540,
+            "108989": 108540,
+            "109088": 108540,
+            "109112": 108540,
+            "109206": 108540,
+            "109230": 108540,
+            "109332": 109332,
+            "109590": 109332,
+            "109601": 109332,
+            "109816": 109816,
+            "109941": 109816,
+            "110182": 109816,
+            "110194": 109816,
+            "110408": 110408,
+            "110747": 110408,
+            "110933": 110408,
+            "110964": 110408,
+            "111325": 110408,
+            "111491": 110408,
+            "111518": 110408,
+            "111568": 110408,
+            "111600": 110408,
+            "112012": 112012,
+            "112791": 112012,
+            "112832": 112832,
+            "112879": 112832,
+            "113024": 112832,
+            "113149": 112832,
+            "113193": 112832,
+            "113220": 113220,
+            "113349": 113220,
+            "114344": 113220,
+            "114874": 113220,
+            "115239": 113220,
+            "115607": 113220,
+            "115923": 113220,
+            "116155": 113220,
+            "116273": 113220,
+            "116636": 113220,
+            "116825": 113220,
+            "117156": 113220,
+            "117275": 113220,
+            "117312": 117312,
+            "117352": 117312,
+            "117376": 117376,
+            "117640": 117376,
+            "117664": 117664,
+            "117669": 117664,
+            "117976": 117976,
+            "118206": 117976,
+            "118294": 117976,
+            "118590": 117976,
+            "118641": 117976,
+            "118725": 117976,
+            "118983": 117976,
+            "119024": 119024,
+            "119259": 119024,
+            "119304": 119304,
+            "119450": 119304,
+            "119699": 119304,
+            "119740": 119740,
+            "119880": 119740,
+            "119920": 119920,
+            "120180": 119920,
+            "120192": 120192,
+            "120445": 120192,
+            "120549": 120192,
+            "120675": 120192,
+            "120698": 120192,
+            "120713": 120192,
+            "120742": 120192,
+            "120780": 120780,
+            "120816": 120816,
+            "121010": 120816,
+            "121056": 120816,
+            "121084": 121084,
+            "121170": 121084,
+            "121403": 121084,
+            "121428": 121084,
+            "121664": 121084,
+            "121719": 121084,
+            "121978": 121084,
+            "122003": 121084,
+            "122239": 121084,
+            "122294": 121084,
+            "122553": 121084,
+            "122578": 121084,
+            "122814": 121084,
+            "122869": 121084,
+            "122960": 122960,
+            "122988": 122960,
+            "123000": 122960,
+            "123005": 122960,
+            "123025": 122960,
+            "123056": 122960,
+            "123136": 122960,
+            "123216": 122960,
+            "123248": 122960,
+            "123334": 122960,
+            "123386": 122960,
+            "123416": 122960,
+            "123421": 122960,
+            "123652": 122960,
+            "123750": 122960,
+            "323684": 323684
+        },
+        "library_functions": {
+            "86628": "?ResetPaletteVersion@CDrawImage@@QAEXXZ",
+            "123856": "memset"
+        }
+    }
+}

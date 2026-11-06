@@ -1,0 +1,12 @@
+# Runtime dependencies of the MAPTER Dash app (what app.py and its modules
+# import). Lower bounds = versions the app was tested with. Used by
+# MapterBridge's Python Environment dialog. The generation pipeline has its own
+# MAPTER_backend/requirements-pipeline.txt.
+dash>=3.0
+dash-bootstrap-components>=2.0
+plotly>=6.0
+numpy>=2.0          # the bundled pickles were written with numpy 2
+pandas>=2.2
+scipy>=1.11
+tqdm>=4.66
+requests>=2.31

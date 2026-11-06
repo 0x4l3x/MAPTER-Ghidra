@@ -1,0 +1,337 @@
+{
+    "timestamp": "2024-12-13T23:28:15.227388",
+    "version": "7.4.0",
+    "extractor": "VivisectFeatureExtractor",
+    "rules": {
+        "link function at runtime on Windows": {
+            "rule_name": "link function at runtime on Windows",
+            "rule_namespace": "linking/runtime-linking",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Shared Modules",
+                "subtechnique_attck": "",
+                "attck_id": "T1129"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [],
+            "associated_addresses": [
+                4198594
+            ],
+            "rules_non_code_related": []
+        },
+        "create or open registry key": {
+            "rule_name": "create or open registry key",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Create Registry Key",
+                "mbc_id": "C0036.004"
+            },
+            "associated_funcs": [
+                4198400
+            ],
+            "associated_addresses": [
+                4198400
+            ],
+            "rules_non_code_related": []
+        },
+        "encode data using XOR": {
+            "rule_name": "encode data using XOR",
+            "rule_namespace": "data-manipulation/encoding/xor",
+            "rule_attack": {
+                "tactic_attck": "Defense Evasion",
+                "technique_attck": "Obfuscated Files or Information",
+                "subtechnique_attck": "",
+                "attck_id": "T1027"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Defense Evasion",
+                "behavior_mbc": "Obfuscated Files or Information",
+                "method_mbc": "Encoding-Standard Algorithm",
+                "mbc_id": "E1027.m02"
+            },
+            "associated_funcs": [
+                4198400,
+                4198547,
+                4198547
+            ],
+            "associated_addresses": [
+                4198478,
+                4198666,
+                4198869
+            ],
+            "rules_non_code_related": []
+        },
+        "create or open file": {
+            "rule_name": "create or open file",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Create File",
+                "method_mbc": "",
+                "mbc_id": "C0016"
+            },
+            "associated_funcs": [
+                4198547
+            ],
+            "associated_addresses": [
+                4198932
+            ],
+            "rules_non_code_related": []
+        },
+        "create process suspended": {
+            "rule_name": "create process suspended",
+            "rule_namespace": "host-interaction/process/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Create Process",
+                "method_mbc": "Create Suspended Process",
+                "mbc_id": "C0017.003"
+            },
+            "associated_funcs": [
+                4198547
+            ],
+            "associated_addresses": [
+                4199068
+            ],
+            "rules_non_code_related": []
+        },
+        "create process on Windows": {
+            "rule_name": "create process on Windows",
+            "rule_namespace": "host-interaction/process/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Create Process",
+                "method_mbc": "",
+                "mbc_id": "C0017"
+            },
+            "associated_funcs": [
+                4198547
+            ],
+            "associated_addresses": [
+                4199068
+            ],
+            "rules_non_code_related": []
+        },
+        "contain loop": {
+            "rule_name": "contain loop",
+            "rule_namespace": "Unknown",
+            "rule_attack": null,
+            "rule_mbc": null,
+            "associated_funcs": [
+                4198400,
+                4198547,
+                4202502
+            ],
+            "associated_addresses": [
+                4198400,
+                4198547,
+                4202502
+            ],
+            "rules_non_code_related": []
+        },
+        "set registry value": {
+            "rule_name": "set registry value",
+            "rule_namespace": "host-interaction/registry/create",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Operating System",
+                "behavior_mbc": "Registry",
+                "method_mbc": "Set Registry Key",
+                "mbc_id": "C0036.001"
+            },
+            "associated_funcs": [
+                4198400
+            ],
+            "associated_addresses": [
+                4198400
+            ],
+            "rules_non_code_related": []
+        },
+        "move file": {
+            "rule_name": "move file",
+            "rule_namespace": "host-interaction/file-system/move",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Move File",
+                "method_mbc": "",
+                "mbc_id": "C0063"
+            },
+            "associated_funcs": [
+                4198547
+            ],
+            "associated_addresses": [
+                4198547
+            ],
+            "rules_non_code_related": []
+        },
+        "write file on Windows": {
+            "rule_name": "write file on Windows",
+            "rule_namespace": "host-interaction/file-system/write",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Writes File",
+                "method_mbc": "",
+                "mbc_id": "C0052"
+            },
+            "associated_funcs": [
+                4198547
+            ],
+            "associated_addresses": [
+                4198547
+            ],
+            "rules_non_code_related": []
+        },
+        "get hostname": {
+            "rule_name": "get hostname",
+            "rule_namespace": "host-interaction/os/hostname",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "System Information Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1082"
+            },
+            "associated_funcs": [
+                4198547
+            ],
+            "associated_addresses": [
+                4198547
+            ],
+            "rules_non_code_related": []
+        },
+        "delete file": {
+            "rule_name": "delete file",
+            "rule_namespace": "host-interaction/file-system/delete",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "File System",
+                "behavior_mbc": "Delete File",
+                "method_mbc": "",
+                "mbc_id": "C0047"
+            },
+            "associated_funcs": [
+                4198547
+            ],
+            "associated_addresses": [
+                4198547
+            ],
+            "rules_non_code_related": []
+        },
+        "query environment variable": {
+            "rule_name": "query environment variable",
+            "rule_namespace": "host-interaction/environment-variable",
+            "rule_attack": {
+                "tactic_attck": "Discovery",
+                "technique_attck": "System Information Discovery",
+                "subtechnique_attck": "",
+                "attck_id": "T1082"
+            },
+            "rule_mbc": {
+                "objective_mbc": "Discovery",
+                "behavior_mbc": "System Information Discovery",
+                "method_mbc": "",
+                "mbc_id": "E1082"
+            },
+            "associated_funcs": [
+                4198547
+            ],
+            "associated_addresses": [
+                4198547
+            ],
+            "rules_non_code_related": []
+        },
+        "write and execute a file": {
+            "rule_name": "write and execute a file",
+            "rule_namespace": "communication/c2/file-transfer",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Execution",
+                "behavior_mbc": "Install Additional Program",
+                "method_mbc": "",
+                "mbc_id": "B0023"
+            },
+            "associated_funcs": [
+                4198547
+            ],
+            "associated_addresses": [
+                4198547
+            ],
+            "rules_non_code_related": []
+        },
+        "terminate process": {
+            "rule_name": "terminate process",
+            "rule_namespace": "host-interaction/process/terminate",
+            "rule_attack": null,
+            "rule_mbc": {
+                "objective_mbc": "Process",
+                "behavior_mbc": "Terminate Process",
+                "method_mbc": "",
+                "mbc_id": "C0018"
+            },
+            "associated_funcs": [
+                4202502
+            ],
+            "associated_addresses": [
+                4202502
+            ],
+            "rules_non_code_related": []
+        },
+        "parse PE header": {
+            "rule_name": "parse PE header",
+            "rule_namespace": "load-code/pe",
+            "rule_attack": {
+                "tactic_attck": "Execution",
+                "technique_attck": "Shared Modules",
+                "subtechnique_attck": "",
+                "attck_id": "T1129"
+            },
+            "rule_mbc": null,
+            "associated_funcs": [
+                4202502
+            ],
+            "associated_addresses": [
+                4202502
+            ],
+            "rules_non_code_related": []
+        }
+    },
+    "analysis": {
+        "base_address": {
+            "type": "absolute",
+            "value": 4194304
+        },
+        "file_functions": {
+            "4198400": 4198400,
+            "4198478": 4198400,
+            "4198547": 4198547,
+            "4198666": 4198547,
+            "4198704": 4198547,
+            "4198778": 4198547,
+            "4198837": 4198547,
+            "4198869": 4198547,
+            "4198909": 4198547,
+            "4198932": 4198547,
+            "4199068": 4198547,
+            "4202502": 4202502,
+            "4202532": 4202502,
+            "4202607": 4202502,
+            "4202698": 4202502
+        },
+        "library_functions": {
+            "4202968": "__setdefaultprecision"
+        }
+    }
+}
