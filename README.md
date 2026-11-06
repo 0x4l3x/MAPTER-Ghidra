@@ -93,8 +93,9 @@ repository" button exports it):
 }
 ```
 
-The DOI above always resolves to the latest version; v1.0.1 specifically is
-[10.5281/zenodo.24011200](https://doi.org/10.5281/zenodo.24011200).
+The DOI above always resolves to the latest version. To cite a specific
+version: v1.0.1 is [10.5281/zenodo.24011600](https://doi.org/10.5281/zenodo.24011600),
+v1.0.0 is [10.5281/zenodo.24011200](https://doi.org/10.5281/zenodo.24011200).
 
 ## License
 

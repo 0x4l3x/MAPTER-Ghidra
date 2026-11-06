@@ -23,8 +23,11 @@ identifiers:
     value: "10.5281/zenodo.24011199"
     description: "Concept DOI (all versions, resolves to the latest)"
   - type: doi
-    value: "10.5281/zenodo.24011200"
+    value: "10.5281/zenodo.24011600"
     description: "Version v1.0.1"
+  - type: doi
+    value: "10.5281/zenodo.24011200"
+    description: "Version v1.0.0"
 repository-code: "https://github.com/0x4l3x/MAPTER-Ghidra"
 license: MIT
 keywords:
