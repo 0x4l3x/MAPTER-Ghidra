@@ -51,7 +51,7 @@ the SAFE model, which is not stored in git (GitHub limits files to 100 MB):
 ```bash
 # 1. SAFE model -> MAPTER_backend/model/ (checksum-verified)
 python3 MAPTER_backend/tools/fetch_model.py \
-    --url https://github.com/<owner>/<repo>/releases/download/<tag>/safe-model.zip
+    --url https://github.com/0x4l3x/MAPTER-Ghidra/releases/download/v1.0.0/safe-model.zip
 
 # 2. Build one zip per Ghidra version (output in MapterBridge/dist/)
 cd MapterBridge
