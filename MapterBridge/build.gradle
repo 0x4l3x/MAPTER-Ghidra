@@ -76,6 +76,8 @@ def mapterAppFiles = [
 	// helpers: CAPA merge, binary similarity, dendrogram avclass tags
 	'malware_data_loader.py', 'dendogram_matrix_generation.py', 'dendogram_plot_utils.py',
 	'assets/**', 'datasets/README.md', 'datasets/APT_19/**', 'datasets/capa/APT_19/**',
+	// license texts must travel with the redistributed code and SAFE model
+	'LICENSE', 'THIRD_PARTY_NOTICES.md', 'CITATION.cff',
 ]
 buildExtension {
 	from (mapterRepo) {

@@ -1,5 +1,7 @@
 # MAPTER for Ghidra
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24011199.svg)](https://doi.org/10.5281/zenodo.24011199)
+
 **MAPTER** maps the functions of a set of binaries (e.g. the samples of an APT
 group) onto a 2D plane using SAFE function embeddings, groups the binaries by
 how many functions they share, and links that map to Ghidra:
@@ -51,7 +53,7 @@ the SAFE model, which is not stored in git (GitHub limits files to 100 MB):
 ```bash
 # 1. SAFE model -> MAPTER_backend/model/ (checksum-verified)
 python3 MAPTER_backend/tools/fetch_model.py \
-    --url https://github.com/0x4l3x/MAPTER-Ghidra/releases/download/v1.0.0/safe-model.zip
+    --url https://github.com/0x4l3x/MAPTER-Ghidra/releases/download/v1.0.1/safe-model.zip
 
 # 2. Build one zip per Ghidra version (output in MapterBridge/dist/)
 cd MapterBridge
@@ -72,6 +74,27 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements-app.txt
 
 Run the pipeline without Ghidra: see
 [MAPTER_backend/README.md](MAPTER_backend/README.md).
+
+## Citing
+
+If you use MAPTER for Ghidra, please cite the archived release
+([CITATION.cff](CITATION.cff) has the full metadata; GitHub's "Cite this
+repository" button exports it):
+
+```bibtex
+@software{mapter_ghidra,
+  author    = {Barreiro-Morante, Alejandro and Blasco Al{\'i}s, Jorge},
+  title     = {{MAPTER} for {Ghidra}},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {v1.0.1},
+  doi       = {10.5281/zenodo.24011199},
+  url       = {https://doi.org/10.5281/zenodo.24011199},
+}
+```
+
+The DOI above always resolves to the latest version; v1.0.1 specifically is
+[10.5281/zenodo.24011200](https://doi.org/10.5281/zenodo.24011200).
 
 ## License
 

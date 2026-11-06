@@ -1,0 +1,73 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "MAPTER for Ghidra"
+abstract: >-
+  Ghidra extension that links Ghidra to MAPTER, an interactive 2D map of SAFE
+  function embeddings for exploring code reuse across malware binaries.
+  Includes the Dash web app and the pipeline that generates maps from your own
+  binaries.
+authors:
+  - family-names: "Barreiro-Morante"
+    given-names: "Alejandro"
+    orcid: "https://orcid.org/0009-0006-4279-5093"
+    affiliation: "Universidad Politécnica de Madrid"
+  - family-names: "Blasco Alís"
+    given-names: "Jorge"
+    orcid: "https://orcid.org/0000-0003-4392-9023"
+version: "v1.0.1"
+date-released: "2026-11-06"
+doi: "10.5281/zenodo.24011199"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24011199"
+    description: "Concept DOI (all versions, resolves to the latest)"
+  - type: doi
+    value: "10.5281/zenodo.24011200"
+    description: "Version v1.0.1"
+repository-code: "https://github.com/0x4l3x/MAPTER-Ghidra"
+license: MIT
+keywords:
+  - Ghidra
+  - malware analysis
+  - binary similarity
+  - function embeddings
+  - SAFE
+  - reverse engineering
+references:
+  - type: article
+    title: "Function Representations for Binary Similarity"
+    authors:
+      - family-names: "Massarelli"
+        given-names: "Luca"
+      - family-names: "Di Luna"
+        given-names: "Giuseppe Antonio"
+      - family-names: "Petroni"
+        given-names: "Fabio"
+      - family-names: "Querzoni"
+        given-names: "Leonardo"
+      - family-names: "Baldoni"
+        given-names: "Roberto"
+    journal: "IEEE Transactions on Dependable and Secure Computing"
+    volume: 19
+    issue: 4
+    start: 2259
+    end: 2273
+    year: 2022
+    doi: "10.1109/TDSC.2021.3051852"
+  - type: software
+    title: "SAFEtorch: PyTorch Version of the SAFE Neural Network"
+    authors:
+      - family-names: "Massarelli"
+        given-names: "Luca"
+      - family-names: "Di Luna"
+        given-names: "Giuseppe Antonio"
+      - family-names: "Petroni"
+        given-names: "Fabio"
+      - family-names: "Querzoni"
+        given-names: "Leonardo"
+      - family-names: "Baldoni"
+        given-names: "Roberto"
+    year: 2019
+    url: "https://github.com/facebookresearch/SAFEtorch"
+    license: MIT
